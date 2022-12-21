@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Messages>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="RUNTIME" content="Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.01 seconds; current allocated memory: 72.704 MB." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1312" tag="" content="Analyzing design file &apos;fpga/hls/MMult.cpp&apos; ..." resolution=""/>
+	<Message severity="WARNING" prefix="[HLS 214-114]" key="HLS 214-114" tag="DATAFLOW,VITIS_THROUGHPUT" content="Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region: fpga/hls/MMult.cpp:120:3" resolution="http://www.xilinx.com/cgi-bin/docs/rdoc?v=2020.2;t=hls+guidance;d=214-114.html"/>
+	<Message severity="WARNING" prefix="[HLS 200-471]" key="HLS 200-471" tag="DATAFLOW,VITIS_THROUGHPUT" content="Dataflow form checks found 1 issue(s) in file fpga/hls/MMult.cpp" resolution="http://www.xilinx.com/cgi-bin/docs/rdoc?v=2020.2;t=hls+guidance;d=200-471.html"/>
+	<Message severity="WARNING" prefix="[HLS 207-5301]" key="HLS 207-5301" tag="" content="unused parameter &apos;intnumInputs&apos;: fpga/hls/MMult.cpp:45:8" resolution=""/>
+	<Message severity="WARNING" prefix="[HLS 207-5301]" key="HLS 207-5301" tag="" content="unused parameter &apos;intnumInputs&apos;: fpga/hls/MMult.cpp:63:9" resolution=""/>
+	<Message severity="WARNING" prefix="[HLS 207-5301]" key="HLS 207-5301" tag="" content="unused parameter &apos;intnumInputs&apos;: fpga/hls/MMult.cpp:78:8" resolution=""/>
+	<Message severity="WARNING" prefix="[HLS 207-5301]" key="HLS 207-5301" tag="" content="unused parameter &apos;c&apos;: fpga/hls/MMult.cpp:78:26" resolution=""/>
+	<Message severity="WARNING" prefix="[HLS 207-5524]" key="HLS 207-5524" tag="" content="Ignore interface attribute or pragma which is not used in top function: fpga/hls/MMult.cpp:133:9" resolution=""/>
+	<Message severity="WARNING" prefix="[HLS 207-5524]" key="HLS 207-5524" tag="" content="Ignore interface attribute or pragma which is not used in top function: fpga/hls/MMult.cpp:134:9" resolution=""/>
+	<Message severity="WARNING" prefix="[HLS 207-5524]" key="HLS 207-5524" tag="" content="Ignore interface attribute or pragma which is not used in top function: fpga/hls/MMult.cpp:135:9" resolution=""/>
+	<Message severity="WARNING" prefix="[HLS 207-5301]" key="HLS 207-5301" tag="" content="unused parameter &apos;c&apos;: fpga/hls/MMult.cpp:132:8" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="RUNTIME" content="Finished Source Code Analysis and Preprocessing: CPU user time: 5.27 seconds. CPU system time: 0.4 seconds. Elapsed time: 4.54 seconds; current allocated memory: 73.992 MB." resolution=""/>
+	<Message severity="ERROR" prefix="[HLS 214-157]" key="HLS 214-157" tag="" content="Top function not found: there is no function named &apos;mmult&apos;" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="RUNTIME" content="Finished Command csynth_design CPU user time: 8.03 seconds. CPU system time: 0.61 seconds. Elapsed time: 7.53 seconds; current allocated memory: 73.983 MB." resolution=""/>
+</Messages>

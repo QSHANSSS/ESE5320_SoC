@@ -1,0 +1,262 @@
+INFO-FLOW: Workspace /home/hans/Desktop/SoC/hw6/apps/mmult/hw6/solution1 opened at Tue Oct 18 21:07:33 EDT 2022
+Execute     ap_set_clock -name default -period 6.7 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 6.7ns.
+Execute     import_lib /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/Zynq UltraScale+ MPSoCs/Zynq UltraScale+ MPSoCs 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute     ap_family_info -name Zynq UltraScale+ MPSoCs -data parts 
+DBG:HLSDevice: Trying to load device library: /tools/Xilinx/Vitis_HLS/2020.2/lib/lnx64.o/librdi_hlsvwrap.so
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: /tools/Xilinx/Vivado/2020.2/data/parts/arch.xml
+Command     ap_family_info done; 0.77 sec.
+Execute     ap_part_info -name xcu25-ffvc1760-2L-e -data info 
+Execute     source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Command       ap_source done; 0.12 sec.
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command     ap_source done; 0.18 sec.
+Execute     import_lib /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/Zynq UltraScale+ MPSoCs/Zynq UltraScale+ MPSoCs_fpv7 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute     source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Command       ap_source done; 0.11 sec.
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command     ap_source done; 0.15 sec.
+Execute     import_lib /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/zynquplus/zynquplus 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute     source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Command       ap_source done; 0.11 sec.
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command     ap_source done; 0.15 sec.
+Execute     set_part xczu11eg-ffvb1517-1-e 
+INFO-FLOW: DBG:set_part: XILINX_VIVADO=/tools/Xilinx/Vivado/2020.2
+INFO-FLOW: DBG:set_part: RDI_DATADIR=/tools/Xilinx/Vivado/2020.2/data:/tools/Xilinx/Vitis_HLS/2020.2/data
+Execute       ap_part_info -name xczu11eg-ffvb1517-1-e -data single -quiet 
+Execute       ap_part_info -name xczu11eg-ffvb1517-1-e -data info 
+Execute       add_library xilinx/zynquplus/zynquplus:xczu11eg:-ffvb1517:-1-e 
+Execute         get_default_platform 
+Execute         open_platform DefaultPlatform 
+Execute         ap_part_info -data single -name xczu11eg-ffvb1517-1-e 
+Execute         ap_part_info -name xczu11eg-ffvb1517-1-e -data resources 
+Execute         config_chip_info -resource {SLICE 37320} {LUT 298560} {FF 597120} {DSP 2928} {BRAM 1200} {URAM 80} 
+Execute         ap_part_info -name xczu11eg-ffvb1517-1-e -data info 
+Execute         config_chip_info -speed slow 
+Execute         ap_part_info -name xczu11eg-ffvb1517-1-e -data info 
+Execute         config_library_info -library zynquplus_slow 
+Execute         config_library_info -family zynquplus 
+Execute         config_library_info -part xczu11eg:-ffvb1517:-1-e 
+Execute         import_lib /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/zynquplus/zynquplus 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
+Execute             source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/zynquplus_dsp48e2.hlp 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute             source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Command           ap_source done; 0.12 sec.
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command         ap_source done; 0.16 sec.
+Command       add_library done; 0.22 sec.
+INFO: [HLS 200-10] Setting target device to 'xczu11eg-ffvb1517-1-e'
+Execute       ap_part_info -name xczu11eg-ffvb1517-1-e -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 0.23 sec.
+Execute     ap_part_info -data single -name xczu11eg-ffvb1517-1-e 
+Execute     ap_part_info -name xczu11eg-ffvb1517-1-e -data resources 
+Execute     config_chip_info -resource {SLICE 37320} {LUT 298560} {FF 597120} {DSP 2928} {BRAM 1200} {URAM 80} 
+Execute     ap_part_info -name xczu11eg-ffvb1517-1-e -data info 
+Execute     config_chip_info -speed slow 
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     get_config_interface -m_axi_latency 
+Execute     get_config_interface -m_axi_alignment_byte_size 
+Execute     get_config_interface -m_axi_max_widen_bitwidth 
+Execute     get_config_interface -default_interface 
+Execute     get_config_interface -m_axi_offset 
+Execute     get_config_rtl -register_reset_num 
+Command   open_solution done; 1.52 sec.
+Execute   set_part xczu11eg-ffvb1517-1-e 
+INFO: [HLS 200-1510] Running: set_part xczu11eg-ffvb1517-1-e 
+INFO-FLOW: DBG:set_part: XILINX_VIVADO=/tools/Xilinx/Vivado/2020.2
+INFO-FLOW: DBG:set_part: RDI_DATADIR=/tools/Xilinx/Vivado/2020.2/data:/tools/Xilinx/Vitis_HLS/2020.2/data
+Execute     ap_part_info -name xczu11eg-ffvb1517-1-e -data single -quiet 
+Execute     ap_part_info -name xczu11eg-ffvb1517-1-e -data info 
+Execute     add_library xilinx/zynquplus/zynquplus:xczu11eg:-ffvb1517:-1-e 
+Execute       get_default_platform 
+Execute       open_platform DefaultPlatform 
+Execute       ap_part_info -data single -name xczu11eg-ffvb1517-1-e 
+Execute       ap_part_info -name xczu11eg-ffvb1517-1-e -data resources 
+Execute       config_chip_info -resource {SLICE 37320} {LUT 298560} {FF 597120} {DSP 2928} {BRAM 1200} {URAM 80} 
+Execute       ap_part_info -name xczu11eg-ffvb1517-1-e -data info 
+Execute       config_chip_info -speed slow 
+Execute       ap_part_info -name xczu11eg-ffvb1517-1-e -data info 
+Execute       config_library_info -library zynquplus_slow 
+Execute       config_library_info -family zynquplus 
+Execute       config_library_info -part xczu11eg:-ffvb1517:-1-e 
+Execute       import_lib /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/zynquplus/zynquplus 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/zynquplus_dsp48e2.hlp 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command       ap_source done; 0.15 sec.
+Command     add_library done; 0.17 sec.
+Execute     ap_part_info -name xczu11eg-ffvb1517-1-e -data info 
+Execute     config_compile -quiet -complex-mul-dsp=0 
+Command   set_part done; 0.19 sec.
+Execute   create_clock -period 6.7 -name default 
+INFO: [HLS 200-1510] Running: create_clock -period 6.7 -name default 
+Execute   csynth_design 
+INFO: [HLS 200-1510] Running: csynth_design 
+Execute     get_config_compile -effort 
+Execute     get_config_compile -enable_clang39 
+Execute     get_config_compile -g 
+Execute     get_config_compile -ng 
+Execute     get_config_compile -opt_fp 
+Execute     get_config_compile -skip_cdt 
+Execute     get_config_compile -skip_syncheck 
+Execute     get_config_compile -skip_transform 
+Execute     get_config_compile -keep_printf 
+Execute     elaborate -effort=medium -skip_syncheck=0 -keep_printf=0 -skip_cdt=0 -skip_transform=0 -ng=0 -g=0 -opt_fp=0 -from_csynth_design=1 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.01 seconds; current allocated memory: 72.704 MB.
+INFO: [HLS 200-10] Analyzing design file 'fpga/hls/MMult.cpp' ... 
+INFO-FLOW: Compiling one TU...
+Execute       get_config_compile -pragma_strict_mode 
+INFO-FLOW: Handling fpga/hls/MMult.cpp as C++
+Execute       ap_part_info -name xczu11eg-ffvb1517-1-e -data info 
+INFO-FLOW: Running: GCC PP 39
+INFO-FLOW: Source preprocessing
+Execute       ap_eval exec -ignorestderr /tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/clang fpga/hls/MMult.cpp -foptimization-record-file=/home/hans/Desktop/SoC/hw6/apps/mmult/hw6/solution1/.autopilot/db/clang.MMult.cpp.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fno-limit-debug-info -gcc-toolchain /tools/Xilinx/Vitis_HLS/2020.2/tps/lnx64/gcc-6.2.0 -fhls -fno-exceptions -E -fno-math-errno -c -emit-llvm -mllvm -disable-llvm-optzns -Werror=implicit-function-declaration -Werror=implicit-hls-streams -Werror=return-type -Wpragmas -Wunused-parameter -fno-threadsafe-statics -fno-use-cxa-atexit -std=gnu++14 -target fpga64-xilinx-linux-gnu -fno-threadsafe-statics -fno-use-cxa-atexit -I /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/39 -D__VITIS_HLS__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot -I /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E2__ -o /home/hans/Desktop/SoC/hw6/apps/mmult/hw6/solution1/.autopilot/db/MMult.pp.0.cpp > /home/hans/Desktop/SoC/hw6/apps/mmult/hw6/solution1/.autopilot/db/clang.MMult.cpp.out.log 2> /home/hans/Desktop/SoC/hw6/apps/mmult/hw6/solution1/.autopilot/db/clang.MMult.cpp.err.log 
+Command       ap_eval done; 0.11 sec.
+INFO-FLOW: Done: GCC PP 39 time: 0.1 seconds per iteration
+Execute       set_directive_top mmult -name=mmult 
+INFO-FLOW: Setting directive 'TOP' name=mmult 
+INFO-FLOW: Setting directive 'TOP' name=mmult 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/tps/tcl/tcllib1.11.1/yaml/huddle.tcl 
+Execute       source /tools/Xilinx/Vitis_HLS/2020.2/tps/tcl/tcllib1.11.1/yaml/json2huddle.tcl 
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/tps/tcl/tcllib1.11.1/try/try.tcl 
+INFO-FLOW: Setting directive 'TOP' name=mmult 
+Execute       list_core -type functional_unit 
+Execute       clang_tidy xilinx-systemc-detector /home/hans/Desktop/SoC/hw6/apps/mmult/hw6/solution1/.autopilot/db/MMult.pp.0.cpp std=gnu++14 -target fpga  -directive=/home/hans/Desktop/SoC/hw6/apps/mmult/hw6/solution1/.autopilot/db/.systemc_flag 
+INFO-FLOW: exec /tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-systemc-detector -import-directive=/home/hans/Desktop/SoC/hw6/apps/mmult/hw6/solution1/.autopilot/db/.systemc_flag -fix-errors /home/hans/Desktop/SoC/hw6/apps/mmult/hw6/solution1/.autopilot/db/MMult.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
+Command       clang_tidy done; 1.06 sec.
+INFO-FLOW: Running: clang-tidy CDT preprocess 39
+Execute       clang_tidy xilinx-directive2pragma /home/hans/Desktop/SoC/hw6/apps/mmult/hw6/solution1/.autopilot/db/MMult.pp.0.cpp std=gnu++14 -target fpga  -directive=/home/hans/Desktop/SoC/hw6/apps/mmult/hw6/solution1/.autopilot/db/all.directive.json 
+INFO-FLOW: exec /tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-directive2pragma -import-directive=/home/hans/Desktop/SoC/hw6/apps/mmult/hw6/solution1/.autopilot/db/all.directive.json -fix-errors /home/hans/Desktop/SoC/hw6/apps/mmult/hw6/solution1/.autopilot/db/MMult.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
+Command       clang_tidy done; 0.64 sec.
+Execute       clang_tidy xilinx-constantarray-param,xilinx-remove-assert /home/hans/Desktop/SoC/hw6/apps/mmult/hw6/solution1/.autopilot/db/MMult.pp.0.cpp std=gnu++14 -target fpga  
+INFO-FLOW: exec /tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-constantarray-param,xilinx-remove-assert -fix-errors /home/hans/Desktop/SoC/hw6/apps/mmult/hw6/solution1/.autopilot/db/MMult.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
+Command       clang_tidy done; 0.7 sec.
+INFO-FLOW: Done: clang-tidy CDT preprocess 39 time: 1.3 seconds per iteration
+INFO-FLOW: Calling xilinx-label-all-loops ... 
+Execute       clang_tidy -errorcheck xilinx-label-all-loops,xilinx-top-parameters,xilinx-array-stream-check,xilinx-warn-mayneed-no-ctor-attribute /home/hans/Desktop/SoC/hw6/apps/mmult/hw6/solution1/.autopilot/db/MMult.pp.0.cpp std=gnu++14 -target fpga  
+Execute         ap_eval exec -ignorestderr /tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -export-fixes=/home/hans/Desktop/SoC/hw6/apps/mmult/hw6/solution1/.autopilot/db/clang-tidy.MMult.pp.0.cpp.diag.yml -header-filter=.* --checks=-*,xilinx-label-all-loops,xilinx-top-parameters,xilinx-array-stream-check,xilinx-warn-mayneed-no-ctor-attribute -fix-errors /home/hans/Desktop/SoC/hw6/apps/mmult/hw6/solution1/.autopilot/db/MMult.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0 > /home/hans/Desktop/SoC/hw6/apps/mmult/hw6/solution1/.autopilot/db/clang-tidy.MMult.pp.0.cpp.out.log 2> /home/hans/Desktop/SoC/hw6/apps/mmult/hw6/solution1/.autopilot/db/clang-tidy.MMult.pp.0.cpp.err.log 
+Command         ap_eval done; 0.94 sec.
+Execute         source /tools/Xilinx/Vitis_HLS/2020.2/tps/tcl/tcllib1.11.1/yaml/yaml.tcl 
+Execute           source /tools/Xilinx/Vitis_HLS/2020.2/tps/tcl/tcllib1.11.1/cmdline/cmdline.tcl 
+Command       clang_tidy done; 1.02 sec.
+Execute       get_config_dataflow -strict_mode 
+Execute       ap_eval exec -ignorestderr /tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=/home/hans/Desktop/SoC/hw6/apps/mmult/hw6/solution1/.autopilot/db/xilinx-dataflow-lawyer.MMult.pp.0.cpp.diag.yml /home/hans/Desktop/SoC/hw6/apps/mmult/hw6/solution1/.autopilot/db/MMult.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0 -fstrict-dataflow > /home/hans/Desktop/SoC/hw6/apps/mmult/hw6/solution1/.autopilot/db/xilinx-dataflow-lawyer.MMult.pp.0.cpp.out.log 2> /home/hans/Desktop/SoC/hw6/apps/mmult/hw6/solution1/.autopilot/db/xilinx-dataflow-lawyer.MMult.pp.0.cpp.err.log 
+Command       ap_eval done; 0.5 sec.
+WARNING: [HLS 214-114] Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region: fpga/hls/MMult.cpp:120:3
+Execute       send_msg_by_id WARNING @200-471@%s%s 1 fpga/hls/MMult.cpp 
+WARNING: [HLS 200-471] Dataflow form checks found 1 issue(s) in file fpga/hls/MMult.cpp
+Execute       ap_part_info -name xczu11eg-ffvb1517-1-e -data info 
+INFO-FLOW: compiling source code to llvm bc
+Execute       ap_eval exec -ignorestderr /tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=/home/hans/Desktop/SoC/hw6/apps/mmult/hw6/solution1/.autopilot/db/clang.MMult.pp.0.cpp.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fno-limit-debug-info -fhls -flto -fno-exceptions -Wno-error=c++11-narrowing /home/hans/Desktop/SoC/hw6/apps/mmult/hw6/solution1/.autopilot/db/MMult.pp.0.cpp -fno-math-errno -c -emit-llvm -mllvm -disable-llvm-optzns -Werror=implicit-function-declaration -Werror=implicit-hls-streams -Werror=return-type -Wpragmas -Wunused-parameter -fno-threadsafe-statics -fno-use-cxa-atexit -std=gnu++14 -target fpga64-xilinx-linux-gnu -D__VITIS_HLS__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot -I /tools/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E2__ -g -o /home/hans/Desktop/SoC/hw6/apps/mmult/hw6/solution1/.autopilot/db/MMult.bc > /home/hans/Desktop/SoC/hw6/apps/mmult/hw6/solution1/.autopilot/db/clang.MMult.pp.0.cpp.out.log 2> /home/hans/Desktop/SoC/hw6/apps/mmult/hw6/solution1/.autopilot/db/clang.MMult.pp.0.cpp.err.log 
+Command       ap_eval done; 0.47 sec.
+WARNING: [HLS 207-5301] unused parameter 'intnumInputs': fpga/hls/MMult.cpp:45:8
+WARNING: [HLS 207-5301] unused parameter 'intnumInputs': fpga/hls/MMult.cpp:63:9
+WARNING: [HLS 207-5301] unused parameter 'intnumInputs': fpga/hls/MMult.cpp:78:8
+WARNING: [HLS 207-5301] unused parameter 'c': fpga/hls/MMult.cpp:78:26
+WARNING: [HLS 207-5524] Ignore interface attribute or pragma which is not used in top function: fpga/hls/MMult.cpp:133:9
+WARNING: [HLS 207-5524] Ignore interface attribute or pragma which is not used in top function: fpga/hls/MMult.cpp:134:9
+WARNING: [HLS 207-5524] Ignore interface attribute or pragma which is not used in top function: fpga/hls/MMult.cpp:135:9
+WARNING: [HLS 207-5301] unused parameter 'c': fpga/hls/MMult.cpp:132:8
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 5.27 seconds. CPU system time: 0.4 seconds. Elapsed time: 4.54 seconds; current allocated memory: 73.992 MB.
+INFO-FLOW: Linking Debug ...
+INFO-FLOW: Linking dut bc code.
+Execute       run_link_or_opt -out /home/hans/Desktop/SoC/hw6/apps/mmult/hw6/solution1/.autopilot/db/a.g.ld.0.bc -args  "/home/hans/Desktop/SoC/hw6/apps/mmult/hw6/solution1/.autopilot/db/MMult.g.bc"  
+Execute         ap_eval exec -ignorestderr /tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/llvm-link /home/hans/Desktop/SoC/hw6/apps/mmult/hw6/solution1/.autopilot/db/MMult.g.bc -o /home/hans/Desktop/SoC/hw6/apps/mmult/hw6/solution1/.autopilot/db/a.g.ld.0.bc > /home/hans/Desktop/SoC/hw6/apps/mmult/hw6/solution1/.autopilot/db/llvm-link.a.g.ld.0.bc.out.log 2> /home/hans/Desktop/SoC/hw6/apps/mmult/hw6/solution1/.autopilot/db/llvm-link.a.g.ld.0.bc.err.log 
+INFO-FLOW: 
+Execute       run_link_or_opt -opt -out /home/hans/Desktop/SoC/hw6/apps/mmult/hw6/solution1/.autopilot/db/a.g.ld.1.lower.bc -args /home/hans/Desktop/SoC/hw6/apps/mmult/hw6/solution1/.autopilot/db/a.g.ld.0.bc -reflow-lower-math-intrinsics 
+Execute         ap_eval exec -ignorestderr /tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=reflow|pasta|unroll -pass-remarks=reflow|pasta|unroll|inline -pass-remarks-output=/home/hans/Desktop/SoC/hw6/apps/mmult/hw6/solution1/.autopilot/db/opt.a.g.ld.1.lower.bc.diag.yml /home/hans/Desktop/SoC/hw6/apps/mmult/hw6/solution1/.autopilot/db/a.g.ld.0.bc -reflow-lower-math-intrinsics -o /home/hans/Desktop/SoC/hw6/apps/mmult/hw6/solution1/.autopilot/db/a.g.ld.1.lower.bc > /home/hans/Desktop/SoC/hw6/apps/mmult/hw6/solution1/.autopilot/db/opt.a.g.ld.1.lower.bc.out.log 2> /home/hans/Desktop/SoC/hw6/apps/mmult/hw6/solution1/.autopilot/db/opt.a.g.ld.1.lower.bc.err.log 
+INFO-FLOW: 
+INFO-FLOW: Linking math bc lib
+Execute       run_link_or_opt -out /home/hans/Desktop/SoC/hw6/apps/mmult/hw6/solution1/.autopilot/db/a.g.ld.2.m1.bc -args /home/hans/Desktop/SoC/hw6/apps/mmult/hw6/solution1/.autopilot/db/a.g.ld.1.lower.bc -only-needed /tools/Xilinx/Vitis_HLS/2020.2/lnx64/lib/libhlsm_39.bc /tools/Xilinx/Vitis_HLS/2020.2/lnx64/lib/libhlsmc++_39.bc 
+Execute         ap_eval exec -ignorestderr /tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/llvm-link /home/hans/Desktop/SoC/hw6/apps/mmult/hw6/solution1/.autopilot/db/a.g.ld.1.lower.bc -only-needed /tools/Xilinx/Vitis_HLS/2020.2/lnx64/lib/libhlsm_39.bc /tools/Xilinx/Vitis_HLS/2020.2/lnx64/lib/libhlsmc++_39.bc -o /home/hans/Desktop/SoC/hw6/apps/mmult/hw6/solution1/.autopilot/db/a.g.ld.2.m1.bc > /home/hans/Desktop/SoC/hw6/apps/mmult/hw6/solution1/.autopilot/db/llvm-link.a.g.ld.2.m1.bc.out.log 2> /home/hans/Desktop/SoC/hw6/apps/mmult/hw6/solution1/.autopilot/db/llvm-link.a.g.ld.2.m1.bc.err.log 
+Command         ap_eval done; 2.26 sec.
+INFO-FLOW: 
+Command       run_link_or_opt done; 2.26 sec.
+Execute       run_link_or_opt -opt -out /home/hans/Desktop/SoC/hw6/apps/mmult/hw6/solution1/.autopilot/db/a.g.ld.3.fpc.bc -args /home/hans/Desktop/SoC/hw6/apps/mmult/hw6/solution1/.autopilot/db/a.g.ld.2.m1.bc -reflow-globaldce -hls-top-function-name=mmult -reflow-float-conversion 
+Execute         ap_eval exec -ignorestderr /tools/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=reflow|pasta|unroll -pass-remarks=reflow|pasta|unroll|inline -pass-remarks-output=/home/hans/Desktop/SoC/hw6/apps/mmult/hw6/solution1/.autopilot/db/opt.a.g.ld.3.fpc.bc.diag.yml /home/hans/Desktop/SoC/hw6/apps/mmult/hw6/solution1/.autopilot/db/a.g.ld.2.m1.bc -reflow-globaldce -hls-top-function-name=mmult -reflow-float-conversion -o /home/hans/Desktop/SoC/hw6/apps/mmult/hw6/solution1/.autopilot/db/a.g.ld.3.fpc.bc > /home/hans/Desktop/SoC/hw6/apps/mmult/hw6/solution1/.autopilot/db/opt.a.g.ld.3.fpc.bc.out.log 2> /home/hans/Desktop/SoC/hw6/apps/mmult/hw6/solution1/.autopilot/db/opt.a.g.ld.3.fpc.bc.err.log 
+Command         ap_eval done; error code: 1; 0.68 sec.
+ERROR: [HLS 214-157] Top function not found: there is no function named 'mmult'
+INFO-FLOW: {error: Top function not found: there is no function named 'mmult'}
+Command       run_link_or_opt done; error code: 2; 0.69 sec.
+Command     elaborate done; error code: 2; 7.53 sec.
+Command   csynth_design done; error code: 2; 7.53 sec.
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 8.03 seconds. CPU system time: 0.61 seconds. Elapsed time: 7.53 seconds; current allocated memory: 73.983 MB.
+Command ap_source done; error code: 1; 9.25 sec.
+Execute cleanup_all 

@@ -1,0 +1,390 @@
+
+
+================================================================
+== Vitis HLS Report for 'compute'
+================================================================
+* Date:           Sun Oct 30 18:48:42 2022
+
+* Version:        2020.2 (Build 3064766 on Wed Nov 18 09:12:47 MST 2020)
+* Project:        HW7
+* Solution:       solution1 (Vitis Kernel Flow Target)
+* Product family: zynquplus
+* Target device:  xczu3eg-sbva484-1-i
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  6.67 ns|  4.063 ns|     1.80 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+--------+--------+----------+
+    |  Latency (cycles) |  Latency (absolute) |     Interval    | Pipeline |
+    |   min   |   max   |    min   |    max   |   min  |   max  |   Type   |
+    +---------+---------+----------+----------+--------+--------+----------+
+    |   130951|   130951|  0.873 ms|  0.873 ms|  130952|  130952|  dataflow|
+    +---------+---------+----------+----------+--------+--------+----------+
+
+    + Detail: 
+        * Instance: 
+        +---------------------------------------+-----------------------------+---------+---------+----------+----------+--------+--------+---------+
+        |                                       |                             |  Latency (cycles) |  Latency (absolute) |     Interval    | Pipeline|
+        |                Instance               |            Module           |   min   |   max   |    min   |    max   |   min  |   max  |   Type  |
+        +---------------------------------------+-----------------------------+---------+---------+----------+----------+--------+--------+---------+
+        |grp_Filter_vertical_HW_stream_fu_32    |Filter_vertical_HW_stream    |   127985|   127985|  0.854 ms|  0.854 ms|  127985|  127985|     none|
+        |grp_Filter_horizontal_HW_stream_fu_40  |Filter_horizontal_HW_stream  |   130951|   130951|  0.873 ms|  0.873 ms|  130951|  130951|     none|
+        +---------------------------------------+-----------------------------+---------+---------+----------+----------+--------+--------+---------+
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 4
+* Pipeline : 0
+* Dataflow Pipeline: 1
+  DF-Pipeline-0: Size = 4, States = { 1 2 3 4 }
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.00>
+ST_1 : Operation 5 [2/2] (0.00ns)   --->   "%call_ln309 = call void @Filter_horizontal_HW_stream, i8 %input_stream, i8 %temp_stream" [Filter.cpp:309]   --->   Operation 5 'call' 'call_ln309' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 2 <SV = 1> <Delay = 0.00>
+ST_2 : Operation 6 [1/2] (0.00ns)   --->   "%call_ln309 = call void @Filter_horizontal_HW_stream, i8 %input_stream, i8 %temp_stream" [Filter.cpp:309]   --->   Operation 6 'call' 'call_ln309' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 3 <SV = 2> <Delay = 0.00>
+ST_3 : Operation 7 [2/2] (0.00ns)   --->   "%call_ln310 = call void @Filter_vertical_HW_stream, i8 %output_stream, i8 %temp_stream" [Filter.cpp:310]   --->   Operation 7 'call' 'call_ln310' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 4 <SV = 3> <Delay = 0.00>
+ST_4 : Operation 8 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %temp_stream, void @empty_1, i32 0, i32 0, void @empty_6, i32 0, i32 0, void @empty_6, void @empty_6, void @empty_6, i32 0, i32 0, i32 0, i32 0, void @empty_6, void @empty_6"   --->   Operation 8 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 9 [1/1] (0.00ns)   --->   "%empty = specchannel i32 @_ssdm_op_SpecChannel, void @temp_stream_str, i32 1, void @p_str, void @p_str, i32 2, i32 2, i8 %temp_stream, i8 %temp_stream"   --->   Operation 9 'specchannel' 'empty' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 10 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %input_stream, void @empty_1, i32 0, i32 0, void @empty_6, i32 0, i32 0, void @empty_6, void @empty_6, void @empty_6, i32 0, i32 0, i32 0, i32 0, void @empty_6, void @empty_6"   --->   Operation 10 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 11 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %input_stream, void @empty_1, i32 0, i32 0, void @empty_6, i32 0, i32 0, void @empty_6, void @empty_6, void @empty_6, i32 0, i32 0, i32 0, i32 0, void @empty_6, void @empty_6"   --->   Operation 11 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 12 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %input_stream, void @empty_1, i32 0, i32 0, void @empty_6, i32 0, i32 0, void @empty_6, void @empty_6, void @empty_6, i32 0, i32 0, i32 0, i32 0, void @empty_6, void @empty_6"   --->   Operation 12 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 13 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %output_stream, void @empty_1, i32 0, i32 0, void @empty_6, i32 0, i32 0, void @empty_6, void @empty_6, void @empty_6, i32 0, i32 0, i32 0, i32 0, void @empty_6, void @empty_6"   --->   Operation 13 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 14 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %output_stream, void @empty_1, i32 0, i32 0, void @empty_6, i32 0, i32 0, void @empty_6, void @empty_6, void @empty_6, i32 0, i32 0, i32 0, i32 0, void @empty_6, void @empty_6"   --->   Operation 14 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 15 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %output_stream, void @empty_1, i32 0, i32 0, void @empty_6, i32 0, i32 0, void @empty_6, void @empty_6, void @empty_6, i32 0, i32 0, i32 0, i32 0, void @empty_6, void @empty_6"   --->   Operation 15 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 16 [1/1] (0.00ns)   --->   "%specdataflowpipeline_ln306 = specdataflowpipeline void @_ssdm_op_SpecDataflowPipeline, i32 4294967295, i32 0, void @empty_6" [Filter.cpp:306]   --->   Operation 16 'specdataflowpipeline' 'specdataflowpipeline_ln306' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 17 [1/2] (0.00ns)   --->   "%call_ln310 = call void @Filter_vertical_HW_stream, i8 %output_stream, i8 %temp_stream" [Filter.cpp:310]   --->   Operation 17 'call' 'call_ln310' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_4 : Operation 18 [1/1] (0.00ns)   --->   "%ret_ln306 = ret" [Filter.cpp:306]   --->   Operation 18 'ret' 'ret_ln306' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+STG Binding: 
+---------------- STG Properties BEGIN ----------------
+- Is combinational: 0
+- Is one-state seq: 0
+- Is datapath-only: 0
+- Is pipelined: 0
+- Is top level: 0
+Port [ Return ] is wired: 1; IO mode=ap_ctrl_hs:ce=0
+Port [ input_stream]:  wired=1; compound=1; hidden=0; nouse=0; global=1; static=1; extern=0; dir=0; type=3; pingpong=0; private_global=0; IO mode=ap_fifo:ce=0
+Port [ temp_stream]:  wired=0; compound=1; hidden=1; nouse=0; global=1; static=1; extern=0; dir=2; type=3; pingpong=0; private_global=0; IO mode=ap_fifo:ce=0
+Port [ output_stream]:  wired=1; compound=1; hidden=0; nouse=0; global=1; static=1; extern=0; dir=1; type=3; pingpong=0; private_global=0; IO mode=ap_fifo:ce=0
+---------------- STG Properties END ------------------
+
+---------------- Datapath Model BEGIN ----------------
+
+<LifeTime>
+<method=bitvector/>
+call_ln309                 (call                ) [ 00000]
+specinterface_ln0          (specinterface       ) [ 00000]
+empty                      (specchannel         ) [ 00000]
+specinterface_ln0          (specinterface       ) [ 00000]
+specinterface_ln0          (specinterface       ) [ 00000]
+specinterface_ln0          (specinterface       ) [ 00000]
+specinterface_ln0          (specinterface       ) [ 00000]
+specinterface_ln0          (specinterface       ) [ 00000]
+specinterface_ln0          (specinterface       ) [ 00000]
+specdataflowpipeline_ln306 (specdataflowpipeline) [ 00000]
+call_ln310                 (call                ) [ 00000]
+ret_ln306                  (ret                 ) [ 00000]
+</LifeTime>
+
+<model>
+
+<comp_list>
+<comp id="0" class="1000" name="input_stream">
+<pin_list>
+<pin id="1" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="input_stream"/></StgValue>
+</bind>
+</comp>
+
+<comp id="2" class="1000" name="temp_stream">
+<pin_list>
+<pin id="3" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="temp_stream"/></StgValue>
+</bind>
+</comp>
+
+<comp id="4" class="1000" name="output_stream">
+<pin_list>
+<pin id="5" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="output_stream"/></StgValue>
+</bind>
+</comp>
+
+<comp id="6" class="1001" name="const_6">
+<pin_list>
+<pin id="7" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="Filter_horizontal_HW_stream"/></StgValue>
+</bind>
+</comp>
+
+<comp id="8" class="1001" name="const_8">
+<pin_list>
+<pin id="9" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="Filter_vertical_HW_stream"/></StgValue>
+</bind>
+</comp>
+
+<comp id="10" class="1001" name="const_10">
+<pin_list>
+<pin id="11" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecInterface"/></StgValue>
+</bind>
+</comp>
+
+<comp id="12" class="1001" name="const_12">
+<pin_list>
+<pin id="13" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="empty_1"/></StgValue>
+</bind>
+</comp>
+
+<comp id="14" class="1001" name="const_14">
+<pin_list>
+<pin id="15" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="16" class="1001" name="const_16">
+<pin_list>
+<pin id="17" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="empty_6"/></StgValue>
+</bind>
+</comp>
+
+<comp id="18" class="1001" name="const_18">
+<pin_list>
+<pin id="19" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecChannel"/></StgValue>
+</bind>
+</comp>
+
+<comp id="20" class="1001" name="const_20">
+<pin_list>
+<pin id="21" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="temp_stream_str"/></StgValue>
+</bind>
+</comp>
+
+<comp id="22" class="1001" name="const_22">
+<pin_list>
+<pin id="23" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="24" class="1001" name="const_24">
+<pin_list>
+<pin id="25" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="p_str"/></StgValue>
+</bind>
+</comp>
+
+<comp id="26" class="1001" name="const_26">
+<pin_list>
+<pin id="27" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="28" class="1001" name="const_28">
+<pin_list>
+<pin id="29" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecDataflowPipeline"/></StgValue>
+</bind>
+</comp>
+
+<comp id="30" class="1001" name="const_30">
+<pin_list>
+<pin id="31" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="32" class="1004" name="grp_Filter_vertical_HW_stream_fu_32">
+<pin_list>
+<pin id="33" dir="0" index="0" bw="0" slack="0"/>
+<pin id="34" dir="0" index="1" bw="8" slack="0"/>
+<pin id="35" dir="0" index="2" bw="8" slack="0"/>
+<pin id="36" dir="1" index="3" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="call(48) " fcode="call"/>
+<opset="call_ln310/3 "/>
+</bind>
+</comp>
+
+<comp id="40" class="1004" name="grp_Filter_horizontal_HW_stream_fu_40">
+<pin_list>
+<pin id="41" dir="0" index="0" bw="0" slack="0"/>
+<pin id="42" dir="0" index="1" bw="8" slack="0"/>
+<pin id="43" dir="0" index="2" bw="8" slack="0"/>
+<pin id="44" dir="1" index="3" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="call(48) " fcode="call"/>
+<opset="call_ln309/1 "/>
+</bind>
+</comp>
+
+</comp_list>
+
+<net_list>
+<net id="37"><net_src comp="8" pin="0"/><net_sink comp="32" pin=0"/></net>
+
+<net id="38"><net_src comp="4" pin="0"/><net_sink comp="32" pin=1"/></net>
+
+<net id="39"><net_src comp="2" pin="0"/><net_sink comp="32" pin=2"/></net>
+
+<net id="45"><net_src comp="6" pin="0"/><net_sink comp="40" pin=0"/></net>
+
+<net id="46"><net_src comp="0" pin="0"/><net_sink comp="40" pin=1"/></net>
+
+<net id="47"><net_src comp="2" pin="0"/><net_sink comp="40" pin=2"/></net>
+
+</net_list>
+
+</model> 
+---------------- Datapath Model END ------------------
+
+* FSMD analyzer results:
+  - Output states:
+	Port: temp_stream | {1 2 }
+	Port: output_stream | {3 4 }
+ - Input state : 
+	Port: compute : input_stream | {1 2 }
+	Port: compute : temp_stream | {3 4 }
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+
+* Functional unit list:
+|----------|---------------------------------------|---------|---------|---------|---------|---------|
+| Operation|            Functional Unit            |   BRAM  |   DSP   |  Delay  |    FF   |   LUT   |
+|----------|---------------------------------------|---------|---------|---------|---------|---------|
+|   call   |  grp_Filter_vertical_HW_stream_fu_32  |    6    |    1    |  8.313  |   270   |   392   |
+|          | grp_Filter_horizontal_HW_stream_fu_40 |    0    |    1    |  0.547  |   196   |   199   |
+|----------|---------------------------------------|---------|---------|---------|---------|---------|
+|   Total  |                                       |    6    |    2    |   8.86  |   466   |   591   |
+|----------|---------------------------------------|---------|---------|---------|---------|---------|
+
+Memories:
+N/A
+
+* Register list:
+N/A
+
+* Multiplexer (MUX) list: 
+|--------|------|------|------|--------|
+|  Comp  |  Pin | Size |  BW  | S x BW |
+|--------|------|------|------|--------|
+|  Total |      |      |      |    0   |
+|--------|------|------|------|--------|
+
+
+
+* Summary:
++-----------+--------+--------+--------+--------+--------+
+|           |  BRAM  |   DSP  |  Delay |   FF   |   LUT  |
++-----------+--------+--------+--------+--------+--------+
+|  Function |    6   |    2   |    8   |   466  |   591  |
+|   Memory  |    -   |    -   |    -   |    -   |    -   |
+|Multiplexer|    -   |    -   |    -   |    -   |    -   |
+|  Register |    -   |    -   |    -   |    -   |    -   |
++-----------+--------+--------+--------+--------+--------+
+|   Total   |    6   |    2   |    8   |   466  |   591  |
++-----------+--------+--------+--------+--------+--------+

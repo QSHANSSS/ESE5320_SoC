@@ -1,0 +1,52 @@
+INFO: [HLS 200-10] Running '/tools/Xilinx/Vitis_HLS/2020.2/bin/unwrapped/lnx64.o/vitis_hls'
+INFO: [HLS 200-10] For user 'hans' on host 'hans-virtual-machine' (Linux_x86_64 version 5.4.0-128-generic) on Tue Oct 18 21:07:33 EDT 2022
+INFO: [HLS 200-10] On os Ubuntu 18.04.6 LTS
+INFO: [HLS 200-10] In directory '/home/hans/Desktop/SoC/hw6/apps/mmult'
+Sourcing Tcl script '/home/hans/Desktop/SoC/hw6/apps/mmult/hw6/solution1/csynth.tcl'
+INFO: [HLS 200-1510] Running: open_project hw6 
+INFO: [HLS 200-10] Opening project '/home/hans/Desktop/SoC/hw6/apps/mmult/hw6'.
+INFO: [HLS 200-1510] Running: set_top mmult 
+INFO: [HLS 200-1510] Running: add_files fpga/hls/MMult.cpp 
+INFO: [HLS 200-10] Adding design file 'fpga/hls/MMult.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files fpga/hls/MMult.h 
+INFO: [HLS 200-10] Adding design file 'fpga/hls/MMult.h' to the project
+INFO: [HLS 200-1510] Running: add_files -tb fpga/hls/testbench.cpp -cflags -Wno-unknown-pragmas 
+INFO: [HLS 200-10] Adding test bench file 'fpga/hls/testbench.cpp' to the project
+INFO: [HLS 200-1510] Running: open_solution solution1 -flow_target vivado 
+INFO: [HLS 200-10] Opening solution '/home/hans/Desktop/SoC/hw6/apps/mmult/hw6/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 6.7ns.
+INFO: [HLS 200-10] Setting target device to 'xczu11eg-ffvb1517-1-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2020.2;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-1510] Running: set_part xczu11eg-ffvb1517-1-e 
+INFO: [HLS 200-1510] Running: create_clock -period 6.7 -name default 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.01 seconds; current allocated memory: 72.704 MB.
+INFO: [HLS 200-10] Analyzing design file 'fpga/hls/MMult.cpp' ... 
+WARNING: [HLS 214-114] Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region: fpga/hls/MMult.cpp:120:3
+Resolution: For help on HLS 214-114 see www.xilinx.com/cgi-bin/docs/rdoc?v=2020.2;t=hls+guidance;d=214-114.html
+WARNING: [HLS 200-471] Dataflow form checks found 1 issue(s) in file fpga/hls/MMult.cpp
+Resolution: For help on HLS 200-471 see www.xilinx.com/cgi-bin/docs/rdoc?v=2020.2;t=hls+guidance;d=200-471.html
+WARNING: [HLS 207-5301] unused parameter 'intnumInputs': fpga/hls/MMult.cpp:45:8
+WARNING: [HLS 207-5301] unused parameter 'intnumInputs': fpga/hls/MMult.cpp:63:9
+WARNING: [HLS 207-5301] unused parameter 'intnumInputs': fpga/hls/MMult.cpp:78:8
+WARNING: [HLS 207-5301] unused parameter 'c': fpga/hls/MMult.cpp:78:26
+WARNING: [HLS 207-5524] Ignore interface attribute or pragma which is not used in top function: fpga/hls/MMult.cpp:133:9
+WARNING: [HLS 207-5524] Ignore interface attribute or pragma which is not used in top function: fpga/hls/MMult.cpp:134:9
+WARNING: [HLS 207-5524] Ignore interface attribute or pragma which is not used in top function: fpga/hls/MMult.cpp:135:9
+WARNING: [HLS 207-5301] unused parameter 'c': fpga/hls/MMult.cpp:132:8
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 5.27 seconds. CPU system time: 0.4 seconds. Elapsed time: 4.54 seconds; current allocated memory: 73.992 MB.
+ERROR: [HLS 214-157] Top function not found: there is no function named 'mmult'
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 8.03 seconds. CPU system time: 0.61 seconds. Elapsed time: 7.53 seconds; current allocated memory: 73.983 MB.
+Error in opt
+    while executing
+"source /home/hans/Desktop/SoC/hw6/apps/mmult/hw6/solution1/csynth.tcl"
+    invoked from within
+"hls::main /home/hans/Desktop/SoC/hw6/apps/mmult/hw6/solution1/csynth.tcl"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel 1 hls::main {*}$newargs"
+    (procedure "hls_proc" line 16)
+    invoked from within
+"hls_proc [info nameofexecutable] $argv"
+INFO: [HLS 200-112] Total CPU user time: 10.41 seconds. Total CPU system time: 1.53 seconds. Total elapsed time: 9.6 seconds; peak allocated memory: 73.992 MB.

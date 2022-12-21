@@ -1,0 +1,50 @@
+INFO: [HLS 200-10] Running '/tools/Xilinx/Vitis_HLS/2020.2/bin/unwrapped/lnx64.o/vitis_hls'
+INFO: [HLS 200-10] For user 'hans' on host 'hans-virtual-machine' (Linux_x86_64 version 5.4.0-131-generic) on Fri Oct 30 20:25:02 EDT 2020
+INFO: [HLS 200-10] On os Ubuntu 18.04.6 LTS
+INFO: [HLS 200-10] In directory '/home/hans/Desktop/SoC/hw7'
+Sourcing Tcl script '/home/hans/Desktop/SoC/hw7/hw7/solution1/export.tcl'
+INFO: [HLS 200-1510] Running: open_project hw7 
+INFO: [HLS 200-10] Opening project '/home/hans/Desktop/SoC/hw7/hw7'.
+INFO: [HLS 200-1510] Running: set_top Filter_HW 
+INFO: [HLS 200-1510] Running: add_files Pipeline.h 
+INFO: [HLS 200-10] Adding design file 'Pipeline.h' to the project
+INFO: [HLS 200-1510] Running: add_files Filter.cpp 
+INFO: [HLS 200-10] Adding design file 'Filter.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files -tb Testbench.cpp -cflags -Wno-unknown-pragmas -csimflags -Wno-unknown-pragmas 
+INFO: [HLS 200-10] Adding test bench file 'Testbench.cpp' to the project
+INFO: [HLS 200-1510] Running: open_solution solution1 -flow_target vitis 
+INFO: [HLS 200-10] Opening solution '/home/hans/Desktop/SoC/hw7/hw7/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 6.667ns.
+INFO: [HLS 200-10] Setting target device to 'xczu3eg-sbva484-1-i'
+INFO: [HLS 200-1505] Using flow_target 'vitis'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2020.2;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-1464] Running solution command: config_rtl -register_reset_num=3
+INFO: [HLS 200-1464] Running solution command: config_interface -default_interface=kernel
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_alignment_byte_size=64
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_latency=64
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_max_widen_bitwidth=512
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_offset=slave
+INFO: [HLS 200-1464] Running solution command: config_export -format=xo
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1510] Running: set_part xczu3eg-sbva484-1-i 
+INFO: [HLS 200-1510] Running: create_clock -period 6.667 -name default 
+INFO: [HLS 200-1510] Running: config_rtl -register_reset_num 3 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_alignment_byte_size 64 -m_axi_latency 64 -m_axi_max_widen_bitwidth 512 -m_axi_offset slave 
+INFO: [HLS 200-1510] Running: config_export -format xo -rtl verilog 
+INFO: [HLS 200-1510] Running: set_directive_top -name Filter_HW Filter_HW 
+INFO: [HLS 200-1510] Running: export_design -rtl verilog -format xo 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+
+****** Vivado v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source run_ippack.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2020.2/data/ip'.
+Running package_xo -xo_path /home/hans/Desktop/SoC/hw7/hw7/solution1/impl/export.xo -kernel_name Filter_HW -kernel_xml /home/hans/Desktop/SoC/hw7/hw7/solution1/impl/ip/../kernel/kernel.xml -kernel_files /home/hans/Desktop/SoC/hw7/Filter.cpp -ip_directory /home/hans/Desktop/SoC/hw7/hw7/solution1/impl/ip/ip_unzip_dir -design_xml /home/hans/Desktop/SoC/hw7/hw7/solution1/.autopilot/db/Filter_HW.design.xml -debug_directory /home/hans/Desktop/SoC/hw7/hw7/solution1/.debug -hls_directory /home/hans/Desktop/SoC/hw7/hw7/solution1/impl/ip/hls_files
+INFO: [Common 17-206] Exiting Vivado at Fri Oct 30 20:25:16 2020...
+INFO: [HLS 200-802] Generated output file hw7/solution1/impl/export.xo
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 14.17 seconds. CPU system time: 2.71 seconds. Elapsed time: 16.41 seconds; current allocated memory: 82.025 MB.

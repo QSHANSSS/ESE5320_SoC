@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="MMult.h" path="/home/hans/Desktop/SoC/hw6/apps/mmult/fpga/hls/MMult.h"/>
+    <originFiles name="MMult.cpp" path="/home/hans/Desktop/SoC/hw6/apps/mmult/fpga/hls/MMult.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="testbench.cpp" path="/home/hans/Desktop/SoC/hw6/apps/mmult/fpga/hls/testbench.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

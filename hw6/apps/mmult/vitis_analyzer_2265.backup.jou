@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vitis Analyzer v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# 
+# Start of session at: Wed Oct 19 12:46:04 2022
+# Process ID: 2265
+# Current directory: /home/hans/Desktop/SoC/hw6/apps/mmult
+# Command line: vitis_analyzer
+# Log file: /home/hans/Desktop/SoC/hw6/apps/mmult/vitis_analyzer.log
+# Journal file: /home/hans/Desktop/SoC/hw6/apps/mmult/vitis_analyzer.jou
+#-----------------------------------------------------------
+start_gui
+create_project dummy

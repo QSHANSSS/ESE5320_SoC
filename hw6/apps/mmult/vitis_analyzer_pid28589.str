@@ -1,0 +1,612 @@
+/*
+
+Xilinx Vitis Analyzer v2020.2 (64-bit) [Major: 2020, Minor: 2]
+SW Build: 3064766 on Wed Nov 18 09:12:47 MST 2020
+
+Process ID (PID): 28589
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Fri Oct 21 01:33:02 EDT 2022
+Time zone: 	Eastern Standard Time (America/New_York)
+
+OS: Ubuntu
+OS Version: 5.4.0-128-generic
+OS Architecture: amd64
+Available processors (cores): 4
+
+Display: 0
+Screen size: 2560x1444
+Screen resolution (DPI): 125
+Available screens: 1
+Default font: family=Dialog,name=Dialog,style=plain,size=15
+Scale size: 19
+
+Java version: 	11.0.2 64-bit
+Java home: 	/tools/Xilinx/Vitis/2020.2/tps/lnx64/jre11.0.2
+Java executable location: 	/tools/Xilinx/Vitis/2020.2/tps/lnx64/jre11.0.2/bin/java
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	hans
+User home directory: /home/hans
+User working directory: /home/hans/Desktop/SoC/hw6/apps/mmult
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: /tools/Xilinx/Vitis
+HDI_APPROOT: /tools/Xilinx/Vitis/2020.2
+RDI_DATADIR: /tools/Xilinx/Vitis/2020.2/data
+RDI_BINDIR: /tools/Xilinx/Vitis/2020.2/bin
+
+Vitis Analyzer preferences file location: /home/hans/.Xilinx/vitis_analyzer/2020.2/vitis_analyzer.xml
+Vitis Analyzer preferences directory: /home/hans/.Xilinx/vitis_analyzer/2020.2/
+Vitis Analyzer layouts directory: /home/hans/.Xilinx/vitis_analyzer/2020.2/data/layouts
+PlanAhead jar file location: 	/tools/Xilinx/Vitis/2020.2/lib/classes/frank.jar
+Vitis Analyzer log file location: 	/home/hans/Desktop/SoC/hw6/apps/mmult/vitis_analyzer.log
+Vitis Analyzer journal file location: 	/home/hans/Desktop/SoC/hw6/apps/mmult/vitis_analyzer.jou
+Engine tmp dir: 	./.Xil/vitis_analyzer-28589-hans-virtual-machine
+
+Xilinx Environment Variables
+----------------------------
+PICO_SDK_PATH: /home/hans/Desktop/pico/pico-sdk
+XILINXD_LICENSE_FILE: /mnt/pollux/software/xilinx/.Xilinx/
+XILINX_DSP: 
+XILINX_HLS: /tools/Xilinx/Vitis_HLS/2020.2
+XILINX_PLANAHEAD: /tools/Xilinx/Vitis/2020.2
+XILINX_SDK: /tools/Xilinx/Vitis/2020.2
+XILINX_VITIS: /tools/Xilinx/Vitis/2020.2
+XILINX_VITIS_AIETOOLS: /tools/Xilinx/Vitis/2020.2/cardano
+XILINX_VIVADO: /tools/Xilinx/Vivado/2020.2
+XILINX_VIVADO_HLS: /tools/Xilinx/Vivado/2020.2
+
+
+GUI allocated memory:	128 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,400 MB
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// Command line args: 
+// Tcl Command: 'create_project dummy'
+// TclEventType: PROJECT_NEW
+// Opening Summary: Resource{value=FrankResource.FrankReportHolderType_RUN_SUMMARY}Type{value=RUN_SUMMARY},SummaryFile{file=/home/hans/Desktop/hw6_1h/kernel.xclbin.run_summary}
+// Command working directory: /tmp/vitis_analyzer_hans5131657728535289313/958115394
+// Command: /tools/Xilinx/Vitis/2020.2/bin/perf_analyze profile --input=/home/hans/Desktop/hw6_1h/profile_summary.csv --output=/tmp/vitis_analyzer_hans5131657728535289313/958115394/profile_summary.pb
+// f (cs):  Restoring Previous Session : addNotify
+// Tcl Message: create_project dummy 
+// Command elapsed time: 2.7s seconds
+// Opening Summary: Resource{value=FrankResource.FrankReportHolderType_RUN_SUMMARY}Type{value=RUN_SUMMARY},SummaryFile{file=/home/hans/Desktop/hw6_1j/kernel.xclbin.run_summary}
+// Command working directory: /tmp/vitis_analyzer_hans5131657728535289313/965112640
+// Command: /tools/Xilinx/Vitis/2020.2/bin/perf_analyze profile --input=/home/hans/Desktop/hw6_1j/profile_summary.csv --output=/tmp/vitis_analyzer_hans5131657728535289313/965112640/profile_summary.pb
+// HMemoryUtils.trashcanNow. Engine heap size: 1,411 MB. GUI used memory: 61 MB. Current time: 10/21/22, 1:33:03 AM EDT
+// Command elapsed time: 2s seconds
+// Opening Summary: Resource{value=FrankResource.FrankReportHolderType_RUN_SUMMARY}Type{value=RUN_SUMMARY},SummaryFile{file=/home/hans/Desktop/kernel.xclbin.run_summary}
+// Command working directory: /tmp/vitis_analyzer_hans5131657728535289313/1558372824
+// Command: /tools/Xilinx/Vitis/2020.2/bin/perf_analyze profile --input=/home/hans/Desktop/profile_summary.csv --output=/tmp/vitis_analyzer_hans5131657728535289313/1558372824/profile_summary.pb
+// Command elapsed time: 2.1s seconds
+// [GUI Memory]: 71 MB (+71767kb) [00:00:17]
+// [Engine Memory]: 1,413 MB (+1330014kb) [00:00:17]
+dismissDialog("Restoring Previous Session"); // f
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// Elapsed time: 17 seconds
+selectTree(FrankResource.ReportNavigatorTreePanel_REPORT_NAVIGATOR_TREE, "[root, Resource{value=FrankResource.FrankViewType_APPLICATION_TIMELINE}Type{value=APPLICATION_TIMELINE_REPORT},SummaryFile{file=kernel.xclbin.run_summary isArchive=false},ReportFile{file=hw6_1h/timeline_trace.csv}]", 6, false); // b
+// Opening Report: Resource{value=FrankResource.FrankViewType_APPLICATION_TIMELINE}Type{value=APPLICATION_TIMELINE_REPORT},SummaryFile{file=kernel.xclbin.run_summary isArchive=false},ReportFile{file=hw6_1h/timeline_trace.csv}
+// Command working directory: /tmp/vitis_analyzer_hans5131657728535289313/958115394
+// Command: /tools/Xilinx/Vitis/2020.2/bin/perf_analyze trace --format=wdb --input=/home/hans/Desktop/hw6_1h/timeline_trace.csv --output=/tmp/vitis_analyzer_hans5131657728535289313/958115394/timeline_trace.wdb
+// bz (cs):  Open Application Timeline Report [kernel.xclbin.run_summary] : addNotify
+// Command elapsed time: 1.1s seconds
+// bz (cs):  Open Application Timeline Report [kernel.xclbin.run_summary] : addNotify
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// Waveform: addNotify
+// [GUI Memory]: 111 MB (+38366kb) [00:00:36]
+// [Engine Memory]: 1,524 MB (+42840kb) [00:00:36]
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+dismissDialog("Open Application Timeline Report [kernel.xclbin.run_summary]"); // bz
+// [GUI Memory]: 145 MB (+29492kb) [00:00:36]
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 1,526 MB. GUI used memory: 96 MB. Current time: 10/21/22, 1:33:28 AM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// Elapsed time: 11 seconds
+selectTree(FrankResource.ReportNavigatorTreePanel_REPORT_NAVIGATOR_TREE, "[root, Resource{value=FrankResource.FrankViewType_PROFILE_SUMMARY}Type{value=PROFILE_SUMMARY_REPORT},SummaryFile{file=kernel.xclbin.run_summary isArchive=false},ReportFile{file=hw6_1h/profile_summary.csv}]", 5, false); // b
+// Opening Report: Resource{value=FrankResource.FrankViewType_PROFILE_SUMMARY}Type{value=PROFILE_SUMMARY_REPORT},SummaryFile{file=kernel.xclbin.run_summary isArchive=false},ReportFile{file=hw6_1h/profile_summary.csv}
+selectTree(FrankResource.ReportNavigatorTreePanel_REPORT_NAVIGATOR_TREE, "[root]", 7, true); // b - Node
+selectTree(FrankResource.ReportNavigatorTreePanel_REPORT_NAVIGATOR_TREE, "[root, Resource{value=FrankResource.FrankViewType_PROFILE_SUMMARY}Type{value=PROFILE_SUMMARY_REPORT},SummaryFile{file=kernel.xclbin.run_summary isArchive=false},ReportFile{file=hw6_1j/profile_summary.csv}]", 12, false); // b
+// Opening Report: Resource{value=FrankResource.FrankViewType_PROFILE_SUMMARY}Type{value=PROFILE_SUMMARY_REPORT},SummaryFile{file=kernel.xclbin.run_summary isArchive=false},ReportFile{file=hw6_1j/profile_summary.csv}
+selectTree(FrankResource.ReportNavigatorTreePanel_REPORT_NAVIGATOR_TREE, "[root, Resource{value=FrankResource.FrankViewType_PROFILE_SUMMARY}Type{value=PROFILE_SUMMARY_REPORT},SummaryFile{file=kernel.xclbin.run_summary isArchive=false},ReportFile{file=hw6_1h/profile_summary.csv}]", 5, false); // b
+collapseTree(FrankResource.ReportNavigatorTreePanel_REPORT_NAVIGATOR_TREE, "[root]", 14); // b
+expandTree(FrankResource.ReportNavigatorTreePanel_REPORT_NAVIGATOR_TREE, "[root]", 14); // b
+selectTree(FrankResource.ReportNavigatorTreePanel_REPORT_NAVIGATOR_TREE, "[root, Resource{value=FrankResource.FrankViewType_PROFILE_SUMMARY}Type{value=PROFILE_SUMMARY_REPORT},SummaryFile{file=kernel.xclbin.run_summary isArchive=false},ReportFile{file=Desktop/profile_summary.csv}]", 19, false); // b
+// Opening Report: Resource{value=FrankResource.FrankViewType_PROFILE_SUMMARY}Type{value=PROFILE_SUMMARY_REPORT},SummaryFile{file=kernel.xclbin.run_summary isArchive=false},ReportFile{file=Desktop/profile_summary.csv}
+selectMenu(FrankResource.FrankMainMenuMgr_FILE, "File"); // ac
+selectMenuItem(FrankCommandResource.FrankCommand_OPEN_SUMMARY, "Open Summary..."); // ak
+dismissMenu(FrankResource.FrankMainMenuMgr_FILE, "File"); // ac
+// Run Command: FrankCommandResource.FrankCommand_OPEN_SUMMARY
+setFileChooser("/home/hans/Desktop/hw6_1f/kernel.xclbin.run_summary");
+// Opening Summary: Resource{value=FrankResource.FrankReportHolderType_RUN_SUMMARY}Type{value=RUN_SUMMARY},SummaryFile{file=/home/hans/Desktop/hw6_1f/kernel.xclbin.run_summary}
+// Command working directory: /tmp/vitis_analyzer_hans5131657728535289313/1413623868
+// Command: /tools/Xilinx/Vitis/2020.2/bin/perf_analyze profile --input=/home/hans/Desktop/hw6_1f/profile_summary.csv --output=/tmp/vitis_analyzer_hans5131657728535289313/1413623868/profile_summary.pb
+// bz (cs):  Open Summary : addNotify
+// Command elapsed time: 2.1s seconds
+// 'e' command handler elapsed time: 7 seconds
+dismissDialog("Open Summary"); // bz
+selectTree(FrankResource.ReportNavigatorTreePanel_REPORT_NAVIGATOR_TREE, "[root, Resource{value=FrankResource.FrankViewType_PROFILE_SUMMARY}Type{value=PROFILE_SUMMARY_REPORT},SummaryFile{file=kernel.xclbin.run_summary isArchive=false},ReportFile{file=hw6_1f/profile_summary.csv}]", 26, false); // b
+// Opening Report: Resource{value=FrankResource.FrankViewType_PROFILE_SUMMARY}Type{value=PROFILE_SUMMARY_REPORT},SummaryFile{file=kernel.xclbin.run_summary isArchive=false},ReportFile{file=hw6_1f/profile_summary.csv}
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,551 MB. GUI used memory: 95 MB. Current time: 10/21/22, 1:34:08 AM EDT
+selectTab("MainWorkspace", (HResource) null, "kernel.xclbin (System Run) (4)", 3); // m
+selectTree(FrankResource.ReportNavigatorTreePanel_REPORT_NAVIGATOR_TREE, "[root]", 21, true, false, false, false, true, false); // b - Popup Trigger - Node
+selectMenuItem(FrankResource.RunSummaryNode_CLOSE_FILE, "Close File"); // ak
+closeView(FrankResource.FrankViewType_RUN_SUMMARY, "Summary"); // d
+closeView(FrankResource.FrankViewType_PROFILE_SUMMARY, "Profile Summary"); // bZ
+closeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // c
+selectMenu(FrankResource.FrankMainMenuMgr_FILE, "File"); // ac
+dismissMenu(FrankResource.FrankMainMenuMgr_FILE, "File"); // ac
+selectMenu(FrankResource.FrankMainMenuMgr_TOOLS, "Tools"); // ac
+dismissMenu(FrankResource.FrankMainMenuMgr_TOOLS, "Tools"); // ac
+selectMenu(FrankResource.FrankMainMenuMgr_FILE, "File"); // ac
+selectMenuItem(FrankCommandResource.FrankCommand_OPEN_SUMMARY, "Open Summary..."); // ak
+dismissMenu(FrankResource.FrankMainMenuMgr_FILE, "File"); // ac
+// Run Command: FrankCommandResource.FrankCommand_OPEN_SUMMARY
+// Elapsed time: 13 seconds
+setFileChooser("/home/hans/Desktop/hw6_analyzer/kernel.xclbin.run_summary");
+// Opening Summary: Resource{value=FrankResource.FrankReportHolderType_RUN_SUMMARY}Type{value=RUN_SUMMARY},SummaryFile{file=/home/hans/Desktop/hw6_analyzer/kernel.xclbin.run_summary}
+// bz (cs):  Open Summary : addNotify
+// Command working directory: /tmp/vitis_analyzer_hans5131657728535289313/602071821
+// Command: /tools/Xilinx/Vitis/2020.2/bin/perf_analyze profile --input=/home/hans/Desktop/hw6_analyzer/profile_summary.csv --output=/tmp/vitis_analyzer_hans5131657728535289313/602071821/profile_summary.pb
+// Command elapsed time: 2s seconds
+// 'e' command handler elapsed time: 15 seconds
+dismissDialog("Open Summary"); // bz
+selectTree(FrankResource.ReportNavigatorTreePanel_REPORT_NAVIGATOR_TREE, "[root, Resource{value=FrankResource.FrankViewType_PROFILE_SUMMARY}Type{value=PROFILE_SUMMARY_REPORT},SummaryFile{file=kernel.xclbin.run_summary isArchive=false},ReportFile{file=hw6_analyzer/profile_summary.csv}]", 26, false); // b
+// Opening Report: Resource{value=FrankResource.FrankViewType_PROFILE_SUMMARY}Type{value=PROFILE_SUMMARY_REPORT},SummaryFile{file=kernel.xclbin.run_summary isArchive=false},ReportFile{file=hw6_analyzer/profile_summary.csv}
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// Elapsed time: 13 seconds
+selectTree(RDIResource.NavigableReportTab_REPORT_NAVIGATION_TREE, "[Report Contents, Kernels & Compute Units, Kernel Execution]", 3, false); // r
+selectTree(RDIResource.NavigableReportTab_REPORT_NAVIGATION_TREE, "[Report Contents, Kernels & Compute Units]", 2, true); // r - Node
+selectTree(RDIResource.NavigableReportTab_REPORT_NAVIGATION_TREE, "[Report Contents, Kernels & Compute Units, Top Kernel Execution]", 4, false); // r
+selectTree(RDIResource.NavigableReportTab_REPORT_NAVIGATION_TREE, "[Report Contents, Summary]", 1, false); // r
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1002 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// Elapsed time: 69 seconds
+selectTree(FrankResource.ReportNavigatorTreePanel_REPORT_NAVIGATOR_TREE, "[root, Resource{value=FrankResource.FrankViewType_APPLICATION_TIMELINE}Type{value=APPLICATION_TIMELINE_REPORT},SummaryFile{file=kernel.xclbin.run_summary isArchive=false},ReportFile{file=hw6_1j/timeline_trace.csv}]", 13, false); // b
+// Opening Report: Resource{value=FrankResource.FrankViewType_APPLICATION_TIMELINE}Type{value=APPLICATION_TIMELINE_REPORT},SummaryFile{file=kernel.xclbin.run_summary isArchive=false},ReportFile{file=hw6_1j/timeline_trace.csv}
+// bz (cs):  Open Application Timeline Report [kernel.xclbin.run_summary] : addNotify
+// Command working directory: /tmp/vitis_analyzer_hans5131657728535289313/965112640
+// Command: /tools/Xilinx/Vitis/2020.2/bin/perf_analyze trace --format=wdb --input=/home/hans/Desktop/hw6_1j/timeline_trace.csv --output=/tmp/vitis_analyzer_hans5131657728535289313/965112640/timeline_trace.wdb
+// Command elapsed time: 1.1s seconds
+// bz (cs):  Open Application Timeline Report [kernel.xclbin.run_summary] : addNotify
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+dismissDialog("Open Application Timeline Report [kernel.xclbin.run_summary]"); // bz
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 1,578 MB. GUI used memory: 108 MB. Current time: 10/21/22, 1:36:15 AM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectTree(FrankResource.ReportNavigatorTreePanel_REPORT_NAVIGATOR_TREE, "[root, Resource{value=FrankResource.FrankViewType_PROFILE_SUMMARY}Type{value=PROFILE_SUMMARY_REPORT},SummaryFile{file=kernel.xclbin.run_summary isArchive=false},ReportFile{file=hw6_1j/profile_summary.csv}]", 12, false); // b
+selectTree(FrankResource.ReportNavigatorTreePanel_REPORT_NAVIGATOR_TREE, "[root, Resource{value=FrankResource.FrankViewType_APPLICATION_TIMELINE}Type{value=APPLICATION_TIMELINE_REPORT},SummaryFile{file=kernel.xclbin.run_summary isArchive=false},ReportFile{file=Desktop/timeline_trace.csv}]", 20, false); // b
+// Opening Report: Resource{value=FrankResource.FrankViewType_APPLICATION_TIMELINE}Type{value=APPLICATION_TIMELINE_REPORT},SummaryFile{file=kernel.xclbin.run_summary isArchive=false},ReportFile{file=Desktop/timeline_trace.csv}
+// Command working directory: /tmp/vitis_analyzer_hans5131657728535289313/1558372824
+// Command: /tools/Xilinx/Vitis/2020.2/bin/perf_analyze trace --format=wdb --input=/home/hans/Desktop/timeline_trace.csv --output=/tmp/vitis_analyzer_hans5131657728535289313/1558372824/timeline_trace.wdb
+// bz (cs):  Open Application Timeline Report [kernel.xclbin.run_summary] : addNotify
+// Command elapsed time: 1.1s seconds
+// bz (cs):  Open Application Timeline Report [kernel.xclbin.run_summary] : addNotify
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+dismissDialog("Open Application Timeline Report [kernel.xclbin.run_summary]"); // bz
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,596 MB. GUI used memory: 131 MB. Current time: 10/21/22, 1:36:23 AM EDT
+selectTree(FrankResource.ReportNavigatorTreePanel_REPORT_NAVIGATOR_TREE, "[root, Resource{value=FrankResource.FrankViewType_APPLICATION_TIMELINE}Type{value=APPLICATION_TIMELINE_REPORT},SummaryFile{file=kernel.xclbin.run_summary isArchive=false},ReportFile{file=hw6_1j/timeline_trace.csv}]", 13, false); // b
+selectTree(FrankResource.ReportNavigatorTreePanel_REPORT_NAVIGATOR_TREE, "[root, Resource{value=FrankResource.FrankViewType_RUN_GUIDANCE}Type{value=RUN_GUIDANCE_REPORT},SummaryFile{file=kernel.xclbin.run_summary isArchive=false},ReportFile{file=hw6_1j/profile_summary.csv}]", 11, false); // b
+// Opening Report: Resource{value=FrankResource.FrankViewType_RUN_GUIDANCE}Type{value=RUN_GUIDANCE_REPORT},SummaryFile{file=kernel.xclbin.run_summary isArchive=false},ReportFile{file=hw6_1j/profile_summary.csv}
+// bz (cs):  Open Run Guidance Report [kernel.xclbin.run_summary] : addNotify
+dismissDialog("Open Run Guidance Report [kernel.xclbin.run_summary]"); // bz
+selectTree(FrankResource.ReportNavigatorTreePanel_REPORT_NAVIGATOR_TREE, "[root, Resource{value=FrankResource.FrankViewType_PROFILE_SUMMARY}Type{value=PROFILE_SUMMARY_REPORT},SummaryFile{file=kernel.xclbin.run_summary isArchive=false},ReportFile{file=hw6_1j/profile_summary.csv}]", 12, false); // b
+selectTree(RDIResource.NavigableReportTab_REPORT_NAVIGATION_TREE, "[Report Contents, Kernel Data Transfers]", 5, false); // r
+selectTree(RDIResource.NavigableReportTab_REPORT_NAVIGATION_TREE, "[Report Contents, Host Data Transfers]", 6, true); // r - Node
+selectTree(RDIResource.NavigableReportTab_REPORT_NAVIGATION_TREE, "[Report Contents, Host Data Transfers, Host Transfer]", 7, false); // r
+selectTree(RDIResource.NavigableReportTab_REPORT_NAVIGATION_TREE, "[Report Contents, Host Data Transfers, Top Memory Writes]", 8, false); // r
+selectTree(RDIResource.NavigableReportTab_REPORT_NAVIGATION_TREE, "[Report Contents, Host Data Transfers, Top Memory Reads]", 9, false); // r
+selectTree(RDIResource.NavigableReportTab_REPORT_NAVIGATION_TREE, "[Report Contents, Kernels & Compute Units, Kernel Execution]", 3, false); // r
+selectTree(RDIResource.NavigableReportTab_REPORT_NAVIGATION_TREE, "[Report Contents, Kernels & Compute Units]", 2, true); // r - Node
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1002 ms.
+// Elapsed time: 42 seconds
+selectTree(FrankResource.ReportNavigatorTreePanel_REPORT_NAVIGATOR_TREE, "[root, Resource{value=FrankResource.FrankViewType_APPLICATION_TIMELINE}Type{value=APPLICATION_TIMELINE_REPORT},SummaryFile{file=kernel.xclbin.run_summary isArchive=false},ReportFile{file=hw6_1j/timeline_trace.csv}]", 13, false); // b
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// Elapsed time: 107 seconds
+selectTree(FrankResource.ReportNavigatorTreePanel_REPORT_NAVIGATOR_TREE, "[root, Resource{value=FrankResource.FrankViewType_PROFILE_SUMMARY}Type{value=PROFILE_SUMMARY_REPORT},SummaryFile{file=kernel.xclbin.run_summary isArchive=false},ReportFile{file=hw6_analyzer/profile_summary.csv}]", 26, false); // b
+selectTree(RDIResource.NavigableReportTab_REPORT_NAVIGATION_TREE, "[Report Contents, Host Data Transfers]", 6, true); // r - Node
+selectTree(RDIResource.NavigableReportTab_REPORT_NAVIGATION_TREE, "[Report Contents, Kernel Data Transfers]", 5, false); // r
+selectTree(RDIResource.NavigableReportTab_REPORT_NAVIGATION_TREE, "[Report Contents, Kernels & Compute Units]", 2, true); // r - Node
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// Elapsed time: 112 seconds
+selectTree(RDIResource.NavigableReportTab_REPORT_NAVIGATION_TREE, "[Report Contents, Summary]", 1, false); // r
+selectTree(FrankResource.ReportNavigatorTreePanel_REPORT_NAVIGATOR_TREE, "[root, Resource{value=FrankResource.FrankViewType_PROFILE_SUMMARY}Type{value=PROFILE_SUMMARY_REPORT},SummaryFile{file=kernel.xclbin.run_summary isArchive=false},ReportFile{file=hw6_1j/profile_summary.csv}]", 12, false); // b
+selectTree(RDIResource.NavigableReportTab_REPORT_NAVIGATION_TREE, "[Report Contents, Summary]", 1, false); // r
+selectTree(RDIResource.NavigableReportTab_REPORT_NAVIGATION_TREE, "[Report Contents, Kernels & Compute Units]", 2, true); // r - Node
+selectTree(RDIResource.NavigableReportTab_REPORT_NAVIGATION_TREE, "[Report Contents, Kernels & Compute Units, Kernel Execution]", 3, false); // r
+selectTree(RDIResource.NavigableReportTab_REPORT_NAVIGATION_TREE, "[Report Contents, Kernels & Compute Units, Top Kernel Execution]", 4, false); // r
+selectTree(RDIResource.NavigableReportTab_REPORT_NAVIGATION_TREE, "[Report Contents, Kernel Data Transfers]", 5, false); // r
+selectTree(RDIResource.NavigableReportTab_REPORT_NAVIGATION_TREE, "[Report Contents, Host Data Transfers, Host Transfer]", 7, false); // r
+selectTree(RDIResource.NavigableReportTab_REPORT_NAVIGATION_TREE, "[Report Contents, Host Data Transfers, Top Memory Writes]", 8, false); // r
+selectTree(RDIResource.NavigableReportTab_REPORT_NAVIGATION_TREE, "[Report Contents, Host Data Transfers, Top Memory Reads]", 9, false); // r
+selectTree(RDIResource.NavigableReportTab_REPORT_NAVIGATION_TREE, "[Report Contents, API Calls]", 10, false); // r
+selectTree(RDIResource.NavigableReportTab_REPORT_NAVIGATION_TREE, "[Report Contents, Kernels & Compute Units, Top Kernel Execution]", 4, false); // r
+selectTree(RDIResource.NavigableReportTab_REPORT_NAVIGATION_TREE, "[Report Contents, Kernels & Compute Units, Kernel Execution]", 3, false); // r
+selectTree(FrankResource.ReportNavigatorTreePanel_REPORT_NAVIGATOR_TREE, "[root, Resource{value=FrankResource.FrankViewType_PROFILE_SUMMARY}Type{value=PROFILE_SUMMARY_REPORT},SummaryFile{file=kernel.xclbin.run_summary isArchive=false},ReportFile{file=Desktop/profile_summary.csv}]", 19, false); // b
+selectTree(RDIResource.NavigableReportTab_REPORT_NAVIGATION_TREE, "[Report Contents, Kernels & Compute Units, Kernel Execution]", 3, false); // r
+selectTree(RDIResource.NavigableReportTab_REPORT_NAVIGATION_TREE, "[Report Contents, Kernels & Compute Units, Top Kernel Execution]", 4, false); // r
+selectTree(RDIResource.NavigableReportTab_REPORT_NAVIGATION_TREE, "[Report Contents, Kernels & Compute Units]", 2, true); // r - Node
+selectTree(RDIResource.NavigableReportTab_REPORT_NAVIGATION_TREE, "[Report Contents, Host Data Transfers]", 6, true); // r - Node
+selectTree(RDIResource.NavigableReportTab_REPORT_NAVIGATION_TREE, "[Report Contents, Host Data Transfers, Host Transfer]", 7, false); // r
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1002 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// Elapsed time: 55 seconds
+selectTree(FrankResource.ReportNavigatorTreePanel_REPORT_NAVIGATOR_TREE, "[root, Resource{value=FrankResource.FrankViewType_RUN_GUIDANCE}Type{value=RUN_GUIDANCE_REPORT},SummaryFile{file=kernel.xclbin.run_summary isArchive=false},ReportFile{file=Desktop/profile_summary.csv}]", 18, false); // b
+// Opening Report: Resource{value=FrankResource.FrankViewType_RUN_GUIDANCE}Type{value=RUN_GUIDANCE_REPORT},SummaryFile{file=kernel.xclbin.run_summary isArchive=false},ReportFile{file=Desktop/profile_summary.csv}
+// bz (cs):  Open Run Guidance Report [kernel.xclbin.run_summary] : addNotify
+dismissDialog("Open Run Guidance Report [kernel.xclbin.run_summary]"); // bz
+selectTree(FrankResource.ReportNavigatorTreePanel_REPORT_NAVIGATOR_TREE, "[root, Resource{value=FrankResource.FrankViewType_PROFILE_SUMMARY}Type{value=PROFILE_SUMMARY_REPORT},SummaryFile{file=kernel.xclbin.run_summary isArchive=false},ReportFile{file=hw6_1j/profile_summary.csv}]", 12, false); // b
+selectTree(RDIResource.NavigableReportTab_REPORT_NAVIGATION_TREE, "[Report Contents, Kernels & Compute Units, Top Kernel Execution]", 4, false); // r
+selectTree(RDIResource.NavigableReportTab_REPORT_NAVIGATION_TREE, "[Report Contents, Kernels & Compute Units]", 2, true); // r - Node
+selectTree(RDIResource.NavigableReportTab_REPORT_NAVIGATION_TREE, "[Report Contents, Summary]", 1, false); // r
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1002 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1002 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1002 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1004 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1002 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1002 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1002 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1002 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1002 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1002 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1002 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1002 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1002 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,598 MB. GUI used memory: 117 MB. Current time: 10/21/22, 2:06:28 AM EDT
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1002 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1687 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,598 MB. GUI used memory: 117 MB. Current time: 10/21/22, 2:43:12 AM EDT
+// WARNING: HTimer (HMemoryUtils Timer) is taking 2003523ms to process. Increasing delay to 6000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2003895 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+                                                            
