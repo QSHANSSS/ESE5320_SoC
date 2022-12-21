@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="LZW.cpp" path="/mnt/castor/seas_home/q/qiansh/Documents/LZW.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="testbench.cpp" path="/mnt/castor/seas_home/q/qiansh/Documents/testbench.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

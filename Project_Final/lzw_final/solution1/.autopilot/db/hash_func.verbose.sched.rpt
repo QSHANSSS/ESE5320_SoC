@@ -1,0 +1,403 @@
+
+
+================================================================
+== Vitis HLS Report for 'hash_func'
+================================================================
+* Date:           Wed Dec  7 20:43:10 2022
+
+* Version:        2020.2 (Build 3064766 on Wed Nov 18 09:12:47 MST 2020)
+* Project:        lzw_final
+* Solution:       solution1 (Vitis Kernel Flow Target)
+* Product family: zynquplus
+* Target device:  xczu3eg-sbva484-1-i
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  6.67 ns|  3.627 ns|     1.80 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        ?|        ?|         ?|         ?|    ?|    ?|     none|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                   |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |     Loop Name     |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- Loop 1           |       20|       20|         1|          -|          -|    20|        no|
+        |- LOOP_HASH_FUNC1  |        ?|        ?|         2|          1|          1|     ?|       yes|
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 2
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 16
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 2, States = { 3 4 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 2 3 
+3 --> 5 4 
+4 --> 3 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 9 
+9 --> 10 
+10 --> 11 
+11 --> 12 
+12 --> 13 
+13 --> 14 
+14 --> 15 
+15 --> 16 
+16 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.48>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%len_read = read i18 @_ssdm_op_Read.ap_auto.i18, i18 %len"   --->   Operation 17 'read' 'len_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%key_offset_read = read i13 @_ssdm_op_Read.ap_auto.i13, i13 %key_offset"   --->   Operation 18 'read' 'key_offset_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%temp_key = alloca i64 1" [../LZW.cpp:28]   --->   Operation 19 'alloca' 'temp_key' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 20> <RAM>
+ST_1 : Operation 20 [1/1] (0.48ns)   --->   "%br_ln28 = br void %memset.loop" [../LZW.cpp:28]   --->   Operation 20 'br' 'br_ln28' <Predicate = true> <Delay = 0.48>
+
+State 2 <SV = 1> <Delay = 1.66>
+ST_2 : Operation 21 [1/1] (0.00ns)   --->   "%empty = phi i5 0, void, i5 %empty_45, void %memset.loop.split"   --->   Operation 21 'phi' 'empty' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 22 [1/1] (0.87ns)   --->   "%empty_45 = add i5 %empty, i5 1"   --->   Operation 22 'add' 'empty_45' <Predicate = true> <Delay = 0.87> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.96> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 23 [1/1] (0.00ns)   --->   "%p_cast6 = zext i5 %empty"   --->   Operation 23 'zext' 'p_cast6' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 24 [1/1] (0.87ns)   --->   "%exitcond3 = icmp_eq  i5 %empty, i5 20"   --->   Operation 24 'icmp' 'exitcond3' <Predicate = true> <Delay = 0.87> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.87> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 25 [1/1] (0.00ns)   --->   "%empty_46 = speclooptripcount i32 @_ssdm_op_SpecLoopTripCount, i64 20, i64 20, i64 20"   --->   Operation 25 'speclooptripcount' 'empty_46' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 26 [1/1] (0.00ns)   --->   "%br_ln0 = br i1 %exitcond3, void %memset.loop.split, void %split.preheader"   --->   Operation 26 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 27 [1/1] (0.00ns)   --->   "%temp_key_addr = getelementptr i8 %temp_key, i64 0, i64 %p_cast6"   --->   Operation 27 'getelementptr' 'temp_key_addr' <Predicate = (!exitcond3)> <Delay = 0.00>
+ST_2 : Operation 28 [1/1] (0.79ns)   --->   "%store_ln0 = store i8 0, i5 %temp_key_addr"   --->   Operation 28 'store' 'store_ln0' <Predicate = (!exitcond3)> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 20> <RAM>
+ST_2 : Operation 29 [1/1] (0.00ns)   --->   "%br_ln0 = br void %memset.loop"   --->   Operation 29 'br' 'br_ln0' <Predicate = (!exitcond3)> <Delay = 0.00>
+ST_2 : Operation 30 [1/1] (0.48ns)   --->   "%br_ln0 = br void %split"   --->   Operation 30 'br' 'br_ln0' <Predicate = (exitcond3)> <Delay = 0.48>
+
+State 3 <SV = 2> <Delay = 2.32>
+ST_3 : Operation 31 [1/1] (0.00ns)   --->   "%i = phi i8 %i_2, void %.split, i8 0, void %split.preheader"   --->   Operation 31 'phi' 'i' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 32 [1/1] (0.90ns)   --->   "%i_2 = add i8 %i, i8 1" [../LZW.cpp:30]   --->   Operation 32 'add' 'i_2' <Predicate = true> <Delay = 0.90> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.96> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 33 [1/1] (0.00ns)   --->   "%specpipeline_ln0 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 1, i32 0, void @p_str"   --->   Operation 33 'specpipeline' 'specpipeline_ln0' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 34 [1/1] (0.00ns)   --->   "%sext_ln30 = sext i8 %i" [../LZW.cpp:30]   --->   Operation 34 'sext' 'sext_ln30' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 35 [1/1] (0.89ns)   --->   "%icmp_ln30 = icmp_slt  i18 %sext_ln30, i18 %len_read" [../LZW.cpp:30]   --->   Operation 35 'icmp' 'icmp_ln30' <Predicate = true> <Delay = 0.89> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.87> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 36 [1/1] (0.00ns)   --->   "%br_ln30 = br i1 %icmp_ln30, void %._crit_edge.loopexit, void %.split" [../LZW.cpp:30]   --->   Operation 36 'br' 'br_ln30' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 37 [1/1] (0.00ns)   --->   "%sext_ln31 = sext i8 %i" [../LZW.cpp:31]   --->   Operation 37 'sext' 'sext_ln31' <Predicate = (icmp_ln30)> <Delay = 0.00>
+ST_3 : Operation 38 [1/1] (0.97ns)   --->   "%add_ln31 = add i13 %sext_ln31, i13 %key_offset_read" [../LZW.cpp:31]   --->   Operation 38 'add' 'add_ln31' <Predicate = (icmp_ln30)> <Delay = 0.97> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.96> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 39 [1/1] (0.00ns)   --->   "%zext_ln31_1 = zext i13 %add_ln31" [../LZW.cpp:31]   --->   Operation 39 'zext' 'zext_ln31_1' <Predicate = (icmp_ln30)> <Delay = 0.00>
+ST_3 : Operation 40 [1/1] (0.00ns)   --->   "%key_addr = getelementptr i8 %key, i64 0, i64 %zext_ln31_1" [../LZW.cpp:31]   --->   Operation 40 'getelementptr' 'key_addr' <Predicate = (icmp_ln30)> <Delay = 0.00>
+ST_3 : Operation 41 [2/2] (1.35ns)   --->   "%key_load = load i13 %key_addr" [../LZW.cpp:31]   --->   Operation 41 'load' 'key_load' <Predicate = (icmp_ln30)> <Delay = 1.35> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.35> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 8192> <RAM>
+
+State 4 <SV = 3> <Delay = 2.14>
+ST_4 : Operation 42 [1/1] (0.00ns)   --->   "%specloopname_ln30 = specloopname void @_ssdm_op_SpecLoopName, void @empty_2" [../LZW.cpp:30]   --->   Operation 42 'specloopname' 'specloopname_ln30' <Predicate = (icmp_ln30)> <Delay = 0.00>
+ST_4 : Operation 43 [1/1] (0.00ns)   --->   "%zext_ln31 = zext i8 %i" [../LZW.cpp:31]   --->   Operation 43 'zext' 'zext_ln31' <Predicate = (icmp_ln30)> <Delay = 0.00>
+ST_4 : Operation 44 [1/2] (1.35ns)   --->   "%key_load = load i13 %key_addr" [../LZW.cpp:31]   --->   Operation 44 'load' 'key_load' <Predicate = (icmp_ln30)> <Delay = 1.35> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.35> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 8192> <RAM>
+ST_4 : Operation 45 [1/1] (0.00ns)   --->   "%temp_key_addr_1 = getelementptr i8 %temp_key, i64 0, i64 %zext_ln31" [../LZW.cpp:31]   --->   Operation 45 'getelementptr' 'temp_key_addr_1' <Predicate = (icmp_ln30)> <Delay = 0.00>
+ST_4 : Operation 46 [1/1] (0.79ns)   --->   "%store_ln31 = store i8 %key_load, i5 %temp_key_addr_1" [../LZW.cpp:31]   --->   Operation 46 'store' 'store_ln31' <Predicate = (icmp_ln30)> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 20> <RAM>
+ST_4 : Operation 47 [1/1] (0.00ns)   --->   "%br_ln0 = br void %split"   --->   Operation 47 'br' 'br_ln0' <Predicate = (icmp_ln30)> <Delay = 0.00>
+
+State 5 <SV = 3> <Delay = 0.79>
+ST_5 : Operation 48 [1/1] (0.00ns)   --->   "%temp_key_addr_3 = getelementptr i8 %temp_key, i64 0, i64 1" [../LZW.cpp:38]   --->   Operation 48 'getelementptr' 'temp_key_addr_3' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 49 [2/2] (0.79ns)   --->   "%temp_key_load = load i5 %temp_key_addr_3" [../LZW.cpp:38]   --->   Operation 49 'load' 'temp_key_load' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 20> <RAM>
+
+State 6 <SV = 4> <Delay = 0.79>
+ST_6 : Operation 50 [1/1] (0.00ns)   --->   "%temp_key_addr_2 = getelementptr i8 %temp_key, i64 0, i64 0" [../LZW.cpp:38]   --->   Operation 50 'getelementptr' 'temp_key_addr_2' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 51 [2/2] (0.79ns)   --->   "%hash = load i5 %temp_key_addr_2" [../LZW.cpp:38]   --->   Operation 51 'load' 'hash' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 20> <RAM>
+ST_6 : Operation 52 [1/2] (0.79ns)   --->   "%temp_key_load = load i5 %temp_key_addr_3" [../LZW.cpp:38]   --->   Operation 52 'load' 'temp_key_load' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 20> <RAM>
+ST_6 : Operation 53 [1/1] (0.00ns)   --->   "%temp_key_addr_5 = getelementptr i8 %temp_key, i64 0, i64 3" [../LZW.cpp:38]   --->   Operation 53 'getelementptr' 'temp_key_addr_5' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 54 [2/2] (0.79ns)   --->   "%temp_key_load_2 = load i5 %temp_key_addr_5" [../LZW.cpp:38]   --->   Operation 54 'load' 'temp_key_load_2' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 20> <RAM>
+
+State 7 <SV = 5> <Delay = 0.79>
+ST_7 : Operation 55 [1/2] (0.79ns)   --->   "%hash = load i5 %temp_key_addr_2" [../LZW.cpp:38]   --->   Operation 55 'load' 'hash' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 20> <RAM>
+ST_7 : Operation 56 [1/1] (0.00ns)   --->   "%temp_key_addr_4 = getelementptr i8 %temp_key, i64 0, i64 2" [../LZW.cpp:38]   --->   Operation 56 'getelementptr' 'temp_key_addr_4' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 57 [2/2] (0.79ns)   --->   "%temp_key_load_1 = load i5 %temp_key_addr_4" [../LZW.cpp:38]   --->   Operation 57 'load' 'temp_key_load_1' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 20> <RAM>
+ST_7 : Operation 58 [1/2] (0.79ns)   --->   "%temp_key_load_2 = load i5 %temp_key_addr_5" [../LZW.cpp:38]   --->   Operation 58 'load' 'temp_key_load_2' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 20> <RAM>
+ST_7 : Operation 59 [1/1] (0.00ns)   --->   "%temp_key_addr_7 = getelementptr i8 %temp_key, i64 0, i64 5" [../LZW.cpp:38]   --->   Operation 59 'getelementptr' 'temp_key_addr_7' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 60 [2/2] (0.79ns)   --->   "%temp_key_load_4 = load i5 %temp_key_addr_7" [../LZW.cpp:38]   --->   Operation 60 'load' 'temp_key_load_4' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 20> <RAM>
+
+State 8 <SV = 6> <Delay = 0.79>
+ST_8 : Operation 61 [1/2] (0.79ns)   --->   "%temp_key_load_1 = load i5 %temp_key_addr_4" [../LZW.cpp:38]   --->   Operation 61 'load' 'temp_key_load_1' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 20> <RAM>
+ST_8 : Operation 62 [1/1] (0.00ns)   --->   "%temp_key_addr_6 = getelementptr i8 %temp_key, i64 0, i64 4" [../LZW.cpp:38]   --->   Operation 62 'getelementptr' 'temp_key_addr_6' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 63 [2/2] (0.79ns)   --->   "%temp_key_load_3 = load i5 %temp_key_addr_6" [../LZW.cpp:38]   --->   Operation 63 'load' 'temp_key_load_3' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 20> <RAM>
+ST_8 : Operation 64 [1/2] (0.79ns)   --->   "%temp_key_load_4 = load i5 %temp_key_addr_7" [../LZW.cpp:38]   --->   Operation 64 'load' 'temp_key_load_4' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 20> <RAM>
+ST_8 : Operation 65 [1/1] (0.00ns)   --->   "%temp_key_addr_9 = getelementptr i8 %temp_key, i64 0, i64 7" [../LZW.cpp:38]   --->   Operation 65 'getelementptr' 'temp_key_addr_9' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 66 [2/2] (0.79ns)   --->   "%temp_key_load_6 = load i5 %temp_key_addr_9" [../LZW.cpp:38]   --->   Operation 66 'load' 'temp_key_load_6' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 20> <RAM>
+
+State 9 <SV = 7> <Delay = 1.69>
+ST_9 : Operation 67 [1/2] (0.79ns)   --->   "%temp_key_load_3 = load i5 %temp_key_addr_6" [../LZW.cpp:38]   --->   Operation 67 'load' 'temp_key_load_3' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 20> <RAM>
+ST_9 : Operation 68 [1/1] (0.00ns)   --->   "%temp_key_addr_8 = getelementptr i8 %temp_key, i64 0, i64 6" [../LZW.cpp:38]   --->   Operation 68 'getelementptr' 'temp_key_addr_8' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 69 [2/2] (0.79ns)   --->   "%temp_key_load_5 = load i5 %temp_key_addr_8" [../LZW.cpp:38]   --->   Operation 69 'load' 'temp_key_load_5' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 20> <RAM>
+ST_9 : Operation 70 [1/2] (0.79ns)   --->   "%temp_key_load_6 = load i5 %temp_key_addr_9" [../LZW.cpp:38]   --->   Operation 70 'load' 'temp_key_load_6' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 20> <RAM>
+ST_9 : Operation 71 [1/1] (0.00ns)   --->   "%temp_key_addr_11 = getelementptr i8 %temp_key, i64 0, i64 9" [../LZW.cpp:38]   --->   Operation 71 'getelementptr' 'temp_key_addr_11' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 72 [2/2] (0.79ns)   --->   "%temp_key_load_8 = load i5 %temp_key_addr_11" [../LZW.cpp:38]   --->   Operation 72 'load' 'temp_key_load_8' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 20> <RAM>
+ST_9 : Operation 73 [1/1] (0.00ns)   --->   "%temp_key_load_1_cast = zext i8 %temp_key_load" [../LZW.cpp:38]   --->   Operation 73 'zext' 'temp_key_load_1_cast' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 74 [1/1] (0.00ns)   --->   "%temp_key_load_7_cast = zext i8 %temp_key_load_6" [../LZW.cpp:38]   --->   Operation 74 'zext' 'temp_key_load_7_cast' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 75 [1/1] (0.90ns)   --->   "%empty_47 = add i9 %temp_key_load_7_cast, i9 %temp_key_load_1_cast" [../LZW.cpp:38]   --->   Operation 75 'add' 'empty_47' <Predicate = true> <Delay = 0.90> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.96> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+
+State 10 <SV = 8> <Delay = 1.69>
+ST_10 : Operation 76 [1/1] (0.00ns)   --->   "%zext_ln27 = zext i8 %hash" [../LZW.cpp:27]   --->   Operation 76 'zext' 'zext_ln27' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 77 [1/2] (0.79ns)   --->   "%temp_key_load_5 = load i5 %temp_key_addr_8" [../LZW.cpp:38]   --->   Operation 77 'load' 'temp_key_load_5' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 20> <RAM>
+ST_10 : Operation 78 [1/1] (0.00ns)   --->   "%zext_ln38 = zext i8 %temp_key_load_5" [../LZW.cpp:38]   --->   Operation 78 'zext' 'zext_ln38' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 79 [1/1] (0.00ns)   --->   "%temp_key_addr_10 = getelementptr i8 %temp_key, i64 0, i64 8" [../LZW.cpp:38]   --->   Operation 79 'getelementptr' 'temp_key_addr_10' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 80 [2/2] (0.79ns)   --->   "%temp_key_load_7 = load i5 %temp_key_addr_10" [../LZW.cpp:38]   --->   Operation 80 'load' 'temp_key_load_7' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 20> <RAM>
+ST_10 : Operation 81 [1/2] (0.79ns)   --->   "%temp_key_load_8 = load i5 %temp_key_addr_11" [../LZW.cpp:38]   --->   Operation 81 'load' 'temp_key_load_8' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 20> <RAM>
+ST_10 : Operation 82 [1/1] (0.00ns)   --->   "%temp_key_addr_13 = getelementptr i8 %temp_key, i64 0, i64 11" [../LZW.cpp:38]   --->   Operation 82 'getelementptr' 'temp_key_addr_13' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 83 [2/2] (0.79ns)   --->   "%temp_key_load_10 = load i5 %temp_key_addr_13" [../LZW.cpp:38]   --->   Operation 83 'load' 'temp_key_load_10' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 20> <RAM>
+ST_10 : Operation 84 [1/1] (0.00ns)   --->   "%temp_key_load_3_cast = zext i8 %temp_key_load_2" [../LZW.cpp:38]   --->   Operation 84 'zext' 'temp_key_load_3_cast' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 85 [1/1] (0.00ns)   --->   "%temp_key_load_9_cast = zext i8 %temp_key_load_8" [../LZW.cpp:38]   --->   Operation 85 'zext' 'temp_key_load_9_cast' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 86 [1/1] (0.90ns)   --->   "%empty_49 = add i9 %temp_key_load_9_cast, i9 %temp_key_load_3_cast" [../LZW.cpp:38]   --->   Operation 86 'add' 'empty_49' <Predicate = true> <Delay = 0.90> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.96> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_10 : Operation 87 [1/1] (0.90ns)   --->   "%hash_5 = add i9 %zext_ln38, i9 %zext_ln27" [../LZW.cpp:38]   --->   Operation 87 'add' 'hash_5' <Predicate = true> <Delay = 0.90> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.96> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+
+State 11 <SV = 9> <Delay = 1.69>
+ST_11 : Operation 88 [1/2] (0.79ns)   --->   "%temp_key_load_7 = load i5 %temp_key_addr_10" [../LZW.cpp:38]   --->   Operation 88 'load' 'temp_key_load_7' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 20> <RAM>
+ST_11 : Operation 89 [1/1] (0.00ns)   --->   "%temp_key_addr_12 = getelementptr i8 %temp_key, i64 0, i64 10" [../LZW.cpp:38]   --->   Operation 89 'getelementptr' 'temp_key_addr_12' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 90 [2/2] (0.79ns)   --->   "%temp_key_load_9 = load i5 %temp_key_addr_12" [../LZW.cpp:38]   --->   Operation 90 'load' 'temp_key_load_9' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 20> <RAM>
+ST_11 : Operation 91 [1/2] (0.79ns)   --->   "%temp_key_load_10 = load i5 %temp_key_addr_13" [../LZW.cpp:38]   --->   Operation 91 'load' 'temp_key_load_10' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 20> <RAM>
+ST_11 : Operation 92 [1/1] (0.00ns)   --->   "%temp_key_addr_15 = getelementptr i8 %temp_key, i64 0, i64 13" [../LZW.cpp:38]   --->   Operation 92 'getelementptr' 'temp_key_addr_15' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 93 [2/2] (0.79ns)   --->   "%temp_key_load_12 = load i5 %temp_key_addr_15" [../LZW.cpp:38]   --->   Operation 93 'load' 'temp_key_load_12' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 20> <RAM>
+ST_11 : Operation 94 [1/1] (0.00ns)   --->   "%temp_key_load_2_cast = zext i8 %temp_key_load_1" [../LZW.cpp:38]   --->   Operation 94 'zext' 'temp_key_load_2_cast' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 95 [1/1] (0.00ns)   --->   "%temp_key_load_8_cast = zext i8 %temp_key_load_7" [../LZW.cpp:38]   --->   Operation 95 'zext' 'temp_key_load_8_cast' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 96 [1/1] (0.90ns)   --->   "%empty_50 = add i9 %temp_key_load_8_cast, i9 %temp_key_load_2_cast" [../LZW.cpp:38]   --->   Operation 96 'add' 'empty_50' <Predicate = true> <Delay = 0.90> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.96> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+
+State 12 <SV = 10> <Delay = 1.69>
+ST_12 : Operation 97 [1/2] (0.79ns)   --->   "%temp_key_load_9 = load i5 %temp_key_addr_12" [../LZW.cpp:38]   --->   Operation 97 'load' 'temp_key_load_9' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 20> <RAM>
+ST_12 : Operation 98 [1/1] (0.00ns)   --->   "%temp_key_addr_14 = getelementptr i8 %temp_key, i64 0, i64 12" [../LZW.cpp:38]   --->   Operation 98 'getelementptr' 'temp_key_addr_14' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 99 [2/2] (0.79ns)   --->   "%temp_key_load_11 = load i5 %temp_key_addr_14" [../LZW.cpp:38]   --->   Operation 99 'load' 'temp_key_load_11' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 20> <RAM>
+ST_12 : Operation 100 [1/2] (0.79ns)   --->   "%temp_key_load_12 = load i5 %temp_key_addr_15" [../LZW.cpp:38]   --->   Operation 100 'load' 'temp_key_load_12' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 20> <RAM>
+ST_12 : Operation 101 [1/1] (0.00ns)   --->   "%temp_key_addr_17 = getelementptr i8 %temp_key, i64 0, i64 15" [../LZW.cpp:38]   --->   Operation 101 'getelementptr' 'temp_key_addr_17' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 102 [2/2] (0.79ns)   --->   "%temp_key_load_14 = load i5 %temp_key_addr_17" [../LZW.cpp:38]   --->   Operation 102 'load' 'temp_key_load_14' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 20> <RAM>
+ST_12 : Operation 103 [1/1] (0.00ns)   --->   "%temp_key_load_4_cast = zext i8 %temp_key_load_3" [../LZW.cpp:38]   --->   Operation 103 'zext' 'temp_key_load_4_cast' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 104 [1/1] (0.00ns)   --->   "%temp_key_load_10_cast = zext i8 %temp_key_load_9" [../LZW.cpp:38]   --->   Operation 104 'zext' 'temp_key_load_10_cast' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 105 [1/1] (0.90ns)   --->   "%empty_48 = add i9 %temp_key_load_10_cast, i9 %temp_key_load_4_cast" [../LZW.cpp:38]   --->   Operation 105 'add' 'empty_48' <Predicate = true> <Delay = 0.90> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.96> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+
+State 13 <SV = 11> <Delay = 1.71>
+ST_13 : Operation 106 [1/2] (0.79ns)   --->   "%temp_key_load_11 = load i5 %temp_key_addr_14" [../LZW.cpp:38]   --->   Operation 106 'load' 'temp_key_load_11' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 20> <RAM>
+ST_13 : Operation 107 [1/1] (0.00ns)   --->   "%zext_ln27_1 = zext i8 %temp_key_load_11" [../LZW.cpp:27]   --->   Operation 107 'zext' 'zext_ln27_1' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 108 [1/1] (0.00ns)   --->   "%temp_key_addr_16 = getelementptr i8 %temp_key, i64 0, i64 14" [../LZW.cpp:38]   --->   Operation 108 'getelementptr' 'temp_key_addr_16' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 109 [2/2] (0.79ns)   --->   "%temp_key_load_13 = load i5 %temp_key_addr_16" [../LZW.cpp:38]   --->   Operation 109 'load' 'temp_key_load_13' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 20> <RAM>
+ST_13 : Operation 110 [1/2] (0.79ns)   --->   "%temp_key_load_14 = load i5 %temp_key_addr_17" [../LZW.cpp:38]   --->   Operation 110 'load' 'temp_key_load_14' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 20> <RAM>
+ST_13 : Operation 111 [1/1] (0.00ns)   --->   "%temp_key_addr_19 = getelementptr i8 %temp_key, i64 0, i64 17" [../LZW.cpp:38]   --->   Operation 111 'getelementptr' 'temp_key_addr_19' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 112 [2/2] (0.79ns)   --->   "%temp_key_load_16 = load i5 %temp_key_addr_19" [../LZW.cpp:38]   --->   Operation 112 'load' 'temp_key_load_16' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 20> <RAM>
+ST_13 : Operation 113 [1/1] (0.00ns)   --->   "%temp_key_load_15_cast = zext i8 %temp_key_load_14" [../LZW.cpp:38]   --->   Operation 113 'zext' 'temp_key_load_15_cast' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 114 [1/1] (0.00ns)   --->   "%p_cast4 = zext i9 %empty_49" [../LZW.cpp:38]   --->   Operation 114 'zext' 'p_cast4' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 115 [1/1] (0.92ns)   --->   "%tmp114 = add i10 %p_cast4, i10 %temp_key_load_15_cast" [../LZW.cpp:38]   --->   Operation 115 'add' 'tmp114' <Predicate = true> <Delay = 0.92> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.96> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_13 : Operation 116 [1/1] (0.00ns)   --->   "%zext_ln38_1 = zext i9 %hash_5" [../LZW.cpp:38]   --->   Operation 116 'zext' 'zext_ln38_1' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 117 [1/1] (0.92ns)   --->   "%hash_6 = add i10 %zext_ln38_1, i10 %zext_ln27_1" [../LZW.cpp:38]   --->   Operation 117 'add' 'hash_6' <Predicate = true> <Delay = 0.92> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.96> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+
+State 14 <SV = 12> <Delay = 2.95>
+ST_14 : Operation 118 [1/2] (0.79ns)   --->   "%temp_key_load_13 = load i5 %temp_key_addr_16" [../LZW.cpp:38]   --->   Operation 118 'load' 'temp_key_load_13' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 20> <RAM>
+ST_14 : Operation 119 [1/1] (0.00ns)   --->   "%temp_key_addr_18 = getelementptr i8 %temp_key, i64 0, i64 16" [../LZW.cpp:38]   --->   Operation 119 'getelementptr' 'temp_key_addr_18' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 120 [2/2] (0.79ns)   --->   "%temp_key_load_15 = load i5 %temp_key_addr_18" [../LZW.cpp:38]   --->   Operation 120 'load' 'temp_key_load_15' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 20> <RAM>
+ST_14 : Operation 121 [1/2] (0.79ns)   --->   "%temp_key_load_16 = load i5 %temp_key_addr_19" [../LZW.cpp:38]   --->   Operation 121 'load' 'temp_key_load_16' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 20> <RAM>
+ST_14 : Operation 122 [1/1] (0.00ns)   --->   "%temp_key_addr_21 = getelementptr i8 %temp_key, i64 0, i64 19" [../LZW.cpp:38]   --->   Operation 122 'getelementptr' 'temp_key_addr_21' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 123 [2/2] (0.79ns)   --->   "%temp_key_load_18 = load i5 %temp_key_addr_21" [../LZW.cpp:38]   --->   Operation 123 'load' 'temp_key_load_18' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 20> <RAM>
+ST_14 : Operation 124 [1/1] (0.00ns)   --->   "%temp_key_load_5_cast = zext i8 %temp_key_load_4" [../LZW.cpp:38]   --->   Operation 124 'zext' 'temp_key_load_5_cast' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 125 [1/1] (0.00ns)   --->   "%temp_key_load_11_cast = zext i8 %temp_key_load_10" [../LZW.cpp:38]   --->   Operation 125 'zext' 'temp_key_load_11_cast' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 126 [1/1] (0.00ns)   --->   "%temp_key_load_17_cast8 = zext i8 %temp_key_load_16" [../LZW.cpp:38]   --->   Operation 126 'zext' 'temp_key_load_17_cast8' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 127 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%tmp1 = add i9 %temp_key_load_5_cast, i9 %temp_key_load_17_cast8" [../LZW.cpp:38]   --->   Operation 127 'add' 'tmp1' <Predicate = true> <Delay = 0.00> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.46> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync>
+ST_14 : Operation 128 [1/1] (1.17ns) (root node of TernaryAdder)   --->   "%tmp58 = add i9 %tmp1, i9 %temp_key_load_11_cast" [../LZW.cpp:38]   --->   Operation 128 'add' 'tmp58' <Predicate = true> <Delay = 1.17> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.46> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync>
+ST_14 : Operation 129 [1/1] (0.00ns)   --->   "%tmp6 = bitconcatenate i14 @_ssdm_op_BitConcatenate.i14.i9.i5, i9 %tmp58, i5 0" [../LZW.cpp:38]   --->   Operation 129 'bitconcatenate' 'tmp6' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 130 [1/1] (0.00ns)   --->   "%tmp7 = bitconcatenate i13 @_ssdm_op_BitConcatenate.i13.i10.i3, i10 %tmp114, i3 0" [../LZW.cpp:38]   --->   Operation 130 'bitconcatenate' 'tmp7' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 131 [1/1] (0.00ns)   --->   "%tmp12_cast = zext i13 %tmp7" [../LZW.cpp:38]   --->   Operation 131 'zext' 'tmp12_cast' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 132 [1/1] (0.00ns)   --->   "%temp_key_load_14_cast = zext i8 %temp_key_load_13" [../LZW.cpp:38]   --->   Operation 132 'zext' 'temp_key_load_14_cast' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 133 [1/1] (0.00ns)   --->   "%p_cast5 = zext i9 %empty_50" [../LZW.cpp:38]   --->   Operation 133 'zext' 'p_cast5' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 134 [1/1] (0.92ns)   --->   "%tmp142 = add i10 %p_cast5, i10 %temp_key_load_14_cast" [../LZW.cpp:38]   --->   Operation 134 'add' 'tmp142' <Predicate = true> <Delay = 0.92> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.96> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_14 : Operation 135 [1/1] (0.00ns)   --->   "%tmp8 = bitconcatenate i12 @_ssdm_op_BitConcatenate.i12.i10.i2, i10 %tmp142, i2 0" [../LZW.cpp:38]   --->   Operation 135 'bitconcatenate' 'tmp8' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 136 [1/1] (0.00ns)   --->   "%zext_ln38_2 = zext i10 %hash_6" [../LZW.cpp:38]   --->   Operation 136 'zext' 'zext_ln38_2' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 137 [1/1] (0.96ns)   --->   "%hash_7 = add i12 %tmp8, i12 %zext_ln38_2" [../LZW.cpp:38]   --->   Operation 137 'add' 'hash_7' <Predicate = true> <Delay = 0.96> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.96> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_14 : Operation 138 [1/1] (0.98ns)   --->   "%add_ln41 = add i14 %tmp6, i14 %tmp12_cast" [../LZW.cpp:41]   --->   Operation 138 'add' 'add_ln41' <Predicate = true> <Delay = 0.98> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.96> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+
+State 15 <SV = 13> <Delay = 2.61>
+ST_15 : Operation 139 [1/2] (0.79ns)   --->   "%temp_key_load_15 = load i5 %temp_key_addr_18" [../LZW.cpp:38]   --->   Operation 139 'load' 'temp_key_load_15' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 20> <RAM>
+ST_15 : Operation 140 [1/1] (0.00ns)   --->   "%temp_key_addr_20 = getelementptr i8 %temp_key, i64 0, i64 18" [../LZW.cpp:38]   --->   Operation 140 'getelementptr' 'temp_key_addr_20' <Predicate = true> <Delay = 0.00>
+ST_15 : Operation 141 [2/2] (0.79ns)   --->   "%temp_key_load_17 = load i5 %temp_key_addr_20" [../LZW.cpp:38]   --->   Operation 141 'load' 'temp_key_load_17' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 20> <RAM>
+ST_15 : Operation 142 [1/2] (0.79ns)   --->   "%temp_key_load_18 = load i5 %temp_key_addr_21" [../LZW.cpp:38]   --->   Operation 142 'load' 'temp_key_load_18' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 20> <RAM>
+ST_15 : Operation 143 [1/1] (0.00ns)   --->   "%temp_key_load_12_cast = zext i8 %temp_key_load_12" [../LZW.cpp:38]   --->   Operation 143 'zext' 'temp_key_load_12_cast' <Predicate = true> <Delay = 0.00>
+ST_15 : Operation 144 [1/1] (0.00ns)   --->   "%p_cast = zext i9 %empty_47" [../LZW.cpp:38]   --->   Operation 144 'zext' 'p_cast' <Predicate = true> <Delay = 0.00>
+ST_15 : Operation 145 [1/1] (0.00ns)   --->   "%temp_key_load_18_cast = zext i8 %temp_key_load_18" [../LZW.cpp:38]   --->   Operation 145 'zext' 'temp_key_load_18_cast' <Predicate = true> <Delay = 0.00>
+ST_15 : Operation 146 [1/1] (0.90ns)   --->   "%tmp = add i9 %temp_key_load_12_cast, i9 %temp_key_load_18_cast" [../LZW.cpp:38]   --->   Operation 146 'add' 'tmp' <Predicate = true> <Delay = 0.90> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.96> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_15 : Operation 147 [1/1] (0.00ns)   --->   "%tmp_cast = zext i9 %tmp" [../LZW.cpp:38]   --->   Operation 147 'zext' 'tmp_cast' <Predicate = true> <Delay = 0.00>
+ST_15 : Operation 148 [1/1] (0.92ns)   --->   "%tmp210 = add i10 %tmp_cast, i10 %p_cast" [../LZW.cpp:38]   --->   Operation 148 'add' 'tmp210' <Predicate = true> <Delay = 0.92> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.96> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_15 : Operation 149 [1/1] (0.00ns)   --->   "%temp_key_load_16_cast = zext i8 %temp_key_load_15" [../LZW.cpp:38]   --->   Operation 149 'zext' 'temp_key_load_16_cast' <Predicate = true> <Delay = 0.00>
+ST_15 : Operation 150 [1/1] (0.00ns)   --->   "%p_cast3 = zext i9 %empty_48" [../LZW.cpp:38]   --->   Operation 150 'zext' 'p_cast3' <Predicate = true> <Delay = 0.00>
+ST_15 : Operation 151 [1/1] (0.92ns)   --->   "%tmp86 = add i10 %p_cast3, i10 %temp_key_load_16_cast" [../LZW.cpp:38]   --->   Operation 151 'add' 'tmp86' <Predicate = true> <Delay = 0.92> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.96> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+
+State 16 <SV = 14> <Delay = 3.62>
+ST_16 : Operation 152 [1/2] (0.79ns)   --->   "%temp_key_load_17 = load i5 %temp_key_addr_20" [../LZW.cpp:38]   --->   Operation 152 'load' 'temp_key_load_17' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 20> <RAM>
+ST_16 : Operation 153 [1/1] (0.00ns)   --->   "%zext_ln38_3 = zext i8 %temp_key_load_17" [../LZW.cpp:38]   --->   Operation 153 'zext' 'zext_ln38_3' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 154 [1/1] (0.00ns)   --->   "%tmp3 = bitconcatenate i11 @_ssdm_op_BitConcatenate.i11.i10.i1, i10 %tmp210, i1 0" [../LZW.cpp:38]   --->   Operation 154 'bitconcatenate' 'tmp3' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 155 [1/1] (0.00ns)   --->   "%tmp3_cast = zext i11 %tmp3" [../LZW.cpp:38]   --->   Operation 155 'zext' 'tmp3_cast' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 156 [1/1] (0.00ns)   --->   "%tmp9 = bitconcatenate i14 @_ssdm_op_BitConcatenate.i14.i10.i4, i10 %tmp86, i4 0" [../LZW.cpp:38]   --->   Operation 156 'bitconcatenate' 'tmp9' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 157 [1/1] (0.00ns)   --->   "%zext_ln41 = zext i12 %hash_7" [../LZW.cpp:41]   --->   Operation 157 'zext' 'zext_ln41' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 158 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%add_ln41_1 = add i14 %add_ln41, i14 %tmp9" [../LZW.cpp:41]   --->   Operation 158 'add' 'add_ln41_1' <Predicate = true> <Delay = 0.00> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.46> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync>
+ST_16 : Operation 159 [1/1] (0.94ns)   --->   "%add_ln41_2 = add i12 %tmp3_cast, i12 %zext_ln38_3" [../LZW.cpp:41]   --->   Operation 159 'add' 'add_ln41_2' <Predicate = true> <Delay = 0.94> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.96> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_16 : Operation 160 [1/1] (0.00ns)   --->   "%zext_ln41_1 = zext i12 %add_ln41_2" [../LZW.cpp:41]   --->   Operation 160 'zext' 'zext_ln41_1' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 161 [1/1] (0.96ns)   --->   "%add_ln41_3 = add i13 %zext_ln41_1, i13 %zext_ln41" [../LZW.cpp:41]   --->   Operation 161 'add' 'add_ln41_3' <Predicate = true> <Delay = 0.96> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.96> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_16 : Operation 162 [1/1] (0.00ns)   --->   "%zext_ln41_2 = zext i13 %add_ln41_3" [../LZW.cpp:41]   --->   Operation 162 'zext' 'zext_ln41_2' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 163 [1/1] (0.92ns) (root node of TernaryAdder)   --->   "%hash_4 = add i14 %zext_ln41_2, i14 %add_ln41_1" [../LZW.cpp:41]   --->   Operation 163 'add' 'hash_4' <Predicate = true> <Delay = 0.92> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.46> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync>
+ST_16 : Operation 164 [1/1] (0.00ns)   --->   "%ret_ln41 = ret i14 %hash_4" [../LZW.cpp:41]   --->   Operation 164 'ret' 'ret_ln41' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 6.67ns, clock uncertainty: 1.8ns.
+
+ <State 1>: 0.489ns
+The critical path consists of the following:
+	multiplexor before 'phi' operation ('empty') with incoming values : ('empty_45') [9]  (0.489 ns)
+
+ <State 2>: 1.67ns
+The critical path consists of the following:
+	'phi' operation ('empty') with incoming values : ('empty_45') [9]  (0 ns)
+	'add' operation ('empty_45') [10]  (0.878 ns)
+	blocking operation 0.789 ns on control path)
+
+ <State 3>: 2.33ns
+The critical path consists of the following:
+	'phi' operation ('i') with incoming values : ('i', ../LZW.cpp:30) [22]  (0 ns)
+	'add' operation ('add_ln31', ../LZW.cpp:31) [32]  (0.975 ns)
+	'getelementptr' operation ('key_addr', ../LZW.cpp:31) [34]  (0 ns)
+	'load' operation ('key_load', ../LZW.cpp:31) on array 'key' [35]  (1.35 ns)
+
+ <State 4>: 2.14ns
+The critical path consists of the following:
+	'load' operation ('key_load', ../LZW.cpp:31) on array 'key' [35]  (1.35 ns)
+	'store' operation ('store_ln31', ../LZW.cpp:31) of variable 'key_load', ../LZW.cpp:31 on array 'temp_key', ../LZW.cpp:28 [37]  (0.79 ns)
+
+ <State 5>: 0.79ns
+The critical path consists of the following:
+	'getelementptr' operation ('temp_key_addr_3', ../LZW.cpp:38) [43]  (0 ns)
+	'load' operation ('temp_key_load', ../LZW.cpp:38) on array 'temp_key', ../LZW.cpp:28 [44]  (0.79 ns)
+
+ <State 6>: 0.79ns
+The critical path consists of the following:
+	'getelementptr' operation ('temp_key_addr_2', ../LZW.cpp:38) [40]  (0 ns)
+	'load' operation ('hash', ../LZW.cpp:38) on array 'temp_key', ../LZW.cpp:28 [41]  (0.79 ns)
+
+ <State 7>: 0.79ns
+The critical path consists of the following:
+	'load' operation ('hash', ../LZW.cpp:38) on array 'temp_key', ../LZW.cpp:28 [41]  (0.79 ns)
+
+ <State 8>: 0.79ns
+The critical path consists of the following:
+	'load' operation ('temp_key_load_1', ../LZW.cpp:38) on array 'temp_key', ../LZW.cpp:28 [46]  (0.79 ns)
+
+ <State 9>: 1.7ns
+The critical path consists of the following:
+	'load' operation ('temp_key_load_6', ../LZW.cpp:38) on array 'temp_key', ../LZW.cpp:28 [57]  (0.79 ns)
+	'add' operation ('empty_47', ../LZW.cpp:38) [87]  (0.907 ns)
+
+ <State 10>: 1.7ns
+The critical path consists of the following:
+	'load' operation ('temp_key_load_8', ../LZW.cpp:38) on array 'temp_key', ../LZW.cpp:28 [61]  (0.79 ns)
+	'add' operation ('empty_49', ../LZW.cpp:38) [111]  (0.907 ns)
+
+ <State 11>: 1.7ns
+The critical path consists of the following:
+	'load' operation ('temp_key_load_7', ../LZW.cpp:38) on array 'temp_key', ../LZW.cpp:28 [59]  (0.79 ns)
+	'add' operation ('empty_50', ../LZW.cpp:38) [119]  (0.907 ns)
+
+ <State 12>: 1.7ns
+The critical path consists of the following:
+	'load' operation ('temp_key_load_9', ../LZW.cpp:38) on array 'temp_key', ../LZW.cpp:28 [63]  (0.79 ns)
+	'add' operation ('empty_48', ../LZW.cpp:38) [104]  (0.907 ns)
+
+ <State 13>: 1.71ns
+The critical path consists of the following:
+	'load' operation ('temp_key_load_14', ../LZW.cpp:38) on array 'temp_key', ../LZW.cpp:28 [74]  (0.79 ns)
+	'add' operation ('tmp114', ../LZW.cpp:38) [113]  (0.921 ns)
+
+ <State 14>: 2.95ns
+The critical path consists of the following:
+	'load' operation ('temp_key_load_16', ../LZW.cpp:38) on array 'temp_key', ../LZW.cpp:28 [78]  (0.79 ns)
+	'add' operation ('tmp1', ../LZW.cpp:38) [98]  (0 ns)
+	'add' operation ('tmp58', ../LZW.cpp:38) [99]  (1.17 ns)
+	'add' operation ('add_ln41', ../LZW.cpp:41) [129]  (0.989 ns)
+
+ <State 15>: 2.62ns
+The critical path consists of the following:
+	'load' operation ('temp_key_load_18', ../LZW.cpp:38) on array 'temp_key', ../LZW.cpp:28 [83]  (0.79 ns)
+	'add' operation ('tmp', ../LZW.cpp:38) [90]  (0.907 ns)
+	'add' operation ('tmp210', ../LZW.cpp:38) [92]  (0.921 ns)
+
+ <State 16>: 3.63ns
+The critical path consists of the following:
+	'load' operation ('temp_key_load_17', ../LZW.cpp:38) on array 'temp_key', ../LZW.cpp:28 [80]  (0.79 ns)
+	'add' operation ('add_ln41_2', ../LZW.cpp:41) [131]  (0.948 ns)
+	'add' operation ('add_ln41_3', ../LZW.cpp:41) [133]  (0.962 ns)
+	'add' operation ('hash', ../LZW.cpp:41) [135]  (0.927 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+	State 13
+	State 14
+	State 15
+	State 16
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

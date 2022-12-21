@@ -1,0 +1,2953 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../../LZW.cpp in debug mode
+   Generating csim.exe
+T	84		Th	code: 256	
+h	104		he	code: 257	
+e	101		e 	code: 258	
+ 	32		 L	code: 259	
+L	76		Li	code: 260	
+i	105		it	code: 261	
+t	116		tt	code: 262	
+t	116		tl	code: 263	
+l	108		le	code: 264	
+e 	258		e P	code: 265	
+P	80		Pr	code: 266	
+r	114		ri	code: 267	
+i	105		in	code: 268	
+n	110		nc	code: 269	
+c	99		ce	code: 270	
+e 	258		e C	code: 271	
+C	67		Ch	code: 272	
+h	104		ha	code: 273	
+a	97		ap	code: 274	
+p	112		pt	code: 275	
+t	116		te	code: 276	
+e	101		er	code: 277	
+r	114		r 	code: 278	
+ 	32		 I	code: 279	
+I	73		I
+	code: 280	
+
+	10		
+O	code: 281	
+O	79		On	code: 282	
+nc	269		nce	code: 283	
+e 	258		e w	code: 284	
+w	119		wh	code: 285	
+he	257		hen	code: 286	
+n	110		n 	code: 287	
+ I	279		 I 	code: 288	
+ 	32		 w	code: 289	
+w	119		wa	code: 290	
+a	97		as	code: 291	
+s	115		s 	code: 292	
+ 	32		 s	code: 293	
+s	115		si	code: 294	
+i	105		ix	code: 295	
+x	120		x 	code: 296	
+ 	32		 y	code: 297	
+y	121		ye	code: 298	
+e	101		ea	code: 299	
+a	97		ar	code: 300	
+r	114		rs	code: 301	
+s 	292		s o	code: 302	
+o	111		ol	code: 303	
+l	108		ld	code: 304	
+d	100		d 	code: 305	
+ I 	288		 I s	code: 306	
+s	115		sa	code: 307	
+a	97		aw	code: 308	
+w	119		w 	code: 309	
+ 	32		 a	code: 310	
+a	97		a 	code: 311	
+ 	32		 m	code: 312	
+m	109		ma	code: 313	
+a	97		ag	code: 314	
+g	103		gn	code: 315	
+n	110		ni	code: 316	
+i	105		if	code: 317	
+f	102		fi	code: 318	
+i	105		ic	code: 319	
+ce	270		cen	code: 320	
+n	110		nt	code: 321	
+t	116		t 	code: 322	
+ 	32		 p	code: 323	
+p	112		pi	code: 324	
+ic	319		ict	code: 325	
+t	116		tu	code: 326	
+u	117		ur	code: 327	
+r	114		re	code: 328	
+e 	258		e i	code: 329	
+in	268		in 	code: 330	
+ a	310		 a 	code: 331	
+ 	32		 b	code: 332	
+b	98		bo	code: 333	
+o	111		oo	code: 334	
+o	111		ok	code: 335	
+k	107		k,	code: 336	
+,	44		, 	code: 337	
+ 	32		 c	code: 338	
+c	99		ca	code: 339	
+a	97		al	code: 340	
+l	108		ll	code: 341	
+le	264		led	code: 342	
+d 	305		d T	code: 343	
+T	84		Tr	code: 344	
+r	114		ru	code: 345	
+u	117		ue	code: 346	
+e 	258		e S	code: 347	
+S	83		St	code: 348	
+t	116		to	code: 349	
+o	111		or	code: 350	
+ri	267		rie	code: 351	
+e	101		es	code: 352	
+s 	292		s f	code: 353	
+f	102		fr	code: 354	
+r	114		ro	code: 355	
+o	111		om	code: 356	
+m	109		m 	code: 357	
+ 	32		 N	code: 358	
+N	78		Na	code: 359	
+a	97		at	code: 360	
+tu	326		tur	code: 361	
+re	328		re,	code: 362	
+, 	337		, a	code: 363	
+a	97		ab	code: 364	
+bo	333		bou	code: 365	
+u	117		ut	code: 366	
+t 	322		t t	code: 367	
+t	116		th	code: 368	
+he	257		he 	code: 369	
+ p	323		 pr	code: 370	
+ri	267		rim	code: 371	
+m	109		me	code: 372	
+e	101		ev	code: 373	
+v	118		va	code: 374	
+al	340		al 	code: 375	
+ 	32		 f	code: 376	
+f	102		fo	code: 377	
+or	350		ore	code: 378	
+es	352		est	code: 379	
+t	116		t.	code: 380	
+.	46		. 	code: 381	
+ I	279		 It	code: 382	
+t 	322		t w	code: 383	
+wa	290		was	code: 384	
+s 	292		s a	code: 385	
+a 	311		a p	code: 386	
+pi	324		pic	code: 387	
+c	99		ct	code: 388	
+tur	361		ture	code: 389	
+e 	258		e o	code: 390	
+o	111		of	code: 391	
+f	102		f 	code: 392	
+ a 	331		 a b	code: 393	
+bo	333		boa	code: 394	
+a 	311		a c	code: 395	
+c	99		co	code: 396	
+o	111		on	code: 397	
+n	110		ns	code: 398	
+s	115		st	code: 399	
+t	116		tr	code: 400	
+ri	267		ric	code: 401	
+ct	388		cto	code: 402	
+or	350		or 	code: 403	
+ 	32		 i	code: 404	
+in 	330		in t	code: 405	
+th	368		the	code: 406	
+e 	258		e a	code: 407	
+a	97		ac	code: 408	
+ct	388		ct 	code: 409	
+ 	32		 o	code: 410	
+of	391		of 	code: 411	
+ s	293		 sw	code: 412	
+wa	290		wal	code: 413	
+ll	341		llo	code: 414	
+o	111		ow	code: 415	
+w	119		wi	code: 416	
+in	268		ing	code: 417	
+g	103		g 	code: 418	
+ a	310		 an	code: 419	
+n 	287		n a	code: 420	
+a	97		an	code: 421	
+ni	316		nim	code: 422	
+ma	313		mal	code: 423	
+l	108		l.	code: 424	
+. 	381		. H	code: 425	
+H	72		He	code: 426	
+er	277		ere	code: 427	
+e i	329		e is	code: 428	
+s a	385		s a 	code: 429	
+ c	338		 co	code: 430	
+o	111		op	code: 431	
+p	112		py	code: 432	
+y	121		y 	code: 433	
+ o	410		 of	code: 434	
+f 	392		f t	code: 435	
+the	406		the 	code: 436	
+ 	32		 d	code: 437	
+d	100		dr	code: 438	
+r	114		ra	code: 439	
+aw	308		awi	code: 440	
+ing	417		ing.	code: 441	
+.	46		.
+	code: 442	
+
+	10		
+B	code: 443	
+B	66		Bo	code: 444	
+o	111		oa	code: 445	
+a	97		a
+	code: 446	
+
+	10		
+I	code: 447	
+I	73		In	code: 448	
+n 	287		n t	code: 449	
+the 	436		the b	code: 450	
+bo	333		boo	code: 451	
+ok	335		ok 	code: 452	
+ i	404		 it	code: 453	
+t 	322		t s	code: 454	
+sa	307		sai	code: 455	
+i	105		id	code: 456	
+d	100		d:	code: 457	
+:	58		: 	code: 458	
+ 	32		 "	code: 459	
+"	34		"B	code: 460	
+Bo	444		Boa	code: 461	
+a c	395		a co	code: 462	
+on	397		ons	code: 463	
+st	399		str	code: 464	
+ric	401		rict	code: 465	
+to	349		tor	code: 466	
+rs	301		rs 	code: 467	
+ sw	412		 swa	code: 468	
+al	340		all	code: 469	
+l	108		lo	code: 470	
+ow	415		ow 	code: 471	
+ 	32		 t	code: 472	
+the	406		thei	code: 473	
+i	105		ir	code: 474	
+r 	278		r p	code: 475	
+p	112		pr	code: 476	
+re	328		rey	code: 477	
+y 	433		y w	code: 478	
+wh	285		who	code: 479	
+ol	303		ole	code: 480	
+e	101		e,	code: 481	
+, 	337		, w	code: 482	
+wi	416		wit	code: 483	
+th	368		tho	code: 484	
+o	111		ou	code: 485	
+ut	366		ut 	code: 486	
+ c	338		 ch	code: 487	
+he	257		hew	code: 488	
+wi	416		win	code: 489	
+n	110		ng	code: 490	
+g 	418		g i	code: 491	
+it	261		it.	code: 492	
+. 	381		. A	code: 493	
+A	65		Af	code: 494	
+f	102		ft	code: 495	
+te	276		ter	code: 496	
+r 	278		r t	code: 497	
+th	368		tha	code: 498	
+at	360		at 	code: 499	
+ t	472		 th	code: 500	
+he	257		hey	code: 501	
+y 	433		y a	code: 502	
+ar	300		are	code: 503	
+e 	258		e n	code: 504	
+n	110		no	code: 505	
+o	111		ot	code: 506	
+t 	322		t a	code: 507	
+ab	364		abl	code: 508	
+le	264		le 	code: 509	
+ t	472		 to	code: 510	
+o	111		o 	code: 511	
+ m	312		 mo	code: 512	
+o	111		ov	code: 513	
+v	118		ve	code: 514	
+e,	481		e, 	code: 515	
+ an	419		 and	code: 516	
+d 	305		d t	code: 517	
+the	406		they	code: 518	
+y 	433		y s	code: 519	
+s	115		sl	code: 520	
+le	264		lee	code: 521	
+e	101		ep	code: 522	
+p	112		p 	code: 523	
+ th	500		 thr	code: 524	
+ro	355		rou	code: 525	
+u	117		ug	code: 526	
+g	103		gh	code: 527	
+h	104		h 	code: 528	
+ th	500		 the	code: 529	
+e 	258		e s	code: 530	
+si	294		six	code: 531	
+x 	296		x m	code: 532	
+m	109		mo	code: 533	
+on	397		ont	code: 534	
+th	368		ths	code: 535	
+s 	292		s t	code: 536	
+tha	498		that	code: 537	
+t t	367		t th	code: 538	
+hey	501		hey 	code: 539	
+ 	32		 n	code: 540	
+n	110		ne	code: 541	
+e	101		ee	code: 542	
+e	101		ed	code: 543	
+d 	305		d f	code: 544	
+fo	377		for	code: 545	
+r 	278		r d	code: 546	
+d	100		di	code: 547	
+i	105		ig	code: 548	
+g	103		ge	code: 549	
+est	379		esti	code: 550	
+i	105		io	code: 551	
+on	397		on.	code: 552	
+.	46		."	code: 553	
+"	34		"
+	code: 554	
+
+I	447		
+I 	code: 555	
+ p	323		 po	code: 556	
+on	397		ond	code: 557	
+d	100		de	code: 558	
+ere	427		ered	code: 559	
+d 	305		d d	code: 560	
+de	558		dee	code: 561	
+ep	522		epl	code: 562	
+l	108		ly	code: 563	
+y	121		y,	code: 564	
+, 	337		, t	code: 565	
+the	406		then	code: 566	
+n	110		n,	code: 567	
+, 	337		, o	code: 568	
+ov	513		ove	code: 569	
+er	277		er 	code: 570	
+ the	529		 the 	code: 571	
+ a	310		 ad	code: 572	
+d	100		dv	code: 573	
+ve	514		ven	code: 574	
+nt	321		ntu	code: 575	
+ur	327		ure	code: 576	
+es	352		es 	code: 577	
+ of	434		 of 	code: 578	
+ the 	571		 the j	code: 579	
+j	106		ju	code: 580	
+u	117		un	code: 581	
+ng	490		ngl	code: 582	
+le	264		le.	code: 583	
+. A	493		. An	code: 584	
+n	110		nd	code: 585	
+d 	305		d a	code: 586	
+a	97		af	code: 587	
+ft	495		fte	code: 588	
+er 	570		er s	code: 589	
+s	115		so	code: 590	
+om	356		ome	code: 591	
+e w	284		e wo	code: 592	
+or	350		ork	code: 593	
+k	107		k 	code: 594	
+ w	289		 wi	code: 595	
+it	261		ith	code: 596	
+h 	528		h a	code: 597	
+a co	462		a col	code: 598	
+lo	470		lor	code: 599	
+re	328		red	code: 600	
+d 	305		d p	code: 601	
+p	112		pe	code: 602	
+e	101		en	code: 603	
+nc	269		nci	code: 604	
+i	105		il	code: 605	
+l	108		l 	code: 606	
+ I s	306		 I su	code: 607	
+u	117		uc	code: 608	
+c	99		cc	code: 609	
+ce	270		cee	code: 610	
+ed	543		ede	code: 611	
+ed	543		ed 	code: 612	
+ i	404		 in	code: 613	
+n 	287		n m	code: 614	
+ma	313		mak	code: 615	
+k	107		ki	code: 616	
+ing	417		ing 	code: 617	
+ m	312		 my	code: 618	
+y 	433		y f	code: 619	
+fi	318		fir	code: 620	
+rs	301		rst	code: 621	
+t 	322		t d	code: 622	
+dr	438		dra	code: 623	
+awi	440		awin	code: 624	
+ng	490		ng.	code: 625	
+. 	381		. M	code: 626	
+M	77		My	code: 627	
+y 	433		y D	code: 628	
+D	68		Dr	code: 629	
+ra	439		raw	code: 630	
+win	489		wing	code: 631	
+g 	418		g N	code: 632	
+N	78		Nu	code: 633	
+u	117		um	code: 634	
+m	109		mb	code: 635	
+b	98		be	code: 636	
+er 	570		er O	code: 637	
+On	282		One	code: 638	
+e	101		e.	code: 639	
+. 	381		. I	code: 640	
+I	73		It	code: 641	
+t 	322		t l	code: 642	
+lo	470		loo	code: 643	
+ok	335		oke	code: 644	
+ed 	612		ed s	code: 645	
+so	590		som	code: 646	
+me	372		met	code: 647	
+th	368		thi	code: 648	
+ing 	617		ing l	code: 649	
+l	108		li	code: 650	
+i	105		ik	code: 651	
+k	107		ke	code: 652	
+e 	258		e t	code: 653	
+thi	648		this	code: 654	
+s	115		s:	code: 655	
+:	58		:
+	code: 656	
+
+	10		
+H	code: 657	
+H	72		Ha	code: 658	
+at	360		at
+	code: 659	
+
+I 	555		
+I s	code: 660	
+s	115		sh	code: 661	
+h	104		ho	code: 662	
+ow	415		owe	code: 663	
+ed 	612		ed m	code: 664	
+m	109		my	code: 665	
+y 	433		y m	code: 666	
+ma	313		mas	code: 667	
+st	399		ste	code: 668	
+er	277		erp	code: 669	
+pi	324		pie	code: 670	
+e	101		ec	code: 671	
+ce	270		ce 	code: 672	
+ to	510		 to 	code: 673	
+ the 	571		 the g	code: 674	
+g	103		gr	code: 675	
+ro	355		row	code: 676	
+w	119		wn	code: 677	
+n	110		n-	code: 678	
+-	45		-u	code: 679	
+u	117		up	code: 680	
+p	112		ps	code: 681	
+s	115		s,	code: 682	
+, a	363		, an	code: 683	
+nd	585		nd 	code: 684	
+ a	310		 as	code: 685	
+s	115		sk	code: 686	
+ke	652		ked	code: 687	
+d t	517		d th	code: 688	
+he	257		hem	code: 689	
+m 	357		m w	code: 690	
+wh	285		whe	code: 691	
+e	101		et	code: 692	
+the	406		ther	code: 693	
+r t	497		r th	code: 694	
+he 	369		he d	code: 695	
+dra	623		draw	code: 696	
+wing	631		wing 	code: 697	
+ f	376		 fr	code: 698	
+ri	267		rig	code: 699	
+gh	527		ght	code: 700	
+te	276		ten	code: 701	
+ne	541		ned	code: 702	
+d th	688		d the	code: 703	
+e	101		em	code: 704	
+m	109		m.	code: 705	
+.
+	442		.
+B	code: 706	
+B	66		Bu	code: 707	
+ut 	486		ut t	code: 708	
+they	518		they 	code: 709	
+ an	419		 ans	code: 710	
+s	115		sw	code: 711	
+w	119		we	code: 712	
+ered	559		ered:	code: 713	
+: 	458		: "	code: 714	
+"	34		"F	code: 715	
+F	70		Fr	code: 716	
+rig	699		righ	code: 717	
+h	104		ht	code: 718	
+ten	701		ten?	code: 719	
+?	63		? 	code: 720	
+ 	32		 W	code: 721	
+W	87		Wh	code: 722	
+h	104		hy	code: 723	
+y s	519		y sh	code: 724	
+ho	662		hou	code: 725	
+u	117		ul	code: 726	
+ld	304		ld 	code: 727	
+ an	419		 any	code: 728	
+y 	433		y o	code: 729	
+on	397		one	code: 730	
+e 	258		e b	code: 731	
+be	636		be 	code: 732	
+ fr	698		 fri	code: 733	
+ig	548		igh	code: 734	
+ht	718		hte	code: 735	
+en	603		ene	code: 736	
+ed 	612		ed b	code: 737	
+b	98		by	code: 738	
+y a	502		y a 	code: 739	
+ 	32		 h	code: 740	
+ha	273		hat	code: 741	
+t	116		t?	code: 742	
+?	63		?"	code: 743	
+"
+	554		"
+M	code: 744	
+My	627		My 	code: 745	
+ d	437		 dr	code: 746	
+raw	630		rawi	code: 747	
+ing 	617		ing w	code: 748	
+was	384		was 	code: 749	
+ n	540		 no	code: 750	
+ot	506		ot 	code: 751	
+ a 	331		 a p	code: 752	
+pic	387		pict	code: 753	
+ture	389		ture 	code: 754	
+ of 	578		 of a	code: 755	
+a 	311		a h	code: 756	
+hat	741		hat.	code: 757	
+. I	640		. It	code: 758	
+t w	383		t wa	code: 759	
+as	291		as 	code: 760	
+ a p	752		 a pi	code: 761	
+ict	325		ictu	code: 762	
+ure	576		ure 	code: 763	
+ of a	755		 of a 	code: 764	
+ b	332		 bo	code: 765	
+oa	445		oa 	code: 766	
+ co	430		 con	code: 767	
+ns	398		nst	code: 768	
+tr	400		tri	code: 769	
+ict	325		icto	code: 770	
+or 	403		or d	code: 771	
+di	547		dig	code: 772	
+ge	549		ges	code: 773	
+st	399		sti	code: 774	
+ing 	617		ing a	code: 775	
+an	421		an 	code: 776	
+ 	32		 e	code: 777	
+e	101		el	code: 778	
+le	264		lep	code: 779	
+p	112		ph	code: 780	
+ha	273		han	code: 781	
+nt	321		nt.	code: 782	
+. 	381		. B	code: 783	
+Bu	707		But	code: 784	
+t s	454		t si	code: 785	
+in	268		inc	code: 786	
+ce 	672		ce t	code: 787	
+the 	436		the g	code: 788	
+gr	675		gro	code: 789	
+ow	415		own	code: 790	
+n-	678		n-u	code: 791	
+up	680		ups	code: 792	
+s 	292		s w	code: 793	
+we	712		wer	code: 794	
+re	328		re 	code: 795	
+ no	750		 not	code: 796	
+t a	507		t ab	code: 797	
+b	98		bl	code: 798	
+le 	509		le t	code: 799	
+to	349		to 	code: 800	
+ 	32		 u	code: 801	
+un	581		und	code: 802	
+de	558		der	code: 803	
+rst	621		rsta	code: 804	
+an	421		and	code: 805	
+d 	305		d i	code: 806	
+it	261		it,	code: 807	
+, 	337		, I	code: 808	
+I	73		I 	code: 809	
+ m	312		 ma	code: 810	
+a	97		ad	code: 811	
+de	558		de 	code: 812	
+ an	419		 ano	code: 813	
+ot	506		oth	code: 814	
+he	257		her	code: 815	
+r d	546		r dr	code: 816	
+rawi	747		rawin	code: 817	
+ng	490		ng:	code: 818	
+: 	458		: I	code: 819	
+I 	809		I d	code: 820	
+dr	438		dre	code: 821	
+e	101		ew	code: 822	
+w 	309		w t	code: 823	
+the 	436		the i	code: 824	
+in	268		ins	code: 825	
+si	294		sid	code: 826	
+de 	812		de o	code: 827	
+of 	411		of a	code: 828	
+a 	311		a b	code: 829	
+boa	394		boa 	code: 830	
+ con	767		 cons	code: 831	
+str	464		stri	code: 832	
+icto	770		ictor	code: 833	
+r	114		r,	code: 834	
+, 	337		, s	code: 835	
+so	590		so 	code: 836	
+ th	500		 tha	code: 837	
+at 	499		at t	code: 838	
+the g	788		the gr	code: 839	
+row	676		rown	code: 840	
+n-u	791		n-up	code: 841	
+ps	681		ps 	code: 842	
+ co	430		 cou	code: 843	
+ul	726		uld	code: 844	
+d 	305		d s	code: 845	
+s	115		se	code: 846	
+ee	542		ee 	code: 847	
+ it	453		 it 	code: 848	
+ c	338		 cl	code: 849	
+le	264		lea	code: 850	
+ar	300		arl	code: 851	
+ly	563		ly.	code: 852	
+. 	381		. T	code: 853	
+Th	256		The	code: 854	
+e	101		ey	code: 855	
+y a	502		y al	code: 856	
+l	108		lw	code: 857	
+wa	290		way	code: 858	
+y	121		ys	code: 859	
+s 	292		s n	code: 860	
+ne	541		nee	code: 861	
+ed 	612		ed t	code: 862	
+to 	800		to h	code: 863	
+ha	273		hav	code: 864	
+ve	514		ve 	code: 865	
+ th	500		 thi	code: 866	
+ing	417		ings	code: 867	
+s 	292		s e	code: 868	
+e	101		ex	code: 869	
+x	120		xp	code: 870	
+p	112		pl	code: 871	
+l	108		la	code: 872	
+a	97		ai	code: 873	
+in	268		ine	code: 874	
+ed	543		ed.	code: 875	
+. M	626		. My	code: 876	
+y D	628		y Dr	code: 877	
+rawin	817		rawing	code: 878	
+g N	632		g Nu	code: 879	
+um	634		umb	code: 880	
+be	636		ber	code: 881	
+r 	278		r T	code: 882	
+T	84		Tw	code: 883	
+w	119		wo	code: 884	
+o 	511		o l	code: 885	
+loo	643		look	code: 886	
+ked	687		ked 	code: 887	
+ 	32		 l	code: 888	
+li	650		lik	code: 889	
+ke	652		ke 	code: 890	
+ thi	866		 this	code: 891	
+s:	655		s:
+	code: 892	
+
+	10		
+E	code: 893	
+E	69		El	code: 894	
+lep	779		leph	code: 895	
+han	781		hant	code: 896	
+t 	322		t i	code: 897	
+ins	825		insi	code: 898	
+id	456		ide	code: 899	
+e t	653		e th	code: 900	
+he 	369		he b	code: 901	
+boa	394		boa
+	code: 902	
+
+	10		
+T	code: 903	
+The	854		The 	code: 904	
+ 	32		 g	code: 905	
+gro	789		grow	code: 906	
+wn	677		wn-	code: 907	
+-u	679		-up	code: 908	
+ps	681		ps'	code: 909	
+'	39		' 	code: 910	
+ 	32		 r	code: 911	
+re	328		res	code: 912	
+s	115		sp	code: 913	
+p	112		po	code: 914	
+ons	463		onse	code: 915	
+e, 	515		e, t	code: 916	
+this	654		this 	code: 917	
+ t	472		 ti	code: 918	
+i	105		im	code: 919	
+me	372		me,	code: 920	
+, w	482		, wa	code: 921	
+as 	760		as t	code: 922	
+to 	800		to a	code: 923	
+ad	811		adv	code: 924	
+v	118		vi	code: 925	
+i	105		is	code: 926	
+se	846		se 	code: 927	
+ m	312		 me	code: 928	
+e t	653		e to	code: 929	
+o l	885		o la	code: 930	
+a	97		ay	code: 931	
+y a	502		y as	code: 932	
+sid	826		side	code: 933	
+e 	258		e m	code: 934	
+my	665		my 	code: 935	
+ dr	746		 dra	code: 936	
+awin	624		awing	code: 937	
+g	103		gs	code: 938	
+s o	302		s of	code: 939	
+f 	392		f b	code: 940	
+boa 	830		boa c	code: 941	
+co	396		con	code: 942	
+nst	768		nstr	code: 943	
+rict	465		ricto	code: 944	
+or	350		ors	code: 945	
+s,	682		s, 	code: 946	
+ w	289		 wh	code: 947	
+he	257		het	code: 948	
+ther	693		ther 	code: 949	
+ fr	698		 fro	code: 950	
+om	356		om 	code: 951	
+ the 	571		 the i	code: 952	
+insi	898		insid	code: 953	
+de o	827		de or	code: 954	
+r th	694		r the	code: 955	
+e o	390		e ou	code: 956	
+ut	366		uts	code: 957	
+side	933		side,	code: 958	
+, an	683		, and	code: 959	
+d d	560		d de	code: 960	
+ev	373		evo	code: 961	
+ot	506		ote	code: 962	
+e m	934		e my	code: 963	
+ys	859		yse	code: 964	
+el	778		elf	code: 965	
+f 	392		f i	code: 966	
+ins	825		inst	code: 967	
+te	276		tea	code: 968	
+ad	811		ad 	code: 969	
+ to 	673		 to g	code: 970	
+ge	549		geo	code: 971	
+o	111		og	code: 972	
+gr	675		gra	code: 973	
+ap	274		aph	code: 974	
+hy	723		hy,	code: 975	
+, 	337		, h	code: 976	
+h	104		hi	code: 977	
+is	926		ist	code: 978	
+tor	466		tory	code: 979	
+y,	564		y, 	code: 980	
+ a	310		 ar	code: 981	
+ri	267		rit	code: 982	
+th	368		thm	code: 983	
+met	647		meti	code: 984	
+ic	319		ic,	code: 985	
+, and	959		, and 	code: 986	
+ g	905		 gr	code: 987	
+ra	439		ram	code: 988	
+m	109		mm	code: 989	
+ma	313		mar	code: 990	
+r	114		r.	code: 991	
+. T	853		. Th	code: 992	
+hat	741		hat 	code: 993	
+ i	404		 is	code: 994	
+s w	793		s wh	code: 995	
+hy,	975		hy, 	code: 996	
+ a	310		 at	code: 997	
+t th	538		t the	code: 998	
+e a	407		e ag	code: 999	
+ge	549		ge 	code: 1000	
+ of 	578		 of s	code: 1001	
+six	531		six,	code: 1002	
+, I	808		, I 	code: 1003	
+ g	905		 ga	code: 1004	
+a	97		av	code: 1005	
+ve 	865		ve u	code: 1006	
+up	680		up 	code: 1007	
+ wh	947		 wha	code: 1008	
+at 	499		at m	code: 1009	
+m	109		mi	code: 1010	
+igh	734		ight	code: 1011	
+t 	322		t h	code: 1012	
+hav	864		have	code: 1013	
+e b	731		e be	code: 1014	
+ee	542		een	code: 1015	
+n a	420		n a 	code: 1016	
+ ma	810		 mag	code: 1017	
+gn	315		gni	code: 1018	
+if	317		ifi	code: 1019	
+ic	319		ice	code: 1020	
+en	603		ent	code: 1021	
+t 	322		t c	code: 1022	
+ca	339		car	code: 1023	
+re	328		ree	code: 1024	
+er 	570		er a	code: 1025	
+as 	760		as a	code: 1026	
+a p	386		a pa	code: 1027	
+ai	873		ain	code: 1028	
+nt	321		nte	code: 1029	
+er	277		er.	code: 1030	
+. I	640		. I 	code: 1031	
+ h	740		 ha	code: 1032	
+ad 	969		ad b	code: 1033	
+be	636		bee	code: 1034	
+en	603		en 	code: 1035	
+ d	437		 di	code: 1036	
+is	926		ish	code: 1037	
+he	257		hea	code: 1038	
+ar	300		art	code: 1039	
+ten	701		tene	code: 1040	
+ed b	737		ed by	code: 1041	
+y 	433		y t	code: 1042	
+the 	436		the f	code: 1043	
+f	102		fa	code: 1044	
+ai	873		ail	code: 1045	
+l	108		lu	code: 1046	
+ure 	763		ure o	code: 1047	
+of 	411		of m	code: 1048	
+my 	935		my D	code: 1049	
+Dr	629		Dra	code: 1050	
+awing	937		awing 	code: 1051	
+ N	358		 Nu	code: 1052	
+umb	880		umbe	code: 1053	
+er O	637		er On	code: 1054	
+ne	541		ne 	code: 1055	
+ and	516		 and 	code: 1056	
+ my	618		 my 	code: 1057	
+ 	32		 D	code: 1058	
+Dra	1050		Draw	code: 1059	
+wing 	697		wing N	code: 1060	
+Nu	633		Num	code: 1061	
+mb	635		mbe	code: 1062	
+er 	570		er T	code: 1063	
+Tw	883		Two	code: 1064	
+o	111		o.	code: 1065	
+. 	381		. G	code: 1066	
+G	71		Gr	code: 1067	
+rown	840		rown-	code: 1068	
+-up	908		-ups	code: 1069	
+s n	860		s ne	code: 1070	
+ev	373		eve	code: 1071	
+er 	570		er u	code: 1072	
+und	802		unde	code: 1073	
+er	277		ers	code: 1074	
+st	399		sta	code: 1075	
+and	805		and 	code: 1076	
+ any	728		 anyt	code: 1077	
+thi	648		thin	code: 1078	
+ng	490		ng 	code: 1079	
+ b	332		 by	code: 1080	
+y t	1042		y th	code: 1081	
+hem	689		hems	code: 1082	
+se	846		sel	code: 1083	
+l	108		lv	code: 1084	
+ve	514		ves	code: 1085	
+s, 	946		s, a	code: 1086	
+and 	1076		and i	code: 1087	
+it	261		it 	code: 1088	
+ is	994		 is 	code: 1089	
+ ti	918		 tir	code: 1090	
+res	912		reso	code: 1091	
+ome	591		ome 	code: 1092	
+ f	376		 fo	code: 1093	
+or 	403		or c	code: 1094	
+c	99		ch	code: 1095	
+hi	977		hil	code: 1096	
+ld	304		ldr	code: 1097	
+re	328		ren	code: 1098	
+n t	449		n to	code: 1099	
+o 	511		o b	code: 1100	
+be 	732		be a	code: 1101	
+al	340		alw	code: 1102	
+way	858		ways	code: 1103	
+s a	385		s an	code: 1104	
+nd 	684		nd f	code: 1105	
+for	545		fore	code: 1106	
+eve	1071		ever	code: 1107	
+r 	278		r e	code: 1108	
+ex	869		exp	code: 1109	
+pl	871		pla	code: 1110	
+ain	1028		aini	code: 1111	
+ing 	617		ing t	code: 1112	
+thin	1078		thing	code: 1113	
+gs	938		gs 	code: 1114	
+ to 	673		 to t	code: 1115	
+the	406		them	code: 1116	
+m.	705		m.
+	code: 1117	
+
+	10		
+S	code: 1118	
+S	83		So	code: 1119	
+o 	511		o t	code: 1120	
+then	566		then 	code: 1121	
+ I 	288		 I c	code: 1122	
+ch	1095		cho	code: 1123	
+o	111		os	code: 1124	
+se 	927		se a	code: 1125	
+an	421		ano	code: 1126	
+oth	814		othe	code: 1127	
+er 	570		er p	code: 1128	
+pr	476		pro	code: 1129	
+of	391		ofe	code: 1130	
+es	352		ess	code: 1131	
+si	294		sio	code: 1132	
+on	397		on,	code: 1133	
+, and 	986		, and l	code: 1134	
+lea	850		lear	code: 1135	
+r	114		rn	code: 1136	
+ned	702		ned 	code: 1137	
+ to 	673		 to p	code: 1138	
+pi	324		pil	code: 1139	
+lo	470		lot	code: 1140	
+t a	507		t ai	code: 1141	
+ir	474		irp	code: 1142	
+pla	1110		plan	code: 1143	
+ne	541		nes	code: 1144	
+s	115		s.	code: 1145	
+. I 	1031		. I h	code: 1146	
+have	1013		have 	code: 1147	
+ f	376		 fl	code: 1148	
+lo	470		low	code: 1149	
+wn	677		wn 	code: 1150	
+ a 	331		 a l	code: 1151	
+li	650		lit	code: 1152	
+tt	262		ttl	code: 1153	
+le 	509		le o	code: 1154	
+ove	569		over	code: 1155	
+r 	278		r a	code: 1156	
+all	469		all 	code: 1157	
+ p	323		 pa	code: 1158	
+art	1039		arts	code: 1159	
+s of	939		s of 	code: 1160	
+ the 	571		 the w	code: 1161	
+wo	884		wor	code: 1162	
+r	114		rl	code: 1163	
+ld	304		ld;	code: 1164	
+;	59		; 	code: 1165	
+ and 	1056		 and i	code: 1166	
+it 	1088		it i	code: 1167	
+is	926		is 	code: 1168	
+ t	472		 tr	code: 1169	
+ru	345		rue	code: 1170	
+e th	900		e tha	code: 1171	
+at 	499		at g	code: 1172	
+geo	971		geog	code: 1173	
+gra	973		grap	code: 1174	
+ph	780		phy	code: 1175	
+y 	433		y h	code: 1176	
+ha	273		has	code: 1177	
+s 	292		s b	code: 1178	
+bee	1034		been	code: 1179	
+n 	287		n v	code: 1180	
+ve	514		ver	code: 1181	
+r	114		ry	code: 1182	
+y 	433		y u	code: 1183	
+u	117		us	code: 1184	
+se	846		sef	code: 1185	
+f	102		fu	code: 1186	
+ul	726		ul 	code: 1187	
+ to 	673		 to m	code: 1188	
+me	372		me.	code: 1189	
+. A	493		. At	code: 1190	
+t a	507		t a 	code: 1191	
+ g	905		 gl	code: 1192	
+la	872		lan	code: 1193	
+nce	283		nce 	code: 1194	
+ I c	1122		 I ca	code: 1195	
+an 	776		an d	code: 1196	
+di	547		dis	code: 1197	
+sti	774		stin	code: 1198	
+ng	490		ngu	code: 1199	
+u	117		ui	code: 1200	
+ish	1037		ish 	code: 1201	
+ 	32		 C	code: 1202	
+Ch	272		Chi	code: 1203	
+in	268		ina	code: 1204	
+a 	311		a f	code: 1205	
+fr	354		fro	code: 1206	
+om 	951		om A	code: 1207	
+A	65		Ar	code: 1208	
+ri	267		riz	code: 1209	
+z	122		zo	code: 1210	
+on	397		ona	code: 1211	
+a	97		a.	code: 1212	
+. I	640		. If	code: 1213	
+f 	392		f o	code: 1214	
+one	730		one 	code: 1215	
+ g	905		 ge	code: 1216	
+et	692		ets	code: 1217	
+s 	292		s l	code: 1218	
+lo	470		los	code: 1219	
+st	399		st 	code: 1220	
+ in	613		 in 	code: 1221	
+ the 	571		 the n	code: 1222	
+ni	316		nig	code: 1223	
+ght	700		ght,	code: 1224	
+, s	835		, su	code: 1225	
+uc	608		uch	code: 1226	
+h 	528		h k	code: 1227	
+k	107		kn	code: 1228	
+no	505		now	code: 1229	
+w	119		wl	code: 1230	
+led	342		ledg	code: 1231	
+ge 	1000		ge i	code: 1232	
+is 	1168		is v	code: 1233	
+va	374		val	code: 1234	
+lu	1046		lua	code: 1235	
+abl	508		able	code: 1236	
+e.	639		e.
+	code: 1237	
+
+I	447		
+In	code: 1238	
+n t	449		n th	code: 1239	
+he 	369		he c	code: 1240	
+co	396		cou	code: 1241	
+ur	327		urs	code: 1242	
+se 	927		se o	code: 1243	
+of 	411		of t	code: 1244	
+this 	917		this l	code: 1245	
+li	650		lif	code: 1246	
+f	102		fe	code: 1247	
+e 	258		e I	code: 1248	
+I 	809		I h	code: 1249	
+have 	1147		have h	code: 1250	
+ha	273		had	code: 1251	
+d a	586		d a 	code: 1252	
+ gr	987		 gre	code: 1253	
+ea	299		eat	code: 1254	
+t 	322		t m	code: 1255	
+ma	313		man	code: 1256	
+n	110		ny	code: 1257	
+y 	433		y e	code: 1258	
+en	603		enc	code: 1259	
+cou	1241		coun	code: 1260	
+nte	1029		nter	code: 1261	
+rs 	467		rs w	code: 1262	
+wit	483		with	code: 1263	
+h a	597		h a 	code: 1264	
+ gre	1253		 grea	code: 1265	
+at m	1009		at ma	code: 1266	
+an	421		any	code: 1267	
+y 	433		y p	code: 1268	
+pe	602		peo	code: 1269	
+op	431		opl	code: 1270	
+le 	509		le w	code: 1271	
+who	479		who 	code: 1272	
+ ha	1032		 hav	code: 1273	
+ve 	865		ve b	code: 1274	
+been	1179		been 	code: 1275	
+ con	767		 conc	code: 1276	
+ce	270		cer	code: 1277	
+rn	1136		rne	code: 1278	
+ed 	612		ed w	code: 1279	
+with	1263		with 	code: 1280	
+ ma	810		 mat	code: 1281	
+tt	262		tte	code: 1282	
+ers	1074		ers 	code: 1283	
+ of 	578		 of c	code: 1284	
+con	942		cons	code: 1285	
+se	846		seq	code: 1286	
+q	113		qu	code: 1287	
+ue	346		uen	code: 1288	
+nce	283		nce.	code: 1289	
+. I h	1146		. I ha	code: 1290	
+av	1005		ave	code: 1291	
+e 	258		e l	code: 1292	
+li	650		liv	code: 1293	
+ve	514		ved	code: 1294	
+d a 	1252		d a g	code: 1295	
+gr	675		gre	code: 1296	
+eat	1254		eat 	code: 1297	
+ d	437		 de	code: 1298	
+ea	299		eal	code: 1299	
+l 	606		l a	code: 1300	
+a	97		am	code: 1301	
+mo	533		mon	code: 1302	
+ng 	1079		ng g	code: 1303	
+grow	906		grown	code: 1304	
+n-up	841		n-ups	code: 1305	
+s.	1145		s. 	code: 1306	
+ I 	288		 I h	code: 1307	
+have 	1147		have s	code: 1308	
+se	846		see	code: 1309	
+en 	1035		en t	code: 1310	
+them	1116		them 	code: 1311	
+ in	613		 int	code: 1312	
+t	116		ti	code: 1313	
+im	919		ima	code: 1314	
+at	360		ate	code: 1315	
+el	778		ely	code: 1316	
+y, 	980		y, c	code: 1317	
+c	99		cl	code: 1318	
+los	1219		lose	code: 1319	
+e a	407		e at	code: 1320	
+t h	1012		t ha	code: 1321	
+and	805		and.	code: 1322	
+. An	584		. And	code: 1323	
+d th	688		d tha	code: 1324	
+at 	499		at h	code: 1325	
+has	1177		hasn	code: 1326	
+n	110		n'	code: 1327	
+'	39		't	code: 1328	
+t m	1255		t mu	code: 1329	
+uch	1226		uch 	code: 1330	
+ i	404		 im	code: 1331	
+m	109		mp	code: 1332	
+pro	1129		prov	code: 1333	
+ved	1294		ved 	code: 1334	
+ my 	1057		 my o	code: 1335	
+op	431		opi	code: 1336	
+in	268		ini	code: 1337	
+io	551		ion	code: 1338	
+n 	287		n o	code: 1339	
+of t	1244		of th	code: 1340	
+hem	689		hem.	code: 1341	
+.
+	442		.
+W	code: 1342	
+Wh	722		Whe	code: 1343	
+ene	736		enev	code: 1344	
+ver	1181		ver 	code: 1345	
+ I 	288		 I m	code: 1346	
+met	647		met 	code: 1347	
+ o	410		 on	code: 1348	
+ne 	1055		ne o	code: 1349	
+of th	1340		of the	code: 1350	
+em	704		em 	code: 1351	
+ wh	947		 who	code: 1352	
+o 	511		o s	code: 1353	
+see	1309		seem	code: 1354	
+me	372		med	code: 1355	
+d t	517		d to	code: 1356	
+o 	511		o m	code: 1357	
+me	372		me 	code: 1358	
+ at	997		 at 	code: 1359	
+ a	310		 al	code: 1360	
+ll	341		ll 	code: 1361	
+ cl	849		 cle	code: 1362	
+ea	299		ear	code: 1363	
+r	114		r-	code: 1364	
+-	45		-s	code: 1365	
+si	294		sig	code: 1366	
+ght	700		ghte	code: 1367	
+ed	543		ed,	code: 1368	
+, I 	1003		, I t	code: 1369	
+tri	769		trie	code: 1370	
+ed t	862		ed th	code: 1371	
+he 	369		he e	code: 1372	
+exp	1109		expe	code: 1373	
+er	277		eri	code: 1374	
+im	919		ime	code: 1375	
+ent	1021		ent 	code: 1376	
+ of s	1001		 of sh	code: 1377	
+ho	662		how	code: 1378	
+wing 	697		wing h	code: 1379	
+hi	977		him	code: 1380	
+m 	357		m m	code: 1381	
+my D	1049		my Dr	code: 1382	
+rawing	878		rawing 	code: 1383	
+ Nu	1052		 Num	code: 1384	
+mbe	1062		mber	code: 1385	
+r 	278		r O	code: 1386	
+One	638		One,	code: 1387	
+, w	482		, wh	code: 1388	
+hi	977		hic	code: 1389	
+ch	1095		ch 	code: 1390	
+ I h	1307		 I ha	code: 1391	
+ave	1291		ave 	code: 1392	
+ al	1360		 alw	code: 1393	
+ways	1103		ways 	code: 1394	
+ 	32		 k	code: 1395	
+ke	652		kep	code: 1396	
+pt	275		pt.	code: 1397	
+. I 	1031		. I w	code: 1398	
+wo	884		wou	code: 1399	
+uld	844		uld 	code: 1400	
+ tr	1169		 try	code: 1401	
+y t	1042		y to	code: 1402	
+o 	511		o f	code: 1403	
+fi	318		fin	code: 1404	
+nd 	684		nd o	code: 1405	
+ou	485		out	code: 1406	
+t	116		t,	code: 1407	
+, s	835		, so	code: 1408	
+o	111		o,	code: 1409	
+, 	337		, i	code: 1410	
+if	317		if 	code: 1411	
+ this	891		 this 	code: 1412	
+ w	289		 wa	code: 1413	
+as a	1026		as a 	code: 1414	
+ p	323		 pe	code: 1415	
+ers	1074		erso	code: 1416	
+on	397		on 	code: 1417	
+ of 	578		 of t	code: 1418	
+tr	400		tru	code: 1419	
+ue	346		ue 	code: 1420	
+ u	801		 un	code: 1421	
+nd	585		nde	code: 1422	
+ers	1074		erst	code: 1423	
+t	116		ta	code: 1424	
+and	805		andi	code: 1425	
+ing.	441		ing. 	code: 1426	
+ 	32		 B	code: 1427	
+But	784		But,	code: 1428	
+, wh	1388		, who	code: 1429	
+o	111		oe	code: 1430	
+ever	1107		ever 	code: 1431	
+ it 	848		 it w	code: 1432	
+was	384		was,	code: 1433	
+, h	976		, he	code: 1434	
+e, 	515		e, o	code: 1435	
+or 	403		or s	code: 1436	
+sh	661		she	code: 1437	
+e, 	515		e, w	code: 1438	
+wou	1399		woul	code: 1439	
+ld 	727		ld a	code: 1440	
+alw	1102		alwa	code: 1441	
+ay	931		ays	code: 1442	
+s 	292		s s	code: 1443	
+sa	307		say	code: 1444	
+y	121		y:	code: 1445	
+:
+	656		:
+"	code: 1446	
+"	34		"T	code: 1447	
+Th	256		Tha	code: 1448	
+at 	499		at i	code: 1449	
+is 	1168		is a	code: 1450	
+a h	756		a ha	code: 1451	
+at	360		at.	code: 1452	
+."	553		."
+	code: 1453	
+
+T	903		
+Th	code: 1454	
+hen	286		hen 	code: 1455	
+ I 	288		 I w	code: 1456	
+woul	1439		would	code: 1457	
+d 	305		d n	code: 1458	
+ne	541		nev	code: 1459	
+ver 	1345		ver t	code: 1460	
+ta	1424		tal	code: 1461	
+l	108		lk	code: 1462	
+k 	594		k t	code: 1463	
+to 	800		to t	code: 1464	
+that	537		that 	code: 1465	
+ pe	1415		 per	code: 1466	
+rs	301		rso	code: 1467	
+on 	1417		on a	code: 1468	
+ab	364		abo	code: 1469	
+out	1406		out 	code: 1470	
+ bo	765		 boa	code: 1471	
+a co	462		a con	code: 1472	
+nstr	943		nstri	code: 1473	
+ictor	833		ictors	code: 1474	
+s, 	946		s, o	code: 1475	
+or 	403		or p	code: 1476	
+pr	476		pri	code: 1477	
+ime	1375		imev	code: 1478	
+val	1234		val 	code: 1479	
+ fo	1093		 for	code: 1480	
+res	912		rest	code: 1481	
+t	116		ts	code: 1482	
+s, o	1475		s, or	code: 1483	
+r 	278		r s	code: 1484	
+sta	1075		star	code: 1485	
+rs	301		rs.	code: 1486	
+. I w	1398		. I wo	code: 1487	
+ou	485		oul	code: 1488	
+ld 	727		ld b	code: 1489	
+b	98		br	code: 1490	
+ri	267		rin	code: 1491	
+ng 	1079		ng m	code: 1492	
+my	665		mys	code: 1493	
+sel	1083		self	code: 1494	
+f 	392		f d	code: 1495	
+d	100		do	code: 1496	
+own	790		own 	code: 1497	
+ to 	673		 to h	code: 1498	
+hi	977		his	code: 1499	
+s l	1218		s le	code: 1500	
+eve	1071		evel	code: 1501	
+l.	424		l. 	code: 1502	
+ I w	1456		 I wo	code: 1503	
+oul	1488		ould	code: 1504	
+d t	517		d ta	code: 1505	
+al	340		alk	code: 1506	
+k t	1463		k to	code: 1507	
+o 	511		o h	code: 1508	
+him	1380		him 	code: 1509	
+ a	310		 ab	code: 1510	
+bou	365		bout	code: 1511	
+t 	322		t b	code: 1512	
+br	1490		bri	code: 1513	
+id	456		idg	code: 1514	
+ge	549		ge,	code: 1515	
+, and 	986		, and g	code: 1516	
+g	103		go	code: 1517	
+ol	303		olf	code: 1518	
+f	102		f,	code: 1519	
+, and 	986		, and p	code: 1520	
+po	914		pol	code: 1521	
+lit	1152		liti	code: 1522	
+ic	319		ics	code: 1523	
+s, a	1086		s, an	code: 1524	
+nd 	684		nd n	code: 1525	
+ne	541		nec	code: 1526	
+c	99		ck	code: 1527	
+k	107		kt	code: 1528	
+ti	1313		tie	code: 1529	
+es	352		es.	code: 1530	
+. And	1323		. And 	code: 1531	
+ the g	674		 the gr	code: 1532	
+rown-	1068		rown-u	code: 1533	
+up 	1007		up w	code: 1534	
+would	1457		would 	code: 1535	
+ b	332		 be	code: 1536	
+e 	258		e g	code: 1537	
+gre	1296		grea	code: 1538	
+at	360		atl	code: 1539	
+ly	563		ly 	code: 1540	
+ p	323		 pl	code: 1541	
+lea	850		leas	code: 1542	
+se	846		sed	code: 1543	
+d to	1356		d to 	code: 1544	
+ hav	1273		 have	code: 1545	
+e m	934		e me	code: 1546	
+et	692		et 	code: 1547	
+ s	293		 su	code: 1548	
+uch 	1330		uch a	code: 1549	
+a 	311		a s	code: 1550	
+se	846		sen	code: 1551	
+ns	398		nsi	code: 1552	
+i	105		ib	code: 1553	
+bl	798		ble	code: 1554	
+e m	934		e ma	code: 1555	
+an	421		an.	code: 1556	
+.
+	442		.
+O	code: 1557	
+On	282		Onc	code: 1558	
+ce 	672		ce w	code: 1559	
+whe	691		when	code: 1560	
+n 	287		n I	code: 1561	
+I 	809		I w	code: 1562	
+was 	749		was s	code: 1563	
+six	531		six 	code: 1564	
+ y	297		 ye	code: 1565	
+ear	1363		ears	code: 1566	
+s o	302		s ol	code: 1567	
+ld 	727		ld I	code: 1568	
+I 	809		I s	code: 1569	
+sa	307		saw	code: 1570	
+w 	309		w a	code: 1571	
+a 	311		a m	code: 1572	
+ma	313		mag	code: 1573	
+gni	1018		gnif	code: 1574	
+fi	318		fic	code: 1575	
+cen	320		cent	code: 1576	
+t 	322		t p	code: 1577	
+pict	753		pictu	code: 1578	
+ure 	763		ure i	code: 1579	
+in 	330		in a	code: 1580	
+a b	829		a bo	code: 1581	
+oo	334		ook	code: 1582	
+k,	336		k, 	code: 1583	
+ c	338		 ca	code: 1584	
+all	469		alle	code: 1585	
+ed 	612		ed T	code: 1586	
+Tr	344		Tru	code: 1587	
+ue 	1420		ue S	code: 1588	
+St	348		Sto	code: 1589	
+or	350		ori	code: 1590	
+i	105		ie	code: 1591	
+es 	577		es f	code: 1592	
+fro	1206		from	code: 1593	
+m 	357		m N	code: 1594	
+Na	359		Nat	code: 1595	
+ture	389		ture,	code: 1596	
+, a	363		, ab	code: 1597	
+bout	1511		bout 	code: 1598	
+ the 	571		 the p	code: 1599	
+pri	1477		prim	code: 1600	
+me	372		mev	code: 1601	
+val 	1479		val f	code: 1602	
+fore	1106		fores	code: 1603	
+st	399		st.	code: 1604	
+. It	758		. It 	code: 1605	
+ wa	1413		 was	code: 1606	
+s a 	429		s a p	code: 1607	
+pictu	1578		pictur	code: 1608	
+re 	795		re o	code: 1609	
+of a	828		of a 	code: 1610	
+ boa	1471		 boa 	code: 1611	
+ cons	831		 const	code: 1612	
+tri	769		tric	code: 1613	
+cto	402		ctor	code: 1614	
+r 	278		r i	code: 1615	
+in t	405		in th	code: 1616	
+he 	369		he a	code: 1617	
+ac	408		act	code: 1618	
+t 	322		t o	code: 1619	
+of 	411		of s	code: 1620	
+sw	711		swa	code: 1621	
+all	469		allo	code: 1622	
+ow	415		owi	code: 1623	
+ing a	775		ing an	code: 1624	
+n a	420		n an	code: 1625	
+nim	422		nima	code: 1626	
+al	340		al.	code: 1627	
+. H	425		. He	code: 1628	
+ere	427		ere 	code: 1629	
+ is 	1089		 is a	code: 1630	
+a co	462		a cop	code: 1631	
+py	432		py 	code: 1632	
+ of t	1418		 of th	code: 1633	
+he d	695		he dr	code: 1634	
+rawing	878		rawing.	code: 1635	
+.
+B	706		.
+Bo	code: 1636	
+oa	445		oa
+	code: 1637	
+
+In	1238		
+In 	code: 1638	
+ the 	571		 the b	code: 1639	
+boo	451		book	code: 1640	
+k 	594		k i	code: 1641	
+it 	1088		it s	code: 1642	
+sai	455		said	code: 1643	
+d:	457		d: 	code: 1644	
+ "	459		 "B	code: 1645	
+Boa	461		Boa 	code: 1646	
+ const	1612		 constr	code: 1647	
+ricto	944		rictor	code: 1648	
+rs 	467		rs s	code: 1649	
+swa	1621		swal	code: 1650	
+llo	414		llow	code: 1651	
+w t	823		w th	code: 1652	
+he	257		hei	code: 1653	
+ir	474		ir 	code: 1654	
+ pr	370		 pre	code: 1655	
+ey	855		ey 	code: 1656	
+ who	1352		 whol	code: 1657	
+le	264		le,	code: 1658	
+, w	482		, wi	code: 1659	
+ith	596		itho	code: 1660	
+out 	1470		out c	code: 1661	
+ch	1095		che	code: 1662	
+ew	822		ewi	code: 1663	
+ing 	617		ing i	code: 1664	
+it.	492		it. 	code: 1665	
+ 	32		 A	code: 1666	
+Af	494		Aft	code: 1667	
+ter	496		ter 	code: 1668	
+ tha	837		 that	code: 1669	
+t the	998		t they	code: 1670	
+y a	502		y ar	code: 1671	
+re 	795		re n	code: 1672	
+no	505		not	code: 1673	
+t ab	797		t abl	code: 1674	
+le t	799		le to	code: 1675	
+o m	1357		o mo	code: 1676	
+ove	569		ove,	code: 1677	
+, and 	986		, and t	code: 1678	
+they 	709		they s	code: 1679	
+sl	520		sle	code: 1680	
+ee	542		eep	code: 1681	
+p 	523		p t	code: 1682	
+th	368		thr	code: 1683	
+rou	525		roug	code: 1684	
+gh	527		gh 	code: 1685	
+ the 	571		 the s	code: 1686	
+six 	1564		six m	code: 1687	
+mon	1302		mont	code: 1688	
+ths	535		ths 	code: 1689	
+ that	1669		 that 	code: 1690	
+ the	529		 they	code: 1691	
+y 	433		y n	code: 1692	
+nee	861		need	code: 1693	
+d f	544		d fo	code: 1694	
+or d	771		or di	code: 1695	
+ig	548		ige	code: 1696	
+esti	550		estio	code: 1697	
+on.	552		on."	code: 1698	
+"
+	554		"
+I	code: 1699	
+I 	809		I p	code: 1700	
+po	914		pon	code: 1701	
+nde	1422		nder	code: 1702	
+red	600		red 	code: 1703	
+ de	1298		 dee	code: 1704	
+epl	562		eply	code: 1705	
+y, 	980		y, t	code: 1706	
+then	566		then,	code: 1707	
+, o	568		, ov	code: 1708	
+ver t	1460		ver th	code: 1709	
+he a	1617		he ad	code: 1710	
+dv	573		dve	code: 1711	
+ent	1021		entu	code: 1712	
+ure	576		ures	code: 1713	
+s of 	1160		s of t	code: 1714	
+the 	436		the j	code: 1715	
+ju	580		jun	code: 1716	
+ngl	582		ngle	code: 1717	
+e.	639		e. 	code: 1718	
+ A	1666		 An	code: 1719	
+nd 	684		nd a	code: 1720	
+af	587		aft	code: 1721	
+ter 	1668		ter s	code: 1722	
+som	646		some	code: 1723	
+e wo	592		e wor	code: 1724	
+r	114		rk	code: 1725	
+k 	594		k w	code: 1726	
+with 	1280		with a	code: 1727	
+a col	598		a colo	code: 1728	
+ore	378		ored	code: 1729	
+d p	601		d pe	code: 1730	
+enc	1259		enci	code: 1731	
+il	605		il 	code: 1732	
+ I su	607		 I suc	code: 1733	
+cc	609		cce	code: 1734	
+ee	542		eed	code: 1735	
+de	558		ded	code: 1736	
+d i	806		d in	code: 1737	
+n m	614		n ma	code: 1738	
+a	97		ak	code: 1739	
+ki	616		kin	code: 1740	
+ng m	1492		ng my	code: 1741	
+y f	619		y fi	code: 1742	
+ir	474		irs	code: 1743	
+st 	1220		st d	code: 1744	
+draw	696		drawi	code: 1745	
+ing. 	1426		ing. M	code: 1746	
+My 	745		My D	code: 1747	
+Draw	1059		Drawi	code: 1748	
+ing 	617		ing N	code: 1749	
+Num	1061		Numb	code: 1750	
+ber	881		ber 	code: 1751	
+ 	32		 O	code: 1752	
+One	638		One.	code: 1753	
+. It 	1605		. It l	code: 1754	
+look	886		looke	code: 1755	
+ed s	645		ed so	code: 1756	
+ome	591		omet	code: 1757	
+thing	1113		thing 	code: 1758	
+ l	888		 li	code: 1759	
+ik	651		ike	code: 1760	
+e th	900		e thi	code: 1761	
+is	926		is:	code: 1762	
+:
+	656		:
+H	code: 1763	
+Ha	658		Hat	code: 1764	
+t	116		t
+	code: 1765	
+
+I s	660		
+I sh	code: 1766	
+how	1378		howe	code: 1767	
+ed m	664		ed my	code: 1768	
+y m	666		y ma	code: 1769	
+as	291		ast	code: 1770	
+ter	496		terp	code: 1771	
+pie	670		piec	code: 1772	
+ce t	787		ce to	code: 1773	
+o t	1120		o th	code: 1774	
+he 	369		he g	code: 1775	
+grown	1304		grown-	code: 1776	
+-ups	1069		-ups,	code: 1777	
+, and 	986		, and a	code: 1778	
+as	291		ask	code: 1779	
+ked 	887		ked t	code: 1780	
+them 	1311		them w	code: 1781	
+whe	691		whet	code: 1782	
+ther 	949		ther t	code: 1783	
+the 	436		the d	code: 1784	
+drawi	1745		drawin	code: 1785	
+ng 	1079		ng f	code: 1786	
+fr	354		fri	code: 1787	
+ight	1011		ighte	code: 1788	
+ene	736		ened	code: 1789	
+d the	703		d them	code: 1790	
+m.
+	1117		m.
+B	code: 1791	
+But	784		But 	code: 1792	
+ they	1691		 they 	code: 1793	
+ ans	710		 answ	code: 1794	
+wer	794		were	code: 1795	
+ed	543		ed:	code: 1796	
+: "	714		: "F	code: 1797	
+Fr	716		Fri	code: 1798	
+ighte	1788		ighten	code: 1799	
+n	110		n?	code: 1800	
+? 	720		? W	code: 1801	
+Wh	722		Why	code: 1802	
+y sh	724		y sho	code: 1803	
+ould	1504		ould 	code: 1804	
+ any	728		 any 	code: 1805	
+ on	1348		 one	code: 1806	
+e be	1014		e be 	code: 1807	
+ fri	733		 frig	code: 1808	
+ghte	1367		ghten	code: 1809	
+ned 	1137		ned b	code: 1810	
+by	738		by 	code: 1811	
+ a 	331		 a h	code: 1812	
+hat	741		hat?	code: 1813	
+?"	743		?"
+	code: 1814	
+
+	10		
+M	code: 1815	
+My 	745		My d	code: 1816	
+drawin	1785		drawing	code: 1817	
+g 	418		g w	code: 1818	
+was 	749		was n	code: 1819	
+not	1673		not 	code: 1820	
+ a pi	761		 a pic	code: 1821	
+ct	388		ctu	code: 1822	
+ure o	1047		ure of	code: 1823	
+f 	392		f a	code: 1824	
+a ha	1451		a hat	code: 1825	
+t.	380		t. 	code: 1826	
+ It	382		 It 	code: 1827	
+ was	1606		 was 	code: 1828	
+ a pic	1821		 a pict	code: 1829	
+ture 	754		ture o	code: 1830	
+of a 	1610		of a b	code: 1831	
+boa c	941		boa co	code: 1832	
+ons	463		onst	code: 1833	
+tric	1613		trict	code: 1834	
+tor	466		tor 	code: 1835	
+ di	1036		 dig	code: 1836	
+ges	773		gest	code: 1837	
+ti	1313		tin	code: 1838	
+ng 	1079		ng a	code: 1839	
+an 	776		an e	code: 1840	
+el	778		ele	code: 1841	
+ep	522		eph	code: 1842	
+hant	896		hant.	code: 1843	
+. B	783		. Bu	code: 1844	
+ut 	486		ut s	code: 1845	
+si	294		sin	code: 1846	
+nce 	1194		nce t	code: 1847	
+the gr	839		the gro	code: 1848	
+own	790		own-	code: 1849	
+-ups	1069		-ups 	code: 1850	
+ w	289		 we	code: 1851	
+ere 	1629		ere n	code: 1852	
+not 	1820		not a	code: 1853	
+able	1236		able 	code: 1854	
+ to 	673		 to u	code: 1855	
+unde	1073		under	code: 1856	
+rsta	804		rstan	code: 1857	
+nd 	684		nd i	code: 1858	
+it,	807		it, 	code: 1859	
+ I m	1346		 I ma	code: 1860	
+ad	811		ade	code: 1861	
+e a	407		e an	code: 1862	
+not	1673		noth	code: 1863	
+her	815		her 	code: 1864	
+ dra	936		 draw	code: 1865	
+wing	631		wing:	code: 1866	
+: I	819		: I 	code: 1867	
+ dr	746		 dre	code: 1868	
+ew	822		ew 	code: 1869	
+ the i	952		 the in	code: 1870	
+nsi	1552		nsid	code: 1871	
+de o	827		de of	code: 1872	
+f a	1824		f a 	code: 1873	
+ boa 	1611		 boa c	code: 1874	
+cons	1285		const	code: 1875	
+trict	1834		tricto	code: 1876	
+or	350		or,	code: 1877	
+, so	1408		, so 	code: 1878	
+ that 	1690		 that t	code: 1879	
+the gro	1848		the grow	code: 1880	
+wn-	907		wn-u	code: 1881	
+ups	792		ups 	code: 1882	
+ cou	843		 coul	code: 1883	
+ld 	727		ld s	code: 1884	
+see	1309		see 	code: 1885	
+ it 	848		 it c	code: 1886	
+cl	1318		cle	code: 1887	
+ear	1363		earl	code: 1888	
+ly.	852		ly. 	code: 1889	
+ 	32		 T	code: 1890	
+The	854		They	code: 1891	
+y al	856		y alw	code: 1892	
+ways 	1394		ways n	code: 1893	
+need	1693		need 	code: 1894	
+ to h	1498		 to ha	code: 1895	
+ave 	1392		ave t	code: 1896	
+thing	1113		things	code: 1897	
+s e	868		s ex	code: 1898	
+xp	870		xpl	code: 1899	
+la	872		lai	code: 1900	
+ine	874		ined	code: 1901	
+d	100		d.	code: 1902	
+. My	876		. My 	code: 1903	
+ D	1058		 Dr	code: 1904	
+rawing 	1383		rawing N	code: 1905	
+Numb	1750		Numbe	code: 1906	
+er T	1063		er Tw	code: 1907	
+wo	884		wo 	code: 1908	
+ l	888		 lo	code: 1909	
+ook	1582		ooke	code: 1910	
+ed 	612		ed l	code: 1911	
+lik	889		like	code: 1912	
+e thi	1761		e this	code: 1913	
+s:
+	892		s:
+E	code: 1914	
+El	894		Ele	code: 1915	
+eph	1842		epha	code: 1916	
+an	421		ant	code: 1917	
+t i	897		t in	code: 1918	
+nsid	1871		nside	code: 1919	
+e th	900		e the	code: 1920	
+e b	731		e bo	code: 1921	
+oa
+	1637		oa
+T	code: 1922	
+The 	904		The g	code: 1923	
+grown-	1776		grown-u	code: 1924	
+ups	792		ups'	code: 1925	
+' 	910		' r	code: 1926	
+res	912		resp	code: 1927	
+pon	1701		pons	code: 1928	
+se	846		se,	code: 1929	
+, t	565		, th	code: 1930	
+his	1499		his 	code: 1931	
+ ti	918		 tim	code: 1932	
+me,	920		me, 	code: 1933	
+ was 	1828		 was t	code: 1934	
+to a	923		to ad	code: 1935	
+dv	573		dvi	code: 1936	
+is	926		ise	code: 1937	
+e me	1546		e me 	code: 1938	
+ to 	673		 to l	code: 1939	
+la	872		lay	code: 1940	
+y as	932		y asi	code: 1941	
+ide	899		ide 	code: 1942	
+ my 	1057		 my d	code: 1943	
+drawing	1817		drawings	code: 1944	
+s of 	1160		s of b	code: 1945	
+boa co	1832		boa con	code: 1946	
+nstri	1473		nstric	code: 1947	
+ctor	1614		ctors	code: 1948	
+s, 	946		s, w	code: 1949	
+whet	1782		wheth	code: 1950	
+her 	1864		her f	code: 1951	
+from	1593		from 	code: 1952	
+ the in	1870		 the ins	code: 1953	
+side	933		side 	code: 1954	
+ o	410		 or	code: 1955	
+r the	955		r the 	code: 1956	
+ o	410		 ou	code: 1957	
+uts	957		utsi	code: 1958	
+ide	899		ide,	code: 1959	
+, and 	986		, and d	code: 1960	
+de	558		dev	code: 1961	
+v	118		vo	code: 1962	
+ote	962		ote 	code: 1963	
+ my	618		 mys	code: 1964	
+self	1494		self 	code: 1965	
+ in	613		 ins	code: 1966	
+ste	668		stea	code: 1967	
+ad 	969		ad t	code: 1968	
+to 	800		to g	code: 1969	
+geog	1173		geogr	code: 1970	
+ra	439		rap	code: 1971	
+phy	1175		phy,	code: 1972	
+, h	976		, hi	code: 1973	
+ist	978		isto	code: 1974	
+or	350		ory	code: 1975	
+y, 	980		y, a	code: 1976	
+ar	300		ari	code: 1977	
+ith	596		ithm	code: 1978	
+meti	984		metic	code: 1979	
+c	99		c,	code: 1980	
+, and g	1516		, and gr	code: 1981	
+ram	988		ramm	code: 1982	
+mar	990		mar.	code: 1983	
+. Th	992		. Tha	code: 1984	
+at i	1449		at is	code: 1985	
+s wh	995		s why	code: 1986	
+y, a	1976		y, at	code: 1987	
+t the	998		t the 	code: 1988	
+ a	310		 ag	code: 1989	
+ge 	1000		ge o	code: 1990	
+of s	1620		of si	code: 1991	
+ix	295		ix,	code: 1992	
+, I 	1003		, I g	code: 1993	
+g	103		ga	code: 1994	
+ave 	1392		ave u	code: 1995	
+up w	1534		up wh	code: 1996	
+hat 	993		hat m	code: 1997	
+mi	1010		mig	code: 1998	
+ght	700		ght 	code: 1999	
+ have	1545		 have 	code: 2000	
+ be	1536		 bee	code: 2001	
+en 	1035		en a	code: 2002	
+a m	1572		a ma	code: 2003	
+ag	314		agn	code: 2004	
+ni	316		nif	code: 2005	
+fic	1575		fice	code: 2006	
+ent 	1376		ent c	code: 2007	
+car	1023		care	code: 2008	
+ee	542		eer	code: 2009	
+r a	1156		r as	code: 2010	
+s a p	1607		s a pa	code: 2011	
+ain	1028		aint	code: 2012	
+ter	496		ter.	code: 2013	
+. I ha	1290		. I had	code: 2014	
+d 	305		d b	code: 2015	
+been 	1275		been d	code: 2016	
+dis	1197		dish	code: 2017	
+hea	1038		hear	code: 2018	
+r	114		rt	code: 2019	
+tene	1040		tened	code: 2020	
+d b	2015		d by	code: 2021	
+y th	1081		y the	code: 2022	
+e 	258		e f	code: 2023	
+fa	1044		fai	code: 2024	
+il	605		ilu	code: 2025	
+ure of	1823		ure of 	code: 2026	
+ my 	1057		 my D	code: 2027	
+Drawi	1748		Drawin	code: 2028	
+ng 	1079		ng N	code: 2029	
+Numbe	1906		Number	code: 2030	
+r O	1386		r On	code: 2031	
+ne 	1055		ne a	code: 2032	
+and 	1076		and m	code: 2033	
+my Dr	1382		my Dra	code: 2034	
+awing 	1051		awing N	code: 2035	
+Number	2030		Number 	code: 2036	
+ T	1890		 Tw	code: 2037	
+wo	884		wo.	code: 2038	
+. G	1066		. Gr	code: 2039	
+rown-u	1533		rown-up	code: 2040	
+ps 	842		ps n	code: 2041	
+nev	1459		neve	code: 2042	
+er u	1072		er un	code: 2043	
+nder	1702		nders	code: 2044	
+sta	1075		stan	code: 2045	
+nd a	1720		nd an	code: 2046	
+ny	1257		nyt	code: 2047	
+thing 	1758		thing b	code: 2048	
+by 	1811		by t	code: 2049	
+them	1116		thems	code: 2050	
+sel	1083		selv	code: 2051	
+ves	1085		ves,	code: 2052	
+, and 	986		, and i	code: 2053	
+it i	1167		it is	code: 2054	
+s t	536		s ti	code: 2055	
+ir	474		ire	code: 2056	
+es	352		eso	code: 2057	
+ome 	1092		ome f	code: 2058	
+for	545		for 	code: 2059	
+ ch	487		 chi	code: 2060	
+il	605		ild	code: 2061	
+dre	821		dren	code: 2062	
+n to	1099		n to 	code: 2063	
+ be	1536		 be 	code: 2064	
+ alw	1393		 alwa	code: 2065	
+ays	1442		ays 	code: 2066	
+ and 	1056		 and f	code: 2067	
+fore	1106		forev	code: 2068	
+ver 	1345		ver e	code: 2069	
+exp	1109		expl	code: 2070	
+lai	1900		lain	code: 2071	
+ni	316		nin	code: 2072	
+ng 	1079		ng t	code: 2073	
+things	1897		things 	code: 2074	
+ to t	1115		 to th	code: 2075	
+hem.	1341		hem.
+	code: 2076	
+
+S	1118		
+So	code: 2077	
+o th	1774		o the	code: 2078	
+en 	1035		en I	code: 2079	
+I 	809		I c	code: 2080	
+cho	1123		chos	code: 2081	
+se a	1125		se an	code: 2082	
+noth	1863		nothe	code: 2083	
+er p	1128		er pr	code: 2084	
+ro	355		rof	code: 2085	
+fe	1247		fes	code: 2086	
+s	115		ss	code: 2087	
+sio	1132		sion	code: 2088	
+n,	567		n, 	code: 2089	
+ and 	1056		 and l	code: 2090	
+lear	1135		learn	code: 2091	
+ned 	1137		ned t	code: 2092	
+to 	800		to p	code: 2093	
+pil	1139		pilo	code: 2094	
+ot 	751		ot a	code: 2095	
+ai	873		air	code: 2096	
+r	114		rp	code: 2097	
+plan	1143		plane	code: 2098	
+es.	1530		es. 	code: 2099	
+ I ha	1391		 I hav	code: 2100	
+ve 	865		ve f	code: 2101	
+f	102		fl	code: 2102	
+low	1149		lown	code: 2103	
+n a 	1016		n a l	code: 2104	
+lit	1152		litt	code: 2105	
+tl	263		tle	code: 2106	
+e o	390		e ov	code: 2107	
+ver 	1345		ver a	code: 2108	
+all 	1157		all p	code: 2109	
+p	112		pa	code: 2110	
+arts	1159		arts 	code: 2111	
+ of th	1633		 of the	code: 2112	
+e wor	1724		e worl	code: 2113	
+ld;	1164		ld; 	code: 2114	
+ and i	1166		 and it	code: 2115	
+t i	897		t is	code: 2116	
+s t	536		s tr	code: 2117	
+rue	1170		rue 	code: 2118	
+ that 	1690		 that g	code: 2119	
+geogr	1970		geogra	code: 2120	
+aph	974		aphy	code: 2121	
+y h	1176		y ha	code: 2122	
+as 	760		as b	code: 2123	
+been 	1275		been v	code: 2124	
+ver	1181		very	code: 2125	
+y u	1183		y us	code: 2126	
+sef	1185		sefu	code: 2127	
+ul 	1187		ul t	code: 2128	
+to 	800		to m	code: 2129	
+me.	1189		me. 	code: 2130	
+ A	1666		 At	code: 2131	
+t a 	1191		t a g	code: 2132	
+g	103		gl	code: 2133	
+lan	1193		lanc	code: 2134	
+ce 	672		ce I	code: 2135	
+I c	2080		I ca	code: 2136	
+an d	1196		an di	code: 2137	
+ist	978		isti	code: 2138	
+ing	417		ingu	code: 2139	
+ui	1200		uis	code: 2140	
+sh	661		sh 	code: 2141	
+ C	1202		 Ch	code: 2142	
+hi	977		hin	code: 2143	
+n	110		na	code: 2144	
+a f	1205		a fr	code: 2145	
+ro	355		rom	code: 2146	
+m 	357		m A	code: 2147	
+Ar	1208		Ari	code: 2148	
+i	105		iz	code: 2149	
+zo	1210		zon	code: 2150	
+na	2144		na.	code: 2151	
+. If	1213		. If 	code: 2152	
+ one	1806		 one 	code: 2153	
+ ge	1216		 get	code: 2154	
+ts	1482		ts 	code: 2155	
+ lo	1909		 los	code: 2156	
+st 	1220		st i	code: 2157	
+in th	1616		in the	code: 2158	
+e n	504		e ni	code: 2159	
+ight	1011		ight,	code: 2160	
+, su	1225		, suc	code: 2161	
+ch 	1390		ch k	code: 2162	
+kn	1228		kno	code: 2163	
+ow	415		owl	code: 2164	
+ledg	1231		ledge	code: 2165	
+e is	428		e is 	code: 2166	
+ 	32		 v	code: 2167	
+val	1234		valu	code: 2168	
+u	117		ua	code: 2169	
+able	1236		able.	code: 2170	
+.
+	442		.
+I	code: 2171	
+In	448		In 	code: 2172	
+ the 	571		 the c	code: 2173	
+cou	1241		cour	code: 2174	
+rs	301		rse	code: 2175	
+e o	390		e of	code: 2176	
+f t	435		f th	code: 2177	
+his 	1931		his l	code: 2178	
+lif	1246		life	code: 2179	
+e I	1248		e I 	code: 2180	
+ have 	2000		 have h	code: 2181	
+had	1251		had 	code: 2182	
+ a 	331		 a g	code: 2183	
+grea	1538		great	code: 2184	
+t m	1255		t ma	code: 2185	
+any	1267		any 	code: 2186	
+ e	777		 en	code: 2187	
+nc	269		nco	code: 2188	
+ou	485		oun	code: 2189	
+nter	1261		nters	code: 2190	
+s w	793		s wi	code: 2191	
+ith	596		ith 	code: 2192	
+ a g	2183		 a gr	code: 2193	
+re	328		rea	code: 2194	
+at ma	1266		at man	code: 2195	
+ny	1257		ny 	code: 2196	
+ pe	1415		 peo	code: 2197	
+opl	1270		ople	code: 2198	
+e w	284		e wh	code: 2199	
+ho	662		ho 	code: 2200	
+ have 	2000		 have b	code: 2201	
+been 	1275		been c	code: 2202	
+con	942		conc	code: 2203	
+cer	1277		cern	code: 2204	
+ned 	1137		ned w	code: 2205	
+with 	1280		with m	code: 2206	
+ma	313		mat	code: 2207	
+tte	1282		tter	code: 2208	
+rs 	467		rs o	code: 2209	
+of 	411		of c	code: 2210	
+cons	1285		conse	code: 2211	
+e	101		eq	code: 2212	
+qu	1287		que	code: 2213	
+enc	1259		ence	code: 2214	
+e. 	1718		e. I	code: 2215	
+I h	1249		I ha	code: 2216	
+ave 	1392		ave l	code: 2217	
+liv	1293		live	code: 2218	
+ed 	612		ed a	code: 2219	
+a 	311		a g	code: 2220	
+great	2184		great 	code: 2221	
+ de	1298		 dea	code: 2222	
+al 	375		al a	code: 2223	
+am	1301		amo	code: 2224	
+on	397		ong	code: 2225	
+g 	418		g g	code: 2226	
+grown-u	1924		grown-up	code: 2227	
+ps	681		ps.	code: 2228	
+. I ha	1290		. I hav	code: 2229	
+ve 	865		ve s	code: 2230	
+see	1309		seen	code: 2231	
+n th	1239		n the	code: 2232	
+em 	1351		em i	code: 2233	
+in	268		int	code: 2234	
+ti	1313		tim	code: 2235	
+mat	2207		mate	code: 2236	
+ely	1316		ely,	code: 2237	
+, 	337		, c	code: 2238	
+cl	1318		clo	code: 2239	
+os	1124		ose	code: 2240	
+e at	1320		e at 	code: 2241	
+ ha	1032		 han	code: 2242	
+nd	585		nd.	code: 2243	
+. And 	1531		. And t	code: 2244	
+that 	1465		that h	code: 2245	
+hasn	1326		hasn'	code: 2246	
+'t	1328		't 	code: 2247	
+ m	312		 mu	code: 2248	
+uch 	1330		uch i	code: 2249	
+im	919		imp	code: 2250	
+prov	1333		prove	code: 2251	
+ed my	1768		ed my 	code: 2252	
+ o	410		 op	code: 2253	
+pi	324		pin	code: 2254	
+ni	316		nio	code: 2255	
+on 	1417		on o	code: 2256	
+of the	1350		of them	code: 2257	
+m.
+	1117		m.
+W	code: 2258	
+Whe	1343		When	code: 2259	
+neve	2042		never	code: 2260	
+r 	278		r I	code: 2261	
+I 	809		I m	code: 2262	
+met 	1347		met o	code: 2263	
+one 	1215		one o	code: 2264	
+of them	2257		of them 	code: 2265	
+ who	1352		 who 	code: 2266	
+ s	293		 se	code: 2267	
+ee	542		eem	code: 2268	
+med	1355		med 	code: 2269	
+ to m	1188		 to me	code: 2270	
+e at 	2241		e at a	code: 2271	
+all 	1157		all c	code: 2272	
+cle	1887		clea	code: 2273	
+ar	300		ar-	code: 2274	
+-s	1365		-si	code: 2275	
+ighte	1788		ighted	code: 2276	
+d	100		d,	code: 2277	
+, I t	1369		, I tr	code: 2278	
+rie	351		ried	code: 2279	
+d the	703		d the 	code: 2280	
+ e	777		 ex	code: 2281	
+xp	870		xpe	code: 2282	
+eri	1374		erim	code: 2283	
+me	372		men	code: 2284	
+nt	321		nt 	code: 2285	
+ of sh	1377		 of sho	code: 2286	
+owi	1623		owin	code: 2287	
+ng 	1079		ng h	code: 2288	
+him 	1509		him m	code: 2289	
+my Dra	2034		my Draw	code: 2290	
+wing N	1060		wing Nu	code: 2291	
+umbe	1053		umber	code: 2292	
+r On	2031		r One	code: 2293	
+e, w	1438		e, wh	code: 2294	
+hic	1389		hich	code: 2295	
+h 	528		h I	code: 2296	
+I ha	2216		I hav	code: 2297	
+ve 	865		ve a	code: 2298	
+alwa	1441		alway	code: 2299	
+ys	859		ys 	code: 2300	
+ k	1395		 ke	code: 2301	
+ep	522		ept	code: 2302	
+t. 	1826		t. I	code: 2303	
+I w	1562		I wo	code: 2304	
+ould 	1804		ould t	code: 2305	
+tr	400		try	code: 2306	
+y to	1402		y to 	code: 2307	
+ f	376		 fi	code: 2308	
+in	268		ind	code: 2309	
+d 	305		d o	code: 2310	
+out	1406		out,	code: 2311	
+, so	1408		, so,	code: 2312	
+, i	1410		, if	code: 2313	
+f th	2177		f thi	code: 2314	
+is 	1168		is w	code: 2315	
+was 	749		was a	code: 2316	
+a p	386		a pe	code: 2317	
+erso	1416		erson	code: 2318	
+n o	1339		n of	code: 2319	
+f t	435		f tr	code: 2320	
+rue 	2118		rue u	code: 2321	
+under	1856		unders	code: 2322	
+stan	2045		stand	code: 2323	
+di	547		din	code: 2324	
+ng.	625		ng. 	code: 2325	
+ B	1427		 Bu	code: 2326	
+ut	366		ut,	code: 2327	
+, who	1429		, whoe	code: 2328	
+ever 	1431		ever i	code: 2329	
+it 	1088		it w	code: 2330	
+was,	1433		was, 	code: 2331	
+ h	740		 he	code: 2332	
+e, o	1435		e, or	code: 2333	
+r s	1484		r sh	code: 2334	
+he	257		he,	code: 2335	
+, w	482		, wo	code: 2336	
+ould 	1804		ould a	code: 2337	
+alway	2299		always	code: 2338	
+s s	1443		s sa	code: 2339	
+ay	931		ay:	code: 2340	
+:
+"	1446		:
+"T	code: 2341	
+Tha	1448		That	code: 2342	
+t is	2116		t is 	code: 2343	
+ a h	1812		 a ha	code: 2344	
+at.	1452		at."	code: 2345	
+"
+	554		"
+T	code: 2346	
+The	854		Then	code: 2347	
+n I	1561		n I 	code: 2348	
+ w	289		 wo	code: 2349	
+ould 	1804		ould n	code: 2350	
+never	2260		never 	code: 2351	
+ t	472		 ta	code: 2352	
+alk	1506		alk 	code: 2353	
+ to th	2075		 to tha	code: 2354	
+at 	499		at p	code: 2355	
+pe	602		per	code: 2356	
+rso	1467		rson	code: 2357	
+n a	420		n ab	code: 2358	
+bout 	1598		bout b	code: 2359	
+boa con	1946		boa cons	code: 2360	
+stri	832		stric	code: 2361	
+ctors	1948		ctors,	code: 2362	
+, o	568		, or	code: 2363	
+r p	475		r pr	code: 2364	
+rim	371		rime	code: 2365	
+ev	373		eva	code: 2366	
+al 	375		al f	code: 2367	
+fores	1603		forest	code: 2368	
+ts	1482		ts,	code: 2369	
+, or	2363		, or 	code: 2370	
+ s	293		 st	code: 2371	
+ta	1424		tar	code: 2372	
+rs.	1486		rs. 	code: 2373	
+ I wo	1503		 I wou	code: 2374	
+uld 	1400		uld b	code: 2375	
+bri	1513		brin	code: 2376	
+ng my	1741		ng mys	code: 2377	
+self 	1965		self d	code: 2378	
+do	1496		dow	code: 2379	
+wn 	1150		wn t	code: 2380	
+to h	863		to hi	code: 2381	
+is 	1168		is l	code: 2382	
+le	264		lev	code: 2383	
+ve	514		vel	code: 2384	
+l. 	1502		l. I	code: 2385	
+I wo	2304		I wou	code: 2386	
+uld 	1400		uld t	code: 2387	
+tal	1461		talk	code: 2388	
+k to	1507		k to 	code: 2389	
+ h	740		 hi	code: 2390	
+im	919		im 	code: 2391	
+ ab	1510		 abo	code: 2392	
+out 	1470		out b	code: 2393	
+bri	1513		brid	code: 2394	
+d	100		dg	code: 2395	
+ge,	1515		ge, 	code: 2396	
+ and 	1056		 and g	code: 2397	
+go	1517		gol	code: 2398	
+l	108		lf	code: 2399	
+f,	1519		f, 	code: 2400	
+ and 	1056		 and p	code: 2401	
+pol	1521		poli	code: 2402	
+it	261		iti	code: 2403	
+ics	1523		ics,	code: 2404	
+, and 	986		, and n	code: 2405	
+nec	1526		neck	code: 2406	
+kt	1528		kti	code: 2407	
+ie	1591		ies	code: 2408	
+s. 	1306		s. A	code: 2409	
+A	65		An	code: 2410	
+nd 	684		nd t	code: 2411	
+the grow	1880		the grown	code: 2412	
+n-up	841		n-up 	code: 2413	
+ wo	2349		 wou	code: 2414	
+uld b	2375		uld be	code: 2415	
+e g	1537		e gr	code: 2416	
+rea	2194		reat	code: 2417	
+tl	263		tly	code: 2418	
+y p	1268		y pl	code: 2419	
+leas	1542		lease	code: 2420	
+ed t	862		ed to	code: 2421	
+o h	1508		o ha	code: 2422	
+ave 	1392		ave m	code: 2423	
+met 	1347		met s	code: 2424	
+s	115		su	code: 2425	
+uch a	1549		uch a 	code: 2426	
+ se	2267		 sen	code: 2427	
+nsi	1552		nsib	code: 2428	
+ble	1554		ble 	code: 2429	
+ ma	810		 man	code: 2430	
+n	110		n.	code: 2431	
+.
+O	1557		.
+On	code: 2432	
+nce 	1194		nce w	code: 2433	
+when	1560		when 	code: 2434	
+ I w	1456		 I wa	code: 2435	
+as 	760		as s	code: 2436	
+six 	1564		six y	code: 2437	
+ye	298		yea	code: 2438	
+ar	300		ars	code: 2439	
+s ol	1567		s old	code: 2440	
+d 	305		d I	code: 2441	
+I s	1569		I sa	code: 2442	
+aw	308		aw 	code: 2443	
+ a 	331		 a m	code: 2444	
+mag	1573		magn	code: 2445	
+nif	2005		nifi	code: 2446	
+ice	1020		icen	code: 2447	
+nt 	2285		nt p	code: 2448	
+pictur	1608		picture	code: 2449	
+e i	329		e in	code: 2450	
+n a 	1016		n a b	code: 2451	
+book	1640		book,	code: 2452	
+, c	2238		, ca	code: 2453	
+alle	1585		alled	code: 2454	
+d T	343		d Tr	code: 2455	
+rue 	2118		rue S	code: 2456	
+Sto	1589		Stor	code: 2457	
+rie	351		ries	code: 2458	
+s f	353		s fr	code: 2459	
+rom	2146		rom 	code: 2460	
+ N	358		 Na	code: 2461	
+at	360		atu	code: 2462	
+ure	576		ure,	code: 2463	
+, ab	1597		, abo	code: 2464	
+out 	1470		out t	code: 2465	
+the 	436		the p	code: 2466	
+prim	1600		prime	code: 2467	
+eva	2366		eval	code: 2468	
+l 	606		l f	code: 2469	
+forest	2368		forest.	code: 2470	
+. It 	1605		. It w	code: 2471	
+was a	2316		was a 	code: 2472	
+ p	323		 pi	code: 2473	
+ictu	762		ictur	code: 2474	
+re o	1609		re of	code: 2475	
+f a 	1873		f a b	code: 2476	
+boa cons	2360		boa const	code: 2477	
+tricto	1876		trictor	code: 2478	
+r i	1615		r in	code: 2479	
+n the	2232		n the 	code: 2480	
+ a	310		 ac	code: 2481	
+ct 	409		ct o	code: 2482	
+of s	1620		of sw	code: 2483	
+wal	413		wall	code: 2484	
+low	1149		lowi	code: 2485	
+ing an	1624		ing an 	code: 2486	
+ an	419		 ani	code: 2487	
+ima	1314		imal	code: 2488	
+l. 	1502		l. H	code: 2489	
+He	426		Her	code: 2490	
+re 	795		re i	code: 2491	
+is a	1450		is a 	code: 2492	
+ co	430		 cop	code: 2493	
+py 	1632		py o	code: 2494	
+of the	1350		of the 	code: 2495	
+ draw	1865		 drawi	code: 2496	
+ing.	441		ing.
+	code: 2497	
+
+B	443		
+Bo	code: 2498	
+oa
+	1637		oa
+I	code: 2499	
+In 	2172		In t	code: 2500	
+the b	450		the bo	code: 2501	
+ook	1582		ook 	code: 2502	
+ it 	848		 it s	code: 2503	
+said	1643		said:	code: 2504	
+: "	714		: "B	code: 2505	
+Boa 	1646		Boa c	code: 2506	
+const	1875		constr	code: 2507	
+rictor	1648		rictors	code: 2508	
+s s	1443		s sw	code: 2509	
+wall	2484		wallo	code: 2510	
+ow 	471		ow t	code: 2511	
+thei	473		their	code: 2512	
+r pr	2364		r pre	code: 2513	
+ey 	1656		ey w	code: 2514	
+who	479		whol	code: 2515	
+le,	1658		le, 	code: 2516	
+ wi	595		 wit	code: 2517	
+tho	484		thou	code: 2518	
+ut 	486		ut c	code: 2519	
+che	1662		chew	code: 2520	
+wing 	697		wing i	code: 2521	
+it. 	1665		it. A	code: 2522	
+Aft	1667		Afte	code: 2523	
+er 	570		er t	code: 2524	
+that 	1465		that t	code: 2525	
+they 	709		they a	code: 2526	
+are	503		are 	code: 2527	
+ not	796		 not 	code: 2528	
+ ab	1510		 abl	code: 2529	
+le to	1675		le to 	code: 2530	
+ mo	512		 mov	code: 2531	
+ve	514		ve,	code: 2532	
+, and t	1678		, and th	code: 2533	
+hey 	539		hey s	code: 2534	
+sle	1680		slee	code: 2535	
+ep	522		ep 	code: 2536	
+ thr	524		 thro	code: 2537	
+ou	485		oug	code: 2538	
+gh 	1685		gh t	code: 2539	
+the 	436		the s	code: 2540	
+six m	1687		six mo	code: 2541	
+ont	534		onth	code: 2542	
+h	104		hs	code: 2543	
+s t	536		s th	code: 2544	
+hat 	993		hat t	code: 2545	
+they 	709		they n	code: 2546	
+need 	1894		need f	code: 2547	
+for 	2059		for d	code: 2548	
+dig	772		dige	code: 2549	
+estio	1697		estion	code: 2550	
+n.	2431		n."	code: 2551	
+"
+I	1699		"
+I 	code: 2552	
+ po	556		 pon	code: 2553	
+nder	1702		ndere	code: 2554	
+ed 	612		ed d	code: 2555	
+dee	561		deep	code: 2556	
+pl	871		ply	code: 2557	
+y, t	1706		y, th	code: 2558	
+hen	286		hen,	code: 2559	
+, ov	1708		, ove	code: 2560	
+er t	2524		er th	code: 2561	
+he ad	1710		he adv	code: 2562	
+ven	574		vent	code: 2563	
+ture	389		tures	code: 2564	
+s of t	1714		s of th	code: 2565	
+he 	369		he j	code: 2566	
+jun	1716		jung	code: 2567	
+gl	2133		gle	code: 2568	
+e. 	1718		e. A	code: 2569	
+An	2410		And	code: 2570	
+d a	586		d af	code: 2571	
+fte	588		fter	code: 2572	
+r s	1484		r so	code: 2573	
+ome 	1092		ome w	code: 2574	
+wor	1162		work	code: 2575	
+k w	1726		k wi	code: 2576	
+ith 	2192		ith a	code: 2577	
+a colo	1728		a color	code: 2578	
+red 	1703		red p	code: 2579	
+pe	602		pen	code: 2580	
+nci	604		ncil	code: 2581	
+l 	606		l I	code: 2582	
+I s	1569		I su	code: 2583	
+uc	608		ucc	code: 2584	
+cee	610		ceed	code: 2585	
+ded	1736		ded 	code: 2586	
+ in 	1221		 in m	code: 2587	
+mak	615		maki	code: 2588	
+ing 	617		ing m	code: 2589	
+my 	935		my f	code: 2590	
+fir	620		firs	code: 2591	
+st d	1744		st dr	code: 2592	
+rawing.	1635		rawing. 	code: 2593	
+ 	32		 M	code: 2594	
+My D	1747		My Dr	code: 2595	
+rawing N	1905		rawing Nu	code: 2596	
+umber	2292		umber 	code: 2597	
+ O	1752		 On	code: 2598	
+ne	541		ne.	code: 2599	
+. It l	1754		. It lo	code: 2600	
+ooke	1910		ooked	code: 2601	
+d s	845		d so	code: 2602	
+omet	1757		ometh	code: 2603	
+hin	2143		hing	code: 2604	
+g 	418		g l	code: 2605	
+like	1912		like 	code: 2606	
+ this	891		 this:	code: 2607	
+:
+H	1763		:
+Ha	code: 2608	
+at
+	659		at
+I	code: 2609	
+I s	1569		I sh	code: 2610	
+howe	1767		howed	code: 2611	
+d 	305		d m	code: 2612	
+my 	935		my m	code: 2613	
+mas	667		mast	code: 2614	
+terp	1771		terpi	code: 2615	
+ie	1591		iec	code: 2616	
+ce to	1773		ce to 	code: 2617	
+ the gr	1532		 the gro	code: 2618	
+own-	1849		own-u	code: 2619	
+ups	792		ups,	code: 2620	
+, and a	1778		, and as	code: 2621	
+sk	686		ske	code: 2622	
+ed th	1371		ed the	code: 2623	
+em 	1351		em w	code: 2624	
+wheth	1950		whethe	code: 2625	
+er th	2561		er the	code: 2626	
+e 	258		e d	code: 2627	
+drawing	1817		drawing 	code: 2628	
+ frig	1808		 frigh	code: 2629	
+hte	735		hten	code: 2630	
+ned t	2092		ned th	code: 2631	
+hem.
+	2076		hem.
+B	code: 2632	
+But 	1792		But t	code: 2633	
+they a	2526		they an	code: 2634	
+ns	398		nsw	code: 2635	
+were	1795		wered	code: 2636	
+d: 	1644		d: "	code: 2637	
+"F	715		"Fr	code: 2638	
+righ	717		right	code: 2639	
+ten?	719		ten? 	code: 2640	
+ W	721		 Wh	code: 2641	
+hy	723		hy 	code: 2642	
+ s	293		 sh	code: 2643	
+hou	725		houl	code: 2644	
+ld a	1440		ld an	code: 2645	
+ny 	2196		ny o	code: 2646	
+one 	1215		one b	code: 2647	
+be 	732		be f	code: 2648	
+fri	1787		frig	code: 2649	
+ghten	1809		ghtene	code: 2650	
+ed by	1041		ed by 	code: 2651	
+ a ha	2344		 a hat	code: 2652	
+t?	742		t?"	code: 2653	
+"
+M	744		"
+My	code: 2654	
+y 	433		y d	code: 2655	
+drawing 	2628		drawing w	code: 2656	
+was n	1819		was no	code: 2657	
+ot a	2095		ot a 	code: 2658	
+ pi	2473		 pic	code: 2659	
+ctu	1822		ctur	code: 2660	
+re of	2475		re of 	code: 2661	
+ a hat	2652		 a hat.	code: 2662	
+. It w	2471		. It wa	code: 2663	
+as a 	1414		as a p	code: 2664	
+picture	2449		picture 	code: 2665	
+ of a 	764		 of a b	code: 2666	
+boa const	2477		boa constr	code: 2667	
+rictor	1648		rictor 	code: 2668	
+ dig	1836		 dige	code: 2669	
+esti	550		estin	code: 2670	
+ng a	1839		ng an	code: 2671	
+n 	287		n e	code: 2672	
+ele	1841		elep	code: 2673	
+ph	780		pha	code: 2674	
+ant	1917		ant.	code: 2675	
+. Bu	1844		. But	code: 2676	
+t si	785		t sin	code: 2677	
+nce t	1847		nce th	code: 2678	
+he g	1775		he gr	code: 2679	
+rown-up	2040		rown-ups	code: 2680	
+s w	793		s we	code: 2681	
+ere n	1852		ere no	code: 2682	
+ot a	2095		ot ab	code: 2683	
+ble 	2429		ble t	code: 2684	
+to 	800		to u	code: 2685	
+unders	2322		underst	code: 2686	
+ta	1424		tan	code: 2687	
+nd i	1858		nd it	code: 2688	
+t,	1407		t, 	code: 2689	
+ I ma	1860		 I mad	code: 2690	
+de 	812		de a	code: 2691	
+ano	1126		anot	code: 2692	
+ther 	949		ther d	code: 2693	
+drawing	1817		drawing:	code: 2694	
+: I 	1867		: I d	code: 2695	
+dre	821		drew	code: 2696	
+w th	1652		w the	code: 2697	
+e in	2450		e ins	code: 2698	
+side 	1954		side o	code: 2699	
+of a b	1831		of a bo	code: 2700	
+oa 	766		oa c	code: 2701	
+constr	2507		constri	code: 2702	
+ictor	833		ictor,	code: 2703	
+, so 	1878		, so t	code: 2704	
+that t	2525		that th	code: 2705	
+he gr	2679		he gro	code: 2706	
+own-u	2619		own-up	code: 2707	
+ps 	842		ps c	code: 2708	
+cou	1241		coul	code: 2709	
+ld s	1884		ld se	code: 2710	
+ee 	847		ee i	code: 2711	
+it 	1088		it c	code: 2712	
+clea	2273		clear	code: 2713	
+rl	1163		rly	code: 2714	
+y	121		y.	code: 2715	
+. Th	992		. The	code: 2716	
+ey 	1656		ey a	code: 2717	
+always	2338		always 	code: 2718	
+ n	540		 ne	code: 2719	
+eed	1735		eed 	code: 2720	
+ to ha	1895		 to hav	code: 2721	
+ve 	865		ve t	code: 2722	
+things 	2074		things e	code: 2723	
+expl	2070		expla	code: 2724	
+ain	1028		aine	code: 2725	
+ed.	875		ed. 	code: 2726	
+ M	2594		 My	code: 2727	
+y Dr	877		y Dra	code: 2728	
+awing N	2035		awing Nu	code: 2729	
+umber 	2597		umber T	code: 2730	
+Two	1064		Two 	code: 2731	
+ lo	1909		 loo	code: 2732	
+oke	644		oked	code: 2733	
+d 	305		d l	code: 2734	
+like 	2606		like t	code: 2735	
+this	654		this:	code: 2736	
+:
+	656		:
+E	code: 2737	
+Ele	1915		Elep	code: 2738	
+pha	2674		phan	code: 2739	
+nt 	2285		nt i	code: 2740	
+insid	953		inside	code: 2741	
+e the	1920		e the 	code: 2742	
+ boa	1471		 boa
+	code: 2743	
+
+Th	1454		
+The	code: 2744	
+e gr	2416		e gro	code: 2745	
+own-up	2707		own-ups	code: 2746	
+s	115		s'	code: 2747	
+' r	1926		' re	code: 2748	
+es	352		esp	code: 2749	
+pons	1928		ponse	code: 2750	
+e, t	916		e, th	code: 2751	
+his 	1931		his t	code: 2752	
+tim	2235		time	code: 2753	
+e, w	1438		e, wa	code: 2754	
+as t	922		as to	code: 2755	
+o 	511		o a	code: 2756	
+adv	924		advi	code: 2757	
+ise	1937		ise 	code: 2758	
+ me	928		 me 	code: 2759	
+ to l	1939		 to la	code: 2760	
+ay	931		ay 	code: 2761	
+ as	685		 asi	code: 2762	
+ide 	1942		ide m	code: 2763	
+my 	935		my d	code: 2764	
+drawings	1944		drawings 	code: 2765	
+ of 	578		 of b	code: 2766	
+boa constr	2667		boa constri	code: 2767	
+ictors	1474		ictors,	code: 2768	
+, wh	1388		, whe	code: 2769	
+et	692		eth	code: 2770	
+her f	1951		her fr	code: 2771	
+rom 	2460		rom t	code: 2772	
+the i	824		the in	code: 2773	
+nside	1919		nside 	code: 2774	
+ or	1955		 or 	code: 2775	
+ the 	571		 the o	code: 2776	
+out	1406		outs	code: 2777	
+side,	958		side, 	code: 2778	
+ and 	1056		 and d	code: 2779	
+dev	1961		devo	code: 2780	
+ote 	1963		ote m	code: 2781	
+mys	1493		myse	code: 2782	
+elf	965		elf 	code: 2783	
+ ins	1966		 inst	code: 2784	
+tea	968		tead	code: 2785	
+d to 	1544		d to g	code: 2786	
+geogra	2120		geograp	code: 2787	
+phy,	1972		phy, 	code: 2788	
+ hi	2390		 his	code: 2789	
+st	399		sto	code: 2790	
+ory	1975		ory,	code: 2791	
+, a	363		, ar	code: 2792	
+rit	982		rith	code: 2793	
+h	104		hm	code: 2794	
+metic	1979		metic,	code: 2795	
+, and gr	1981		, and gra	code: 2796	
+am	1301		amm	code: 2797	
+mar.	1983		mar. 	code: 2798	
+ T	1890		 Th	code: 2799	
+hat 	993		hat i	code: 2800	
+is w	2315		is wh	code: 2801	
+hy, 	996		hy, a	code: 2802	
+at t	838		at th	code: 2803	
+he a	1617		he ag	code: 2804	
+ge o	1990		ge of	code: 2805	
+f 	392		f s	code: 2806	
+six,	1002		six, 	code: 2807	
+ I 	288		 I g	code: 2808	
+ga	1994		gav	code: 2809	
+ve u	1006		ve up	code: 2810	
+p 	523		p w	code: 2811	
+wh	285		wha	code: 2812	
+at m	1009		at mi	code: 2813	
+ight	1011		ight 	code: 2814	
+ have b	2201		 have be	code: 2815	
+een	1015		een 	code: 2816	
+ a m	2444		 a ma	code: 2817	
+agn	2004		agni	code: 2818	
+ifi	1019		ific	code: 2819	
+cent	1576		cent 	code: 2820	
+ ca	1584		 car	code: 2821	
+ree	1024		reer	code: 2822	
+r as	2010		r as 	code: 2823	
+ a p	752		 a pa	code: 2824	
+aint	2012		ainte	code: 2825	
+er.	1030		er. 	code: 2826	
+ I ha	1391		 I had	code: 2827	
+d b	2015		d be	code: 2828	
+een 	2816		een d	code: 2829	
+dish	2017		dishe	code: 2830	
+ear	1363		eart	code: 2831	
+tened	2020		tened 	code: 2832	
+ by	1080		 by 	code: 2833	
+ the 	571		 the f	code: 2834	
+fai	2024		fail	code: 2835	
+lu	1046		lur	code: 2836	
+re of 	2661		re of m	code: 2837	
+my Draw	2290		my Drawi	code: 2838	
+ing N	1749		ing Nu	code: 2839	
+umber 	2597		umber O	code: 2840	
+One	638		One 	code: 2841	
+ and 	1056		 and m	code: 2842	
+my Drawi	2838		my Drawin	code: 2843	
+ng N	2029		ng Nu	code: 2844	
+umber T	2730		umber Tw	code: 2845	
+wo.	2038		wo. 	code: 2846	
+ 	32		 G	code: 2847	
+Gr	1067		Gro	code: 2848	
+own-ups	2746		own-ups 	code: 2849	
+ ne	2719		 nev	code: 2850	
+ver 	1345		ver u	code: 2851	
+underst	2686		understa	code: 2852	
+and 	1076		and a	code: 2853	
+any	1267		anyt	code: 2854	
+thing b	2048		thing by	code: 2855	
+y the	2022		y them	code: 2856	
+m	109		ms	code: 2857	
+selv	2051		selve	code: 2858	
+es	352		es,	code: 2859	
+, and i	2053		, and it	code: 2860	
+t is 	2343		t is t	code: 2861	
+ti	1313		tir	code: 2862	
+reso	1091		resom	code: 2863	
+me 	1358		me f	code: 2864	
+for 	2059		for c	code: 2865	
+ch	1095		chi	code: 2866	
+ild	2061		ildr	code: 2867	
+ren	1098		ren 	code: 2868	
+ to 	673		 to b	code: 2869	
+be a	1101		be al	code: 2870	
+lw	857		lwa	code: 2871	
+ays 	2066		ays a	code: 2872	
+and 	1076		and f	code: 2873	
+forev	2068		foreve	code: 2874	
+er 	570		er e	code: 2875	
+expla	2724		explai	code: 2876	
+ini	1337		inin	code: 2877	
+ng t	2073		ng th	code: 2878	
+hing	2604		hings	code: 2879	
+s t	536		s to	code: 2880	
+o the	2078		o them	code: 2881	
+m.
+	1117		m.
+S	code: 2882	
+So	1119		So 	code: 2883	
+ the	529		 then	code: 2884	
+n I 	2348		n I c	code: 2885	
+chos	2081		chose	code: 2886	
+e an	1862		e ano	code: 2887	
+othe	1127		other	code: 2888	
+r pr	2364		r pro	code: 2889	
+ofe	1130		ofes	code: 2890	
+ss	2087		ssi	code: 2891	
+ion	1338		ion,	code: 2892	
+, and l	1134		, and le	code: 2893	
+ear	1363		earn	code: 2894	
+ned t	2092		ned to	code: 2895	
+o 	511		o p	code: 2896	
+pilo	2094		pilot	code: 2897	
+t ai	1141		t air	code: 2898	
+rp	2097		rpl	code: 2899	
+lan	1193		lane	code: 2900	
+es. 	2099		es. I	code: 2901	
+I hav	2297		I have	code: 2902	
+e f	2023		e fl	code: 2903	
+lown	2103		lown 	code: 2904	
+ a l	1151		 a li	code: 2905	
+it	261		itt	code: 2906	
+tle	2106		tle 	code: 2907	
+ o	410		 ov	code: 2908	
+ver a	2108		ver al	code: 2909	
+ll 	1361		ll p	code: 2910	
+pa	2110		par	code: 2911	
+rt	2019		rts	code: 2912	
+s of th	2565		s of the	code: 2913	
+e worl	2113		e world	code: 2914	
+d	100		d;	code: 2915	
+; 	1165		; a	code: 2916	
+and i	1087		and it	code: 2917	
+t is t	2861		t is tr	code: 2918	
+rue 	2118		rue t	code: 2919	
+that 	1465		that g	code: 2920	
+geograp	2787		geograph	code: 2921	
+hy 	2642		hy h	code: 2922	
+has	1177		has 	code: 2923	
+ bee	2001		 been	code: 2924	
+n v	1180		n ve	code: 2925	
+er	277		ery	code: 2926	
+y us	2126		y use	code: 2927	
+e	101		ef	code: 2928	
+fu	1186		ful	code: 2929	
+l 	606		l t	code: 2930	
+to m	2129		to me	code: 2931	
+e. A	2569		e. At	code: 2932	
+t a g	2132		t a gl	code: 2933	
+lanc	2134		lance	code: 2934	
+e I 	2180		e I c	code: 2935	
+ca	339		can	code: 2936	
+n 	287		n d	code: 2937	
+dis	1197		dist	code: 2938	
+tin	1838		ting	code: 2939	
+g	103		gu	code: 2940	
+uis	2140		uish	code: 2941	
+h 	528		h C	code: 2942	
+Chi	1203		Chin	code: 2943	
+na	2144		na 	code: 2944	
+ fro	950		 from	code: 2945	
+m A	2147		m Ar	code: 2946	
+riz	1209		rizo	code: 2947	
+ona	1211		ona.	code: 2948	
+. If 	2152		. If o	code: 2949	
+one 	1215		one g	code: 2950	
+ge	549		get	code: 2951	
+ts 	2155		ts l	code: 2952	
+los	1219		lost	code: 2953	
+t in	1918		t in 	code: 2954	
+ the n	1222		 the ni	code: 2955	
+ight,	2160		ight, 	code: 2956	
+ su	1548		 suc	code: 2957	
+ch k	2162		ch kn	code: 2958	
+now	1229		nowl	code: 2959	
+ledge	2165		ledge 	code: 2960	
+ is 	1089		 is v	code: 2961	
+valu	2168		valua	code: 2962	
+able.	2170		able.
+	code: 2963	
+
+In 	1638		
+In t	code: 2964	
+the 	436		the c	code: 2965	
+cour	2174		cours	code: 2966	
+se o	1243		se of	code: 2967	
+f thi	2314		f this	code: 2968	
+s l	1218		s li	code: 2969	
+if	317		ife	code: 2970	
+e I 	2180		e I h	code: 2971	
+have h	1250		have ha	code: 2972	
+ad 	969		ad a	code: 2973	
+a g	2220		a gr	code: 2974	
+reat	2417		reat 	code: 2975	
+ man	2430		 many	code: 2976	
+y e	1258		y en	code: 2977	
+nco	2188		ncou	code: 2978	
+un	581		unt	code: 2979	
+ter	496		ters	code: 2980	
+s wi	2191		s wit	code: 2981	
+th	368		th 	code: 2982	
+ a gr	2193		 a gre	code: 2983	
+eat 	1297		eat m	code: 2984	
+man	1256		many	code: 2985	
+y p	1268		y pe	code: 2986	
+e	101		eo	code: 2987	
+ople	2198		ople 	code: 2988	
+ who 	2266		 who h	code: 2989	
+have 	1147		have b	code: 2990	
+been c	2202		been co	code: 2991	
+on	397		onc	code: 2992	
+cern	2204		cerne	code: 2993	
+ed w	1279		ed wi	code: 2994	
+ith 	2192		ith m	code: 2995	
+mat	2207		matt	code: 2996	
+ters	2980		ters 	code: 2997	
+ of c	1284		 of co	code: 2998	
+onse	915		onseq	code: 2999	
+que	2213		quen	code: 3000	
+nce.	1289		nce. 	code: 3001	
+ I hav	2100		 I have	code: 3002	
+e l	1292		e li	code: 3003	
+i	105		iv	code: 3004	
+ved 	1334		ved a	code: 3005	
+a gr	2974		a gre	code: 3006	
+eat 	1297		eat d	code: 3007	
+de	558		dea	code: 3008	
+al a	2223		al am	code: 3009	
+mon	1302		mong	code: 3010	
+g g	2226		g gr	code: 3011	
+rown-ups	2680		rown-ups.	code: 3012	
+. I hav	2229		. I have	code: 3013	
+e s	530		e se	code: 3014	
+een 	2816		een t	code: 3015	
+them 	1311		them i	code: 3016	
+int	2234		inti	code: 3017	
+ima	1314		imat	code: 3018	
+te	276		tel	code: 3019	
+ly	563		ly,	code: 3020	
+, c	2238		, cl	code: 3021	
+lose	1319		lose 	code: 3022	
+ at 	1359		 at h	code: 3023	
+han	781		hand	code: 3024	
+d.	1902		d. 	code: 3025	
+ An	1719		 And	code: 3026	
+d tha	1324		d that	code: 3027	
+t ha	1321		t has	code: 3028	
+s	115		sn	code: 3029	
+n'	1327		n't	code: 3030	
+t mu	1329		t muc	code: 3031	
+ch 	1390		ch i	code: 3032	
+imp	2250		impr	code: 3033	
+ro	355		rov	code: 3034	
+ved 	1334		ved m	code: 3035	
+my 	935		my o	code: 3036	
+opi	1336		opin	code: 3037	
+nio	2255		nion	code: 3038	
+n of	2319		n of 	code: 3039	
+ the	529		 them	code: 3040	
+m.
+W	2258		m.
+Wh	code: 3041	
+hen	286		hene	code: 3042	
+ever 	1431		ever I	code: 3043	
+I m	2262		I me	code: 3044	
+et 	1547		et o	code: 3045	
+one o	2264		one of	code: 3046	
+f th	2177		f the	code: 3047	
+em w	2624		em wh	code: 3048	
+ho 	2200		ho s	code: 3049	
+seem	1354		seeme	code: 3050	
+ed to	2421		ed to 	code: 3051	
+ me 	2759		 me a	code: 3052	
+at 	499		at a	code: 3053	
+all c	2272		all cl	code: 3054	
+lear	1135		lear-	code: 3055	
+-si	2275		-sig	code: 3056	
+ghte	1367		ghted	code: 3057	
+d,	2277		d, 	code: 3058	
+ I 	288		 I t	code: 3059	
+trie	1370		tried	code: 3060	
+d the 	2280		d the e	code: 3061	
+expe	1373		exper	code: 3062	
+rime	2365		rimen	code: 3063	
+nt 	2285		nt o	code: 3064	
+of s	1620		of sh	code: 3065	
+how	1378		howi	code: 3066	
+ing 	617		ing h	code: 3067	
+him m	2289		him my	code: 3068	
+y Dra	2728		y Draw	code: 3069	
+wing Nu	2291		wing Num	code: 3070	
+mber	1385		mber 	code: 3071	
+ On	2598		 One	code: 3072	
+e, wh	2294		e, whi	code: 3073	
+ic	319		ich	code: 3074	
+h I	2296		h I 	code: 3075	
+ have 	2000		 have a	code: 3076	
+always 	2718		always k	code: 3077	
+kep	1396		kept	code: 3078	
+t. I	2303		t. I 	code: 3079	
+ wou	2414		 woul	code: 3080	
+ld 	727		ld t	code: 3081	
+try	2306		try 	code: 3082	
+ to 	673		 to f	code: 3083	
+fin	1404		find	code: 3084	
+d o	2310		d ou	code: 3085	
+ut,	2327		ut, 	code: 3086	
+ s	293		 so	code: 3087	
+o,	1409		o, 	code: 3088	
+ i	404		 if	code: 3089	
+f this	2968		f this 	code: 3090	
+ was 	1828		 was a	code: 3091	
+a pe	2317		a per	code: 3092	
+rson	2357		rson 	code: 3093	
+ of t	1418
+2839
+2839
+test passed
+The maximum depth reached by any of the 4 hls::stream() instances in the design is 8192
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************
