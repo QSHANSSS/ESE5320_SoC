@@ -172,47 +172,16 @@ EventTimer timer1, timer2;
 #endif   
     
     int *boundary=(int *)malloc(sizeof(int)*(offset/CHUNK_SIZE));
-	int *boundary2=(int *)malloc(sizeof(int)*(offset/CHUNK_SIZE));
-	uint8_t chunk_num;chunk_num=2;
-    // pin_main_thread_to_cpu0();
-    // std::vector<std::thread> ths;
-    // int start=0;
-	// vector<int>chunk_bound;
-	// chunk_bound.push_back(0);
-	// cdc_para_timer.start();
-    // ths.push_back(std::thread(&cdc_new1,std::ref(file), start, offset/4, std::ref(boundary)/*,chunk_num1*/));
-    // ths.push_back(std::thread(&cdc_new1,std::ref(file), offset/4, offset/2, std::ref(boundary)/*,chunk_num2*/));
-    // ths.push_back(std::thread(&cdc_new1,std::ref(file), offset/2, offset*3/4, std::ref(boundary)/*,chunk_num3*/));
-    // ths.push_back(std::thread(&cdc_new1,std::ref(file), offset*3/4, offset, std::ref(boundary)/*,chunk_num4*/));
-	// pin_thread_to_cpu(ths[0],0);
-    // pin_thread_to_cpu(ths[1],1);
-	// pin_thread_to_cpu(ths[2],2);
-    // pin_thread_to_cpu(ths[3],3);
-    // for (auto &th:ths) {
-    // 	th.join();
-    // }
-	// cdc_para_timer.stop();
-	// //chunk_num1[0]+chunk_num2[0]+chunk_num3[0]+chunk_num4[0];
-	// for(int k=1;k<=chunk_bound.size();k++)
-	// 	boundary[chunk_num1[0]+k]=boundary2[k];
-    // //printf("chunk num:%d\n",chunk_num);
-	// for(int i=0;i<=chunk_num;i++) printf("bound[%d]:%d\n",i,boundary[i]);
-	// std::cout << "--------------- cdc multi-core Throughputs ---------------" << std::endl;
-	// float output_latency_cdc_para = cdc_para_timer.latency() / 1000.0;
-	// float output_throughput_cdc_para = (offset * 8 / 1000000.0) / output_latency_cdc_para; // Mb/s
-	// std::cout << "Output Throughput of multi-core cdc: " << output_throughput_cdc_para << " Mb/s."
-	// 		<< " (Latency: " << output_latency_cdc_para << "s)." << std::endl;
-    
-	//chunk_num=cdc_new(file,offset,boundary);
-	unordered_map<string,int> hash_table;
+    int *boundary2=(int *)malloc(sizeof(int)*(offset/CHUNK_SIZE));
+    uint8_t chunk_num;chunk_num=2;
+    unordered_map<string,int> hash_table;
     uint32_t header=0;
 	
-    
-	unsigned char  *sizing_output=(unsigned char *)malloc(sizeof(unsigned char)*MAX_CHUNK_SIZE);
+    unsigned char  *sizing_output=(unsigned char *)malloc(sizeof(unsigned char)*MAX_CHUNK_SIZE);
     unsigned char  *chunk=(unsigned char *)malloc(sizeof(unsigned char)*MAX_CHUNK_SIZE);
     unsigned char *compressed=(unsigned char *)malloc(offset);
     unsigned int compressed_size=0;
-	int *input_length=(int*)malloc(sizeof(int)*2);
+    int *input_length=(int*)malloc(sizeof(int)*2);
     int *output_length=(int*)malloc(sizeof(int)*2);
     // ------------------------------------------------------------------------------------
     // Step 2: Create buffers and initialize test values
@@ -231,10 +200,9 @@ EventTimer timer1, timer2;
     std::vector<cl::Event> exec_events, read_events,write_events;;
     cl::Event write_ev, exec_ev, read_ev;
     encoding.setArg(0, in_buf);
-	encoding.setArg(2, out_buf);
+    encoding.setArg(2, out_buf);
 	//encoding.setArg(3, out2_buf);
 
-    //input_length=(int *)q.enqueueMapBuffer(in2_buf, CL_TRUE, CL_MAP_WRITE, 0, sizeof(int)*2);
 	//lzw_code = (uint16_t *)q.enqueueMapBuffer(out_buf, CL_TRUE, CL_MAP_READ, 0, sizeof(uint16_t)*MAX_CHUNK_SIZE);
     //output_length=(int *)q.enqueueMapBuffer(out2_buf, CL_TRUE, CL_MAP_READ, 0, sizeof(int)*2);
 	chunk = (unsigned char *)q.enqueueMapBuffer(in_buf, CL_TRUE, CL_MAP_WRITE, 0, sizeof(unsigned char)*MAX_CHUNK_SIZE);
@@ -288,7 +256,6 @@ EventTimer timer1, timer2;
 			header=( ( (lzw_code[0])*13/8+1)<<1 | 0 );
 			//header=LZW_out.size()<<1;
 			memcpy((void *)&compressed[compressed_size],(unsigned char*)&header,sizeof(header));
-			//cout<<"4"<<endl;
 			compressed_size+=sizeof(header);
 			//printf("compressed:%d\n",lzw_code[0]*13/8+1);
 			
@@ -297,9 +264,6 @@ EventTimer timer1, timer2;
 				compressed[compressed_size++]=sizing_output[j];	
 				//printf("compressed[%d]:%d\n",j,sizing_output[j]);
 		    }
-			//  for(int j=0;j<=lzw_code[0];j++){	
-			//  	printf("compressed[%d]:%d\n",j,compressed[j]);
-		    //  }
 		}
 		else{  //duplicated
 			 header=(chunk_match<<1 | 1);
